@@ -1,20 +1,22 @@
-# Nome do projeto
+# PsyCare
 
 Escreva um ou dois parágrafo resumindo o objetivo do seu projeto.
 
 ## Alunos integrantes da equipe
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Gabriel Eduardo de Oliveira
+* Júlia Carvalho Silva
+* Júlia do Carmo Costa Rocha e Silva
+* Lucas Cardoso
+* Nathaly Nagem Araujo
+* Pedro Henrique de Oliveira Silva
+* Yago Garzon Chaves
 
 ## Professores responsáveis
 
-* Nome completo do professor 1
-* Nome completo do professor 2
-
-
+* Daniel Machado Osório Pereira
+* Lucca Soares de Paiva Lacerda
+* Michelle Hanne Soares de Andrade
 
 ## Instruções de utilização 
 
