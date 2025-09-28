@@ -95,7 +95,44 @@ O PsyCare tem como público principal pessoas em situação de vulnerabilidade s
 
 ## Requisitos
 
-<img width="1232" height="1825" alt="image" src="https://github.com/user-attachments/assets/d9dd426a-b089-4219-877b-d3a0d174118f" />
+## Requisitos Funcionais
+1.	Exibir uma página inicial com informações e orientações sobre saúde mental
+2.	Permitir que o usuário agende consultas ou sessões com profissionais voluntários
+3.	Mostrar os horários disponíveis de cada profissional
+4.	Possibilitar que o usuário visualize, remarque ou cancele suas consultas
+5.	Disponibilizar conteúdos educativos em texto, vídeo e áudio sobre saúde mental
+6.	Permitir que o usuário salve conteúdos para acessar depois
+7.	Oferecer uma área de perfil para que o usuário veja e edite seus dados básicos
+8.	Possibilitar o envio de mensagens privadas ao profissional antes ou depois das sessões
+9.	Contar com chat em tempo real durante a consulta, se houver autorização do profissional
+10.	Permitir que o usuário busque profissionais por especialidade ou tipo de atendimento
+11.	Enviar notificações ou lembretes de consultas por e-mail ou pelo próprio site
+12.	Oferecer a opção de avaliar a consulta e enviar feedback anônimo sobre o atendimento
+13.	Exibir um canal de ajuda emergencial com contatos de apoio 24 horas, como o CVV, e disponibilizar um chat na própria plataforma para atendimento imediato em casos de crise
+14.	Disponibilizar um chat interno permanente dentro da plataforma, que envie notificações aos usuários e permite tirar dúvidas gerais sobre o serviço, conteúdos ou agendamentos
+15.	Disponibilizar para o administrador a função de cadastrar, atualizar ou remover profissionais e seus horários
+16.	Permitir que a pessoa agende um atendimento sem precisar de cadastro completo, informando apenas nome e meio de contato
+17.	Disponibilizar um formulário de triagem inicial para entender a necessidade do usuário e direcioná-lo ao profissional adequado
+
+## Requisitos Não Funcionais
+1.	Funcionamento 24 horas por dia, 7 dias por semana.
+2.	Compatibilidade com computadores, tablets e smartphones
+3.	Carregamento de cada página em até 3 segundos em conexão padrão
+4.	Hospedagem em servidor público seguro com certificado SSL (HTTPS)
+5.	Desenvolvimento usando exclusivamente HTML, CSS e JavaScript
+6.	Interface intuitiva e simples, adequada a pessoas com pouca familiaridade com tecnologia
+7.	Conformidade com diretrizes de acessibilidade, incluindo contraste de cores, descrição de imagens e navegação por teclado
+8.	Proteção de dados criptografados e tratamento conforme a LGPD
+9.	Capacidade de suportar aumento de usuários e profissionais sem perda de desempenho
+10.	Backup automático diário com possibilidade de recuperação rápida em caso de falhas ou ataques
+
+## Projeto de Interface
+
+* **Protótipo de tela**
+
+* Home Page
+* <img width="1000" height="2500" alt="image" src="https://github.com/user-attachments/assets/02ccded0-e370-42c1-958c-37c1c329ef6c" />
+
 
 
 ## Instruções de utilização 
