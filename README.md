@@ -55,7 +55,7 @@ O PsyCare tem como público principal pessoas em situação de vulnerabilidade s
 ## Etapa de Definição
 
 * **Personas**
-* <img width="2060" height="1092" alt="image" src="https://github.com/user-attachments/assets/e4b4285b-4bb6-4dc7-bdd8-f4dd9c2bc29c" />
+* <img width="1628" height="1381" alt="image" src="https://github.com/user-attachments/assets/164c7491-b835-4d20-8a22-0429a1d3d1a5" />
 * <img width="1502" height="1497" alt="image" src="https://github.com/user-attachments/assets/8f7a6391-8f48-4723-b919-99e1866ae968" />
 * <img width="1657" height="1357" alt="image" src="https://github.com/user-attachments/assets/bae0475d-5b4b-4c70-963f-c017983a7dcc" />
 * <img width="1632" height="1377" alt="image" src="https://github.com/user-attachments/assets/3e98cb2b-efc7-4b35-9fa1-6be182b82933" />
