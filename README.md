@@ -144,8 +144,14 @@ O PsyCare tem como público principal pessoas em situação de vulnerabilidade s
 <img width="1918" height="865" alt="image" src="https://github.com/user-attachments/assets/9f5564e2-bbb0-416c-8b7b-b8c13256b6a8" />
 
 * Tela de Agendamento de Consultas
-<img width="1918" height="400" alt="image" src="https://github.com/user-attachments/assets/4258e437-3441-48d7-a988-e80d620603a2" />
-<img width="1918" height="400" alt="image" src="https://github.com/user-attachments/assets/fb384e07-3be8-4e57-bb1f-a6ff2c00d260" />
+<img width="1913" height="870" alt="image" src="https://github.com/user-attachments/assets/1a8cf651-ee99-4665-aed6-3346ee1d382b" />
+<img width="1912" height="864" alt="image" src="https://github.com/user-attachments/assets/19d0e62a-5968-40b0-be1a-0bb5603e5489" />
+<img width="1915" height="865" alt="image" src="https://github.com/user-attachments/assets/4e23672f-b218-45c8-bb66-87f1e75b8725" />
+<img width="1919" height="870" alt="image" src="https://github.com/user-attachments/assets/ab819461-92b5-4830-9e92-7b2fce4d099c" />
+
+* Tela ao clicar em Agendar
+<img width="644" height="515" alt="image" src="https://github.com/user-attachments/assets/6087fba2-7faf-4b78-8bed-165827f22fa6" />
+
 
 
 
