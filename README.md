@@ -149,8 +149,8 @@ O PsyCare tem como público principal pessoas em situação de vulnerabilidade s
 * Conteúdo de apoio
 <img width="800" height="700" alt="image" src="https://github.com/user-attachments/assets/25a188b4-1b23-4ad0-8ff5-5968f571e2a8" />
 
-* Tela de Psicólogos 
-<img width="1200" height="700" alt="image" src="https://github.com/user-attachments/assets/9f5564e2-bbb0-416c-8b7b-b8c13256b6a8" />
+* Tela de Psicólogos
+<img width="419" height="286" alt="image" src="https://github.com/user-attachments/assets/d825470b-c702-4d8d-a31c-cf121d618fc0" />
 
 * Tela de Agendamento de Consultas
 <img width="1913" height="870" alt="image" src="https://github.com/user-attachments/assets/1a8cf651-ee99-4665-aed6-3346ee1d382b" />
@@ -159,13 +159,13 @@ O PsyCare tem como público principal pessoas em situação de vulnerabilidade s
 <img width="1919" height="870" alt="image" src="https://github.com/user-attachments/assets/ab819461-92b5-4830-9e92-7b2fce4d099c" />
 
 * Tela ao clicar em Agendar
-<img width="1913" height="515" alt="image" src="https://github.com/user-attachments/assets/6087fba2-7faf-4b78-8bed-165827f22fa6" />
+<img width="1800" height="515" alt="image" src="https://github.com/user-attachments/assets/6087fba2-7faf-4b78-8bed-165827f22fa6" />
 
 * Painel Colaborador (Atendentes)
-<img width="1913" height="508" alt="image" src="https://github.com/user-attachments/assets/6986a2f7-5836-44b1-ac4e-7135391a02fb" />
+<img width="1800" height="508" alt="image" src="https://github.com/user-attachments/assets/6986a2f7-5836-44b1-ac4e-7135391a02fb" />
 
 * **User Flow: Protótipo Interativo**
-* [Protótipo Interativo (Figma)](https://www.figma.com/proto/j5nm5aKOJQCnX30cXPmdSb/Sa%C3%BAde-Mental)
+* [Protótipo Interativo (Figma)](https://www.figma.com/proto/j5nm5aKOJQCnX30cXPmdSb/Sa%C3%BAde-Mental?node-id=3-44&t=wtntbEqNcDvFQ825-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=3%3A44)
 
 ## Instruções de utilização 
 
