@@ -53,15 +53,19 @@ O PsyCare tem como público principal pessoas em situação de vulnerabilidade s
 * <img width="2060" height="1092" alt="image" src="https://github.com/user-attachments/assets/d9d4e47d-1692-46be-8c5c-2538c67652f4" />
 
 ## Etapa de Definição
+* ### Personas
 
-* **Personas**
-* <img width="1628" height="1381" alt="image" src="https://github.com/user-attachments/assets/164c7491-b835-4d20-8a22-0429a1d3d1a5" />
-* <img width="1502" height="1497" alt="image" src="https://github.com/user-attachments/assets/8f7a6391-8f48-4723-b919-99e1866ae968" />
-* <img width="1657" height="1357" alt="image" src="https://github.com/user-attachments/assets/bae0475d-5b4b-4c70-963f-c017983a7dcc" />
-* <img width="1632" height="1377" alt="image" src="https://github.com/user-attachments/assets/3e98cb2b-efc7-4b35-9fa1-6be182b82933" />
-* <img width="1631" height="1378" alt="image" src="https://github.com/user-attachments/assets/37805939-fd6e-4c2b-bf1f-bdcb8c98a028" />
-* <img width="1651" height="1362" alt="image" src="https://github.com/user-attachments/assets/174c8360-200d-496b-b1f5-a28af4a837a4" />
+| Persona 1 | Persona 2 |
+| ------- | ------- |
+| ![Persona1]<img width="1628" height="1381" alt="image" src="https://github.com/user-attachments/assets/164c7491-b835-4d20-8a22-0429a1d3d1a5" />| ![Persona2] <img width="1502" height="1497" alt="image" src="https://github.com/user-attachments/assets/8f7a6391-8f48-4723-b919-99e1866ae968" /> |
 
+| Persona 3 | Persona 4 |
+| --------- | --------- |
+| ![Persona3](https://github.com/user-attachments/assets/bae0475d-5b4b-4c70-963f-c017983a7dcc)| ![Persona4]<img width="1632" height="1377" alt="image" src="https://github.com/user-attachments/assets/3e98cb2b-efc7-4b35-9fa1-6be182b82933" /> |
+
+| Persona 5 | Persona 6 |
+| --------- | --------- |
+| ![Persona5]<img width="1631" height="1378" alt="image" src="https://github.com/user-attachments/assets/37805939-fd6e-4c2b-bf1f-bdcb8c98a028" /> | ![Persona6]<img width="1651" height="1362" alt="image" src="https://github.com/user-attachments/assets/174c8360-200d-496b-b1f5-a28af4a837a4" />|
 ## Product Desing
 
 
