@@ -128,7 +128,7 @@ O PsyCare tem como público principal pessoas em situação de vulnerabilidade s
 
 ## Projeto de Interface
 
-* **Protótipo de tela**
+**Protótipo de tela**
 
 * Home Page
 <img width="1918" height="871" alt="image" src="https://github.com/user-attachments/assets/54744160-f585-4403-9e45-ded57df45c03" />
@@ -164,8 +164,21 @@ O PsyCare tem como público principal pessoas em situação de vulnerabilidade s
 * Painel Colaborador (Atendentes)
 <img width="1800" height="508" alt="image" src="https://github.com/user-attachments/assets/6986a2f7-5836-44b1-ac4e-7135391a02fb" />
 
-* **User Flow: Protótipo Interativo**
+## User Flow: Protótipo Interativo**
 * [Protótipo Interativo (Figma)](https://www.figma.com/proto/j5nm5aKOJQCnX30cXPmdSb/Sa%C3%BAde-Mental?node-id=3-44&t=wtntbEqNcDvFQ825-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=3%3A44)
+
+## Metodologia 
+
+## Ferramentas
+
+| Ambiente                    | Plataforma | Link de acesso                                     |
+| --------------------------- | ---------- | -------------------------------------------------- |
+| Processo de Design Thinking | Miro       | https://miro.com/app/board/uXjVJSvOcvk=/ |
+| Repositório de código     | GitHub     | https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2025-2-ti1-2401100-psycare |
+| Protótipo do site         | Figma      | https://www.figma.com/proto/j5nm5aKOJQCnX30cXPmdSb/Sa%C3%BAde-Mental?node-id=20-532&t=wtntbEqNcDvFQ825-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=3%3A44 |
+| Protótipo Interativo       | Figma  | https://www.figma.com/proto/j5nm5aKOJQCnX30cXPmdSb/Sa%C3%BAde-Mental?node-id=20-532&t=wtntbEqNcDvFQ825-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=3%3A44   |
+
+
 
 ## Instruções de utilização 
 
