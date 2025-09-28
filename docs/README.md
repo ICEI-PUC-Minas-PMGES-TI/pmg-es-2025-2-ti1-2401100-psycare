@@ -90,36 +90,38 @@ O PsyCare tem como público principal pessoas em situação de vulnerabilidade s
 
 ## Requisitos
 
-## Requisitos Funcionais
-1.	Exibir uma página inicial com informações e orientações sobre saúde mental
-2.	Permitir que o usuário agende consultas ou sessões com profissionais voluntários
-3.	Mostrar os horários disponíveis de cada profissional
-4.	Possibilitar que o usuário visualize, remarque ou cancele suas consultas
-5.	Disponibilizar conteúdos educativos em texto, vídeo e áudio sobre saúde mental
-6.	Permitir que o usuário salve conteúdos para acessar depois
-7.	Oferecer uma área de perfil para que o usuário veja e edite seus dados básicos
-8.	Possibilitar o envio de mensagens privadas ao profissional antes ou depois das sessões
-9.	Contar com chat em tempo real durante a consulta, se houver autorização do profissional
-10.	Permitir que o usuário busque profissionais por especialidade ou tipo de atendimento
-11.	Enviar notificações ou lembretes de consultas por e-mail ou pelo próprio site
-12.	Oferecer a opção de avaliar a consulta e enviar feedback anônimo sobre o atendimento
-13.	Exibir um canal de ajuda emergencial com contatos de apoio 24 horas, como o CVV, e disponibilizar um chat na própria plataforma para atendimento imediato em casos de crise
-14.	Disponibilizar um chat interno permanente dentro da plataforma, que envie notificações aos usuários e permite tirar dúvidas gerais sobre o serviço, conteúdos ou agendamentos
-15.	Disponibilizar para o administrador a função de cadastrar, atualizar ou remover profissionais e seus horários
-16.	Permitir que a pessoa agende um atendimento sem precisar de cadastro completo, informando apenas nome e meio de contato
-17.	Disponibilizar um formulário de triagem inicial para entender a necessidade do usuário e direcioná-lo ao profissional adequado
+| ID     | Descrição do Requisito                                                                                                                             | Prioridade |
+| ------ | -------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
+| RF-001 | Exibir uma página inicial com informações e orientações sobre saúde mental                                                                         | ALTA       |
+| RF-002 | Permitir que o usuário agende consultas ou sessões com profissionais voluntários                                                                   | ALTA       |
+| RF-003 | Mostrar os horários disponíveis de cada profissional                                                                                               | MÉDIA      |
+| RF-004 | Possibilitar que o usuário visualize, remarque ou cancele suas consultas                                                                           | ALTA       |
+| RF-005 | Disponibilizar conteúdos educativos em texto, vídeo e áudio sobre saúde mental                                                                     | MÉDIA      |
+| RF-006 | Permitir que o usuário salve conteúdos para acessar depois                                                                                         | MÉDIA      |
+| RF-007 | Oferecer uma área de perfil para que o usuário veja e edite seus dados básicos                                                                     | MÉDIA      |
+| RF-008 | Possibilitar o envio de mensagens privadas ao profissional antes ou depois das sessões                                                             | BAIXA      |
+| RF-009 | Contar com chat em tempo real durante a consulta, se houver autorização do profissional                                                            | MÉDIA      |
+| RF-010 | Permitir que o usuário busque profissionais por especialidade ou tipo de atendimento                                                               | ALTA       |
+| RF-011 | Enviar notificações ou lembretes de consultas por e-mail ou pelo próprio site                                                                      | MÉDIA      |
+| RF-012 | Oferecer a opção de avaliar a consulta e enviar feedback anônimo sobre o atendimento                                                               | BAIXA      |
+| RF-013 | Exibir um canal de ajuda emergencial com contatos de apoio 24 horas (CVV) e disponibilizar chat imediato para casos de crise                       | ALTA       |
+| RF-014 | Disponibilizar um chat interno permanente dentro da plataforma, que envie notificações e permita tirar dúvidas gerais sobre o serviço ou conteúdos | MÉDIA      |
+| RF-015 | Disponibilizar para o administrador a função de cadastrar, atualizar ou remover profissionais e seus horários                                      | ALTA       |
+| RF-016 | Permitir que a pessoa agende um atendimento sem precisar de cadastro completo, informando apenas nome e meio de contato                            | MÉDIA      |
+| RF-017 | Disponibilizar um formulário de triagem inicial para entender a necessidade do usuário e direcioná-lo ao profissional adequado                     | ALTA       |
 
-## Requisitos Não Funcionais
-1.	Funcionamento 24 horas por dia, 7 dias por semana.
-2.	Compatibilidade com computadores, tablets e smartphones
-3.	Carregamento de cada página em até 3 segundos em conexão padrão
-4.	Hospedagem em servidor público seguro com certificado SSL (HTTPS)
-5.	Desenvolvimento usando exclusivamente HTML, CSS e JavaScript
-6.	Interface intuitiva e simples, adequada a pessoas com pouca familiaridade com tecnologia
-7.	Conformidade com diretrizes de acessibilidade, incluindo contraste de cores, descrição de imagens e navegação por teclado
-8.	Proteção de dados criptografados e tratamento conforme a LGPD
-9.	Capacidade de suportar aumento de usuários e profissionais sem perda de desempenho
-10.	Backup automático diário com possibilidade de recuperação rápida em caso de falhas ou ataques
+| ID      | Descrição do Requisito                                                                                  | Prioridade |
+| ------- | ------------------------------------------------------------------------------------------------------- | ---------- |
+| RNF-001 | Funcionamento 24 horas por dia, 7 dias por semana                                                       | ALTA       |
+| RNF-002 | Compatibilidade com computadores, tablets e smartphones                                                 | ALTA       |
+| RNF-003 | Carregamento de cada página em até 3 segundos em conexão padrão                                         | MÉDIA      |
+| RNF-004 | Hospedagem em servidor público seguro com certificado SSL (HTTPS)                                       | ALTA       |
+| RNF-005 | Desenvolvimento usando exclusivamente HTML, CSS e JavaScript                                            | MÉDIA      |
+| RNF-006 | Interface intuitiva e simples, adequada a pessoas com pouca familiaridade com tecnologia                | ALTA       |
+| RNF-007 | Conformidade com diretrizes de acessibilidade (contraste, descrição de imagens e navegação por teclado) | ALTA       |
+| RNF-008 | Proteção de dados criptografados e tratamento conforme a LGPD                                           | ALTA       |
+| RNF-009 | Capacidade de suportar aumento de usuários e profissionais sem perda de desempenho                      | ALTA       |
+| RNF-010 | Backup automático diário com possibilidade de recuperação rápida em caso de falhas ou ataques           | ALTA       |
 
 ## Projeto de Interface
 
