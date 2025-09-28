@@ -89,7 +89,7 @@ O PsyCare tem como público principal pessoas em situação de vulnerabilidade s
 | ![Proposta3](https://github.com/user-attachments/assets/8082af8e-a490-4023-a63d-df1a08b59dd8) | ![Proposta4](https://github.com/user-attachments/assets/36613e8b-9f89-4710-9e2a-1e8498299830)|
 | 5: Hugo | 6: Felipe |
 | ----- | ------ |
-| ![Proposta5](https://github.com/user-attachments/assets/50728cdd-c9e4-45b9-80fe-8d0f1e44b2e6)| ![Proposta6](https://miro.com/app/board/uXjVJSvOcvk=/?moveToWidget=3458764639011588244&cot=14) |
+| ![Proposta5](https://github.com/user-attachments/assets/50728cdd-c9e4-45b9-80fe-8d0f1e44b2e6)| ![Proposta6](https://github.com/user-attachments/assets/eb00334f-7b7b-4997-b457-82cea50c2b60) |
 
 ## Instruções de utilização 
 
