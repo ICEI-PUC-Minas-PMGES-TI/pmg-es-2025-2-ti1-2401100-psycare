@@ -1,6 +1,6 @@
 # PsyCare
 
-Escreva um ou dois parágrafo resumindo o objetivo do seu projeto.
+O PsyCare tem como objetivo ser um espaço digital acessível e inclusivo que ofereça apoio inicial em saúde mental para qualquer pessoa que precise de acolhimento. A plataforma busca reduzir barreiras sociais, financeiras e informacionais, conectando indivíduos a conteúdos confiáveis, orientações práticas e profissionais capacitados, de forma simples e disponível a qualquer hora.
 
 ## Alunos integrantes da equipe
 
