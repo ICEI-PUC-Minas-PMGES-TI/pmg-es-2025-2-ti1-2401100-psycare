@@ -152,6 +152,10 @@ O PsyCare tem como público principal pessoas em situação de vulnerabilidade s
 * Tela ao clicar em Agendar
 <img width="644" height="515" alt="image" src="https://github.com/user-attachments/assets/6087fba2-7faf-4b78-8bed-165827f22fa6" />
 
+* Painel Colaborador (Atendentes)
+<img width="641" height="508" alt="image" src="https://github.com/user-attachments/assets/6986a2f7-5836-44b1-ac4e-7135391a02fb" />
+
+
 
 
 
