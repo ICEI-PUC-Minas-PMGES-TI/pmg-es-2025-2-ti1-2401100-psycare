@@ -1,258 +1,174 @@
-# Introdução
+# PsyCare
 
-Informações básicas do projeto.
+## Alunos integrantes da equipe
 
-* **Projeto:** [NOME DO PROJETO]
-* **Repositório GitHub:** [LINK PARA O REPOSITÓRIO NO GITHUB]
-* **Membros da equipe:**
+* Gabriel Eduardo de Oliveira
+* Júlia Carvalho Silva
+* Júlia do Carmo Costa Rocha e Silva
+* Lucas Cardoso
+* Nathaly Nagem Araujo
+* Pedro Henrique de Oliveira Silva
+* Yago Garzon Chaves
 
-  * [Fulano](https://github.com/fulano) ⚠️ EXEMPLO ⚠️
-  * [Beltrano](https://github.com/beltrano) ⚠️ EXEMPLO ⚠️
-  * [Cicrano](https://github.com/cicrano) ⚠️ EXEMPLO ⚠️
+## Contexto
 
-A documentação do projeto é estruturada da seguinte forma:
-
-1. Introdução
-2. Contexto
-3. Product Discovery
-4. Product Design
-5. Metodologia
-6. Solução
-7. Referências Bibliográficas
-
-✅ [Documentação de Design Thinking (MIRO)](files/processo-dt.pdf)
-
-# Contexto
-
-Detalhes sobre o espaço de problema, os objetivos do projeto, sua justificativa e público-alvo.
+A saúde mental é um direito humano fundamental, tão importante quanto o cuidado com o corpo, mas para milhões de brasileiros em situação de vulnerabilidade, ela permanece como um privilégio distante. Enquanto o esgotamento mental silenciosamente corroí vidas, a luta diária por sustento, moradia e dignidade empurra o autocuidado para as sombras, como se fosse um luxo a ser adiado. Esse abandono aprofunda o sofrimento individual e também perpetua o ciclo da pobreza, onde uma mente sobrecarregada encontra barreiras ainda maiores para buscar oportunidades e melhorar de vida. É nesse abismo entre a necessidade urgente e o acesso inexistente que surge a ideia de uma solução: criar um porto seguro digital acessível, onde o primeiro passo para o cuidado não tenha barreira.
 
 ## Problema
 
-**✳️✳️✳️ COLOQUE AQUI O SEU TEXTO ✳️✳️✳️**
+A dificuldade de acesso à saúde mental para a população de baixa renda cria uma crise invisível, que se agrava em silêncio. O sistema público, embora essencial, frequentemente opera sobrecarregado, com filas de espera que se estendem por meses, transformando um pedido de ajuda em um longo e desgastante processo. Paralelamente, o estigma que ainda cerca os transtornos psicológicos faz com que muitos encarem sua própria dor como fraqueza, optando pelo silêncio em vez de buscar apoio. Para quem já vive sob o peso da instabilidade financeira, a simples ideia de custear uma terapia particular parece um sonho distante, deixando-os presos em um poço de angústia sem uma saída visível. O resultado é uma multidão de pessoas enfrentando suas batalhas completamente sozinhas, sem informação, sem direção e sem a esperança de que um amparo sequer existe.
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Nesse momento você deve apresentar o problema que a sua aplicação deve resolver. No entanto, não é a hora de comentar sobre a aplicação. Descreva também o contexto em que essa aplicação será usada, se houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de fato existir, pois ainda não é a hora de apresentar requisitos detalhados ou projetos.
->
-> **Orientações**:
->
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+## Objetivo
 
-## Objetivos
-
-**✳️✳️✳️ COLOQUE AQUI O SEU TEXTO ✳️✳️✳️**
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
->
-> **Orientações**:
->
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+Diante desse cenário, o objetivo central deste projeto é construir uma ponte digital que una quem precisa de ajuda a um meio de acolhimento. Mais do que um site, a ideia é criar um porto seguro acessível a todos a qualquer hora. A plataforma busca ser uma primeira resposta concreta, oferecendo profissionais capacitados que forneça desde técnicas simples para acalmar uma crise iminente até informações claras que ajudem qualquer pessoa a entender o que está sentindo, quebrando o ciclo de desinformação e medo. Trata-se, acima de tudo, de garantir que o primeiro passo para o cuidado seja dado, direcionando cada pessoa para a rede de apoio adequada e, assim, plantando a ideia de que recuperar o bem-estar mental não é um privilégio, mas um direito que deve ser alcançado por todos.
 
 ## Justificativa
 
-**✳️✳️✳️ COLOQUE AQUI O SEU TEXTO ✳️✳️✳️**
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Descreva a importância ou a motivação para trabalhar com esta aplicação que você escolheu. Indique as razões pelas quais você escolheu seus objetivos específicos ou as razões para aprofundar em certos aspectos do software.
->
-> O grupo de trabalho pode fazer uso de questionários, entrevistas e dados estatísticos, que podem ser apresentados, com o objetivo de esclarecer detalhes do problema que será abordado pelo grupo.
->
-> **Orientações**:
->
-> - [Como montar a justificativa](https://guiadamonografia.com.br/como-montar-justificativa-do-tcc/)
+A escolha do tema saúde mental se da ao fato de que todos os integrantes do grupo reconhecem os impactos que a falta de acesso a cuidados psicológicos causa na vida de pessoas próximas, seja por relatos pessoais, de familiares ou amigos. O cenário atual no Brasil escancara uma desigualdade gritante já que enquanto parte da população dispõe de recursos para custear terapias e atendimentos, milhões ficam à margem, sem alternativas viáveis para buscar ajuda. A ausência de canais acessíveis e o estigma social ainda associado aos transtornos emocionais aprofundam esse abismo. Nesse sentido, o PsyCare nasce como resposta prática a uma necessidade urgente: oferecer um espaço digital inclusivo, acessível e confiável, que conecte indivíduos vulneráveis a recursos de acolhimento e orientação. A proposta vai além da tecnologia; trata-se de um compromisso com a dignidade humana, com a ideia de que saúde mental é um direito, não um privilégio.
 
 ## Público-Alvo
 
-**✳️✳️✳️ COLOQUE AQUI O SEU TEXTO ✳️✳️✳️**
+O PsyCare tem como público principal pessoas em situação de vulnerabilidade social que enfrentam dificuldades de acesso a serviços de saúde mental, mas não apenas elas. A plataforma também se destina a estudantes, trabalhadores sobrecarregados, cuidadores e qualquer indivíduo que, por questões financeiras, sociais ou emocionais, encontra barreiras para buscar apoio psicológico. Além disso, profissionais da área da saúde e instituições parceiras podem se beneficiar da ferramenta como um canal de comunicação, informação e orientação, ampliando seu alcance e impacto. Dessa forma, o PsyCare busca atender tanto quem procura ajuda imediata quanto quem deseja compreender melhor sua própria saúde mental, criando um sistema de apoio mais acessível, empático e humano.
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Descreva o mercado para o qual a solução está sendo desenvolvida, detalhando um pouco mais sobre o perfil dos usuários: conhecimentos prévios, relação com a tecnologia, relações hierárquicas, etc. Adicione informações sobre o público-alvo por meio de uma descrição textual ou por meio do mapa de stakeholders, ou como o grupo achar mais conveniente.
->
-> **Orientações**:
->
-> - [Público-alvo: o que é, tipos, como definir seu público e exemplos](https://klickpages.com.br/blog/publico-alvo-o-que-e/)
-> - [Qual a diferença entre público-alvo e persona?](https://rockcontent.com/blog/diferenca-publico-alvo-e-persona/)
-
-# Product Discovery
+## Product Discovery
 
 ## Etapa de Entendimento
 
-**✳️✳️✳️ APRESENTE OS ARTEFATOS DA ETAPA  ✳️✳️✳️**
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Nessa etapa, vamos trabalhar com a metdologia de Design Thinking para compreender com maior profundidade o problema a ser tratado. Nesse processo, vamos elaborar:
->
-> * **Matriz CSD**: também conhecida por Matriz de Alinhamento, é uma ferramenta utilizada no Design Thinking para organizar informações e facilitar o processo de tomada de decisão e solução de problemas;
-> * **Mapa de stakeholders**: ferramenta que nos permite compreender o grupo de pessoas e entidades que devemos estudar e conversar para entender mais sobre o problema
-> * **Entrevistas qualitativas**: série de entrevistas qualitativas para validar suposições e solucionar as dúvidas com as principais pessoas envolvidas;
-> * **Highlights de pesquisa**: um compilado do levantamento realizado por meio das entrevistas.
+**Matriz CSD**
+<img width="1165" height="765" alt="image" src="https://github.com/user-attachments/assets/6231e1af-4dd7-40b4-aaa6-1230424ecdd3" />
+**Mapa de StakeHolders**
+<img width="1165" height="765" alt="image" src="https://github.com/user-attachments/assets/82cb737e-9c42-4be2-9f5e-d4c525c572ad" />
+**Entrevistas qualitativas:**
+<img width="1393" height="1614" alt="image" src="https://github.com/user-attachments/assets/3bf4a933-5213-47d1-afb5-d09358b6b84b" />
+<img width="1393" height="2024" alt="image" src="https://github.com/user-attachments/assets/61a6a6c6-ed0c-4cd7-a0cd-97457ee95f53" />
+**Highlights de pesquisa**
+<img width="2060" height="1092" alt="image" src="https://github.com/user-attachments/assets/d9d4e47d-1692-46be-8c5c-2538c67652f4" />
 
 ## Etapa de Definição
-
 ### Personas
 
-**✳️✳️✳️ APRESENTE OS DIAGRAMAS DE PERSONAS ✳️✳️✳️**
+| Persona 1 | Persona 2 |
+| --------- | --------- |
+| ![Persona1](https://github.com/user-attachments/assets/164c7491-b835-4d20-8a22-0429a1d3d1a5)| ![Persona2](https://github.com/user-attachments/assets/8f7a6391-8f48-4723-b919-99e1866ae968) |
 
-![Exemplo de proposta de valor](images/exemplo-persona.png)
+| Persona 3 | Persona 4 |
+| --------- | --------- |
+| ![Persona3](https://github.com/user-attachments/assets/bae0475d-5b4b-4c70-963f-c017983a7dcc)| ![Persona4](https://github.com/user-attachments/assets/3e98cb2b-efc7-4b35-9fa1-6be182b82933) |
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Relacione as personas identificadas no seu projeto e os respectivos mapas de empatia. Lembre-se que você deve ser enumerar e descrever precisamente e de forma personalizada todos os principais envolvidos com a solução almeja.
->
-> **Orientações**:
->
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Criar personas (Hotmart)](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
+| Persona 5 | Persona 6 |
+| --------- | --------- |
+| ![Persona5](https://github.com/user-attachments/assets/37805939-fd6e-4c2b-bf1f-bdcb8c98a028) | ![Persona6](https://github.com/user-attachments/assets/174c8360-200d-496b-b1f5-a28af4a837a4)|
 
-# Product Design
+## Product Desing
 
-Nesse momento, vamos transformar os insights e validações obtidos em soluções tangíveis e utilizáveis. Essa fase envolve a definição de uma proposta de valor, detalhando a prioridade de cada ideia e a consequente criação de wireframes, mockups e protótipos de alta fidelidade, que detalham a interface e a experiência do usuário.
-
-## Histórias de Usuários
-
-Com base na análise das personas foram identificadas as seguintes histórias de usuários:
 
 | EU COMO...`PERSONA` | QUERO/PRECISO ...`FUNCIONALIDADE`        | PARA ...`MOTIVO/VALOR`               |
 | --------------------- | ------------------------------------------ | -------------------------------------- |
-| Usuário do sistema   | Registrar minhas tarefas ⚠️ EXEMPLO ⚠️ | Não esquecer de fazê-las             |
-| Administrador         | Alterar permissões ⚠️ EXEMPLO ⚠️      | Permitir que possam administrar contas |
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão das necessidades de cada persona. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
->
-> **Orientações**:
->
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
+| Usuário: Psicólogo  | Ter uma sala de videoconferência segura | Realizar sessões online privadas e práticas para mim e para meus pacientes |
+| Usuário: Psicólogo  |  Definir meus horários disponíveis | Evitar agendamentos em conflito com minha agenda |
+| Usuário: Psicólogo  | Registrar anotações privadas sobre as sessões | Manter um histórico organizado e acessível de cada paciente |
+| Usuário: Paciente  | Filtrar psicólogos por valor da consulta | Encontrar profissionais que cabem no meu orçamento |
+| Usuário: Paciente  | Ter um histórico das minhas sessões e evolução | Acompanhar meu progresso ao longo do tempo |
+| Usuário: Paciente  | Ter acesso a materiais de apoio | Dar continuidade ao meu processo terapêutico entre as sessões |
 
 ## Proposta de Valor
 
-**✳️✳️✳️ APRESENTE O DIAGRAMA DA PROPOSTA DE VALOR PARA CADA PERSONA ✳️✳️✳️**
+| 1: Sarah | 2: Carlos |
+| ----- | ------ |
+| ![Proposta1](https://github.com/user-attachments/assets/f47d7164-b570-4d86-baa6-6e65174be3f9) | ![Proposta2](https://github.com/user-attachments/assets/14b0d265-ada4-4687-87ac-aafd4d22f1b8) |
 
-##### Proposta de valor para Persona XPTO ⚠️ EXEMPLO ⚠️
+| 3: Lucas | 4: Camila |
+| ----- | ------ |
+| ![Proposta3](https://github.com/user-attachments/assets/8082af8e-a490-4023-a63d-df1a08b59dd8) | ![Proposta4](https://github.com/user-attachments/assets/36613e8b-9f89-4710-9e2a-1e8498299830)|
 
-![Exemplo de proposta de valor](images/exemplo-proposta-valor.png)
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> O mapa da proposta de valor é uma ferramenta que nos ajuda a definir qual tipo de produto ou serviço melhor atende às personas definidas anteriormente.
+| 5: Hugo | 6: Felipe |
+| ----- | ------ |
+| ![Proposta5](https://github.com/user-attachments/assets/50728cdd-c9e4-45b9-80fe-8d0f1e44b2e6)| ![Proposta6](https://github.com/user-attachments/assets/eb00334f-7b7b-4997-b457-82cea50c2b60) |
 
 ## Requisitos
 
-As tabelas que se seguem apresentam os requisitos funcionais e não funcionais que detalham o escopo do projeto.
+## Requisitos Funcionais
+1.	Exibir uma página inicial com informações e orientações sobre saúde mental
+2.	Permitir que o usuário agende consultas ou sessões com profissionais voluntários
+3.	Mostrar os horários disponíveis de cada profissional
+4.	Possibilitar que o usuário visualize, remarque ou cancele suas consultas
+5.	Disponibilizar conteúdos educativos em texto, vídeo e áudio sobre saúde mental
+6.	Permitir que o usuário salve conteúdos para acessar depois
+7.	Oferecer uma área de perfil para que o usuário veja e edite seus dados básicos
+8.	Possibilitar o envio de mensagens privadas ao profissional antes ou depois das sessões
+9.	Contar com chat em tempo real durante a consulta, se houver autorização do profissional
+10.	Permitir que o usuário busque profissionais por especialidade ou tipo de atendimento
+11.	Enviar notificações ou lembretes de consultas por e-mail ou pelo próprio site
+12.	Oferecer a opção de avaliar a consulta e enviar feedback anônimo sobre o atendimento
+13.	Exibir um canal de ajuda emergencial com contatos de apoio 24 horas, como o CVV, e disponibilizar um chat na própria plataforma para atendimento imediato em casos de crise
+14.	Disponibilizar um chat interno permanente dentro da plataforma, que envie notificações aos usuários e permite tirar dúvidas gerais sobre o serviço, conteúdos ou agendamentos
+15.	Disponibilizar para o administrador a função de cadastrar, atualizar ou remover profissionais e seus horários
+16.	Permitir que a pessoa agende um atendimento sem precisar de cadastro completo, informando apenas nome e meio de contato
+17.	Disponibilizar um formulário de triagem inicial para entender a necessidade do usuário e direcioná-lo ao profissional adequado
 
-### Requisitos Funcionais
-
-| ID     | Descrição do Requisito                                   | Prioridade |
-| ------ | ---------------------------------------------------------- | ---------- |
-| RF-001 | Permitir que o usuário cadastre tarefas ⚠️ EXEMPLO ⚠️ | ALTA       |
-| RF-002 | Emitir um relatório de tarefas no mês ⚠️ EXEMPLO ⚠️ | MÉDIA     |
-
-### Requisitos não Funcionais
-
-| ID      | Descrição do Requisito                                                              | Prioridade |
-| ------- | ------------------------------------------------------------------------------------- | ---------- |
-| RNF-001 | O sistema deve ser responsivo para rodar em um dispositivos móvel ⚠️ EXEMPLO ⚠️ | MÉDIA     |
-| RNF-002 | Deve processar requisições do usuário em no máximo 3s ⚠️ EXEMPLO ⚠️          | BAIXA      |
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Os requisitos de um projeto são classificados em dois grupos:
->
-> - [Requisitos Funcionais (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
->   correspondem a uma funcionalidade que deve estar presente na plataforma (ex: cadastro de usuário).
-> - [Requisitos Não Funcionais (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
->   correspondem a uma característica técnica, seja de usabilidade, desempenho, confiabilidade, segurança ou outro (ex: suporte a dispositivos iOS e Android).
->
-> Lembre-se que cada requisito deve corresponder à uma e somente uma característica alvo da sua solução. Além disso, certifique-se de que todos os aspectos capturados nas Histórias de Usuário foram cobertos.
->
-> **Orientações**:
->
-> - [O que são Requisitos Funcionais e Requisitos Não Funcionais?](https://codificar.com.br/requisitos-funcionais-nao-funcionais/)
-> - [O que são requisitos funcionais e requisitos não funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisitos-nao-funcionais-o-que-sao/)
+## Requisitos Não Funcionais
+1.	Funcionamento 24 horas por dia, 7 dias por semana.
+2.	Compatibilidade com computadores, tablets e smartphones
+3.	Carregamento de cada página em até 3 segundos em conexão padrão
+4.	Hospedagem em servidor público seguro com certificado SSL (HTTPS)
+5.	Desenvolvimento usando exclusivamente HTML, CSS e JavaScript
+6.	Interface intuitiva e simples, adequada a pessoas com pouca familiaridade com tecnologia
+7.	Conformidade com diretrizes de acessibilidade, incluindo contraste de cores, descrição de imagens e navegação por teclado
+8.	Proteção de dados criptografados e tratamento conforme a LGPD
+9.	Capacidade de suportar aumento de usuários e profissionais sem perda de desempenho
+10.	Backup automático diário com possibilidade de recuperação rápida em caso de falhas ou ataques
 
 ## Projeto de Interface
 
-Artefatos relacionados com a interface e a interacão do usuário na proposta de solução.
+**Protótipo de tela**
 
-### Wireframes
+* **Home Page**
+<img width="1918" height="871" alt="image" src="https://github.com/user-attachments/assets/54744160-f585-4403-9e45-ded57df45c03" />
+<img width="1919" height="871" alt="image" src="https://github.com/user-attachments/assets/3095964e-249a-4d19-ae66-91dd7f9fc9ec" />
+<img width="1919" height="870" alt="image" src="https://github.com/user-attachments/assets/412fc49f-b621-40fe-879f-0476f09a2281" />
+<img width="1918" height="870" alt="image" src="https://github.com/user-attachments/assets/aa31b3dc-e3a7-4b5c-a6aa-24b75970517b" />
+<img width="1919" height="866" alt="image" src="https://github.com/user-attachments/assets/1720daeb-8a36-4480-b01b-076440088185" />
 
-Estes são os protótipos de telas do sistema.
+* **Login de pacientes**
+<img width="1918" height="865" alt="image" src="https://github.com/user-attachments/assets/876e1774-4fc4-4c2c-aca6-8bdbbb47cd7f" />
 
-**✳️✳️✳️ COLOQUE AQUI OS PROTÓTIPOS DE TELAS COM TÍTULO E DESCRIÇÃO ✳️✳️✳️**
+* **Login de colaboradores**
+<img width="1915" height="872" alt="image" src="https://github.com/user-attachments/assets/ceeb814b-a466-44ea-8d61-7e04aef9748d" />
 
-##### TELA XPTO ⚠️ EXEMPLO ⚠️
+* **Tela de detalhes dos colaboradores**
+<img width="900" height="700" alt="image" src="https://github.com/user-attachments/assets/4788ea5b-6586-41bf-bd4f-d38d4ece97ff" />
 
-Descrição para a tela XPTO
+* **Conteúdo de apoio**
+<img width="800" height="700" alt="image" src="https://github.com/user-attachments/assets/25a188b4-1b23-4ad0-8ff5-5968f571e2a8" />
 
-![Exemplo de wireframe](images/exemplo-wireframe.png)
+* **Tela de Psicólogos**
+<img width="1919" height="872" alt="image" src="https://github.com/user-attachments/assets/f3a78396-b7c9-4dbb-936e-84ce6ae04400" />
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Wireframes são protótipos das telas da aplicação usados em design de interface para sugerir a estrutura de um site web e seu relacionamentos entre suas páginas. Um wireframe web é uma ilustração semelhante ao layout de elementos fundamentais na interface.
->
-> **Orientações**:
->
-> - [Ferramentas de Wireframes](https://rockcontent.com/blog/wireframes/)
-> - [Figma](https://www.figma.com/)
-> - [Adobe XD](https://www.adobe.com/br/products/xd.html#scroll)
-> - [MarvelApp](https://marvelapp.com/developers/documentation/tutorials/)
+* **Tela de Agendamento de Consultas**
+<img width="1913" height="870" alt="image" src="https://github.com/user-attachments/assets/1a8cf651-ee99-4665-aed6-3346ee1d382b" />
+<img width="1912" height="864" alt="image" src="https://github.com/user-attachments/assets/19d0e62a-5968-40b0-be1a-0bb5603e5489" />
+<img width="1915" height="865" alt="image" src="https://github.com/user-attachments/assets/4e23672f-b218-45c8-bb66-87f1e75b8725" />
+<img width="1919" height="870" alt="image" src="https://github.com/user-attachments/assets/ab819461-92b5-4830-9e92-7b2fce4d099c" />
 
-### User Flow
+* **Tela ao clicar em Agendar**
+<img width="1800" height="515" alt="image" src="https://github.com/user-attachments/assets/6087fba2-7faf-4b78-8bed-165827f22fa6" />
 
-**✳️✳️✳️ COLOQUE AQUI O DIAGRAMA DE FLUXO DE TELAS ✳️✳️✳️**
+* **Painel Colaborador (Atendentes)**
+<img width="1800" height="508" alt="image" src="https://github.com/user-attachments/assets/6986a2f7-5836-44b1-ac4e-7135391a02fb" />
 
-![Exemplo de fluxo de telas](images/exemplo-userflow.png)
+## User Flow: Protótipo Interativo**
+* [Protótipo Interativo (Figma)](https://www.figma.com/proto/j5nm5aKOJQCnX30cXPmdSb/Sa%C3%BAde-Mental?node-id=3-44&t=wtntbEqNcDvFQ825-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=3%3A44)
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Fluxo de usuário (User Flow) é uma técnica que permite ao desenvolvedor mapear todo fluxo de telas do site ou app. Essa técnica funciona para alinhar os caminhos e as possíveis ações que o usuário pode fazer junto com os membros de sua equipe.
->
-> **Orientações**:
->
-> - [User Flow: O Quê É e Como Fazer?](https://medium.com/7bits/fluxo-de-usu%C3%A1rio-user-flow-o-que-%C3%A9-como-fazer-79d965872534)
-> - [User Flow vs Site Maps](http://designr.com.br/sitemap-e-user-flow-quais-as-diferencas-e-quando-usar-cada-um/)
-> - [Top 25 User Flow Tools &amp; Templates for Smooth](https://www.mockplus.com/blog/post/user-flow-tools)
-
-### Protótipo Interativo
-
-**✳️✳️✳️ COLOQUE AQUI UM IFRAME COM SEU PROTÓTIPO INTERATIVO ✳️✳️✳️**
-
-✅ [Protótipo Interativo (MarvelApp)](https://marvelapp.com/prototype/4hd6091?emb=1&iosapp=false&frameless=false)  ⚠️ EXEMPLO ⚠️
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Um protótipo interativo apresenta o projeto de interfaces e permite ao usuário navegar pelas funcionalidades como se estivesse lidando com o software pronto. Utilize as mesmas ferramentas de construção de wireframes para montagem do seu protótipo interativo. Inclua o link para o protótipo interativo do projeto.
-
-# Metodologia
-
-Detalhes sobre a organização do grupo e o ferramental empregado.
+## Metodologia 
 
 ## Ferramentas
 
-Relação de ferramentas empregadas pelo grupo durante o projeto.
-
 | Ambiente                    | Plataforma | Link de acesso                                     |
 | --------------------------- | ---------- | -------------------------------------------------- |
-| Processo de Design Thinking | Miro       | https://miro.com/XXXXXXX ⚠️ EXEMPLO ⚠️        |
-| Repositório de código     | GitHub     | https://github.com/XXXXXXX ⚠️ EXEMPLO ⚠️      |
-| Hospedagem do site          | Render     | https://site.render.com/XXXXXXX ⚠️ EXEMPLO ⚠️ |
-| Protótipo Interativo       | MarvelApp  | https://marvelapp.com/XXXXXXX ⚠️ EXEMPLO ⚠️   |
-|                             |            |                                                    |
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Liste as ferramentas empregadas no desenvolvimento do projeto, justificando a escolha delas, sempre que possível. Inclua itens como: (1) Editor de código, (2) )ferramentas de comunicação, (3) )ferramentas de diagramação, (4) )plataformas de hospedagem, entre outras.
+| Processo de Design Thinking | Miro       | https://miro.com/app/board/uXjVJSvOcvk=/ |
+| Repositório de código     | GitHub     | https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2025-2-ti1-2401100-psycare |
+| Protótipo do site         | Figma      | https://www.figma.com/proto/j5nm5aKOJQCnX30cXPmdSb/Sa%C3%BAde-Mental?node-id=20-532&t=wtntbEqNcDvFQ825-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=3%3A44 |
+| Protótipo Interativo       | Figma  | https://www.figma.com/proto/j5nm5aKOJQCnX30cXPmdSb/Sa%C3%BAde-Mental?node-id=20-532&t=wtntbEqNcDvFQ825-1&scaling=scale-down-width&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=3%3A44   |
 
 ## Gerenciamento do Projeto
 
