@@ -78,8 +78,18 @@ O PsyCare tem como público principal pessoas em situação de vulnerabilidade s
 | Usuário: Paciente  | Filtrar psicólogos por valor da consulta | Encontrar profissionais que cabem no meu orçamento |
 | Usuário: Paciente  | Ter um histórico das minhas sessões e evolução | Acompanhar meu progresso ao longo do tempo |
 | Usuário: Paciente  | Ter acesso a materiais de apoio | Dar continuidade ao meu processo terapêutico entre as sessões |
- 
 
+## Proposta de Valor
+
+| 1: Sarah | 2: Carlos |
+| ----- | ------ |
+| ![Proposta1](https://github.com/user-attachments/assets/f47d7164-b570-4d86-baa6-6e65174be3f9) | ![Proposta2](https://github.com/user-attachments/assets/14b0d265-ada4-4687-87ac-aafd4d22f1b8) |
+| 3: Lucas | 4: Camila |
+| ----- | ------ |
+| ![Proposta3](https://github.com/user-attachments/assets/8082af8e-a490-4023-a63d-df1a08b59dd8) | ![Proposta4](https://github.com/user-attachments/assets/36613e8b-9f89-4710-9e2a-1e8498299830)|
+| 5: Hugo | 6: Felipe |
+| ----- | ------ |
+| ![Proposta5](https://github.com/user-attachments/assets/50728cdd-c9e4-45b9-80fe-8d0f1e44b2e6)| ![Proposta6](https://miro.com/app/board/uXjVJSvOcvk=/?moveToWidget=3458764639011588244&cot=14) |
 
 ## Instruções de utilização 
 
