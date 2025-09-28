@@ -58,9 +58,11 @@ O PsyCare tem como público principal pessoas em situação de vulnerabilidade s
 | Persona 1 | Persona 2 |
 | --------- | --------- |
 | ![Persona1](https://github.com/user-attachments/assets/164c7491-b835-4d20-8a22-0429a1d3d1a5)| ![Persona2](https://github.com/user-attachments/assets/8f7a6391-8f48-4723-b919-99e1866ae968) |
+
 | Persona 3 | Persona 4 |
 | --------- | --------- |
 | ![Persona3](https://github.com/user-attachments/assets/bae0475d-5b4b-4c70-963f-c017983a7dcc)| ![Persona4](https://github.com/user-attachments/assets/3e98cb2b-efc7-4b35-9fa1-6be182b82933) |
+
 | Persona 5 | Persona 6 |
 | --------- | --------- |
 | ![Persona5](https://github.com/user-attachments/assets/37805939-fd6e-4c2b-bf1f-bdcb8c98a028) | ![Persona6](https://github.com/user-attachments/assets/174c8360-200d-496b-b1f5-a28af4a837a4)|
@@ -82,9 +84,11 @@ O PsyCare tem como público principal pessoas em situação de vulnerabilidade s
 | 1: Sarah | 2: Carlos |
 | ----- | ------ |
 | ![Proposta1](https://github.com/user-attachments/assets/f47d7164-b570-4d86-baa6-6e65174be3f9) | ![Proposta2](https://github.com/user-attachments/assets/14b0d265-ada4-4687-87ac-aafd4d22f1b8) |
+
 | 3: Lucas | 4: Camila |
 | ----- | ------ |
 | ![Proposta3](https://github.com/user-attachments/assets/8082af8e-a490-4023-a63d-df1a08b59dd8) | ![Proposta4](https://github.com/user-attachments/assets/36613e8b-9f89-4710-9e2a-1e8498299830)|
+
 | 5: Hugo | 6: Felipe |
 | ----- | ------ |
 | ![Proposta5](https://github.com/user-attachments/assets/50728cdd-c9e4-45b9-80fe-8d0f1e44b2e6)| ![Proposta6](https://github.com/user-attachments/assets/eb00334f-7b7b-4997-b457-82cea50c2b60) |
