@@ -38,6 +38,14 @@ A escolha do tema saúde mental se da ao fato de que todos os integrantes do gru
 
 O PsyCare tem como público principal pessoas em situação de vulnerabilidade social que enfrentam dificuldades de acesso a serviços de saúde mental, mas não apenas elas. A plataforma também se destina a estudantes, trabalhadores sobrecarregados, cuidadores e qualquer indivíduo que, por questões financeiras, sociais ou emocionais, encontra barreiras para buscar apoio psicológico. Além disso, profissionais da área da saúde e instituições parceiras podem se beneficiar da ferramenta como um canal de comunicação, informação e orientação, ampliando seu alcance e impacto. Dessa forma, o PsyCare busca atender tanto quem procura ajuda imediata quanto quem deseja compreender melhor sua própria saúde mental, criando um sistema de apoio mais acessível, empático e humano.
 
+## Product Discovery
+
+## Etapa de Entendimento
+
+* **Matriz CSD**
+* <img width="859" height="587" alt="image" src="https://github.com/user-attachments/assets/6231e1af-4dd7-40b4-aaa6-1230424ecdd3" />
+
+
 ## Instruções de utilização 
 
 > **IMPORTANTE: APAGUE ESSA SEÇÃO DE INSTRUÇÕES ANTES DE ENTREGAR SEU TRABALHO**
