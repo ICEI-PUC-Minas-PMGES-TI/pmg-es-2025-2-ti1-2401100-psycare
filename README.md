@@ -137,8 +137,17 @@ O PsyCare tem como público principal pessoas em situação de vulnerabilidade s
 <img width="1918" height="870" alt="image" src="https://github.com/user-attachments/assets/aa31b3dc-e3a7-4b5c-a6aa-24b75970517b" />
 <img width="1919" height="866" alt="image" src="https://github.com/user-attachments/assets/1720daeb-8a36-4480-b01b-076440088185" />
 
-* Login
+* Login de pacientes
 <img width="1918" height="865" alt="image" src="https://github.com/user-attachments/assets/876e1774-4fc4-4c2c-aca6-8bdbbb47cd7f" />
+
+* Login de colaboradores
+<img width="1915" height="872" alt="image" src="https://github.com/user-attachments/assets/ceeb814b-a466-44ea-8d61-7e04aef9748d" />
+
+* Tela de detalhes dos colaboradores
+<img width="752" height="557" alt="image" src="https://github.com/user-attachments/assets/4788ea5b-6586-41bf-bd4f-d38d4ece97ff" />
+
+* Conteúdo de apoio
+<img width="384" height="545" alt="image" src="https://github.com/user-attachments/assets/25a188b4-1b23-4ad0-8ff5-5968f571e2a8" />
 
 * Tela de Psicólogos 
 <img width="1918" height="865" alt="image" src="https://github.com/user-attachments/assets/9f5564e2-bbb0-416c-8b7b-b8c13256b6a8" />
@@ -154,16 +163,6 @@ O PsyCare tem como público principal pessoas em situação de vulnerabilidade s
 
 * Painel Colaborador (Atendentes)
 <img width="641" height="508" alt="image" src="https://github.com/user-attachments/assets/6986a2f7-5836-44b1-ac4e-7135391a02fb" />
-
-
-
-
-
-
-
-
-
-
 
 ## Instruções de utilização 
 
