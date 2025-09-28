@@ -130,38 +130,38 @@ O PsyCare tem como público principal pessoas em situação de vulnerabilidade s
 
 **Protótipo de tela**
 
-* Home Page
+* **Home Page**
 <img width="1918" height="871" alt="image" src="https://github.com/user-attachments/assets/54744160-f585-4403-9e45-ded57df45c03" />
 <img width="1919" height="871" alt="image" src="https://github.com/user-attachments/assets/3095964e-249a-4d19-ae66-91dd7f9fc9ec" />
 <img width="1919" height="870" alt="image" src="https://github.com/user-attachments/assets/412fc49f-b621-40fe-879f-0476f09a2281" />
 <img width="1918" height="870" alt="image" src="https://github.com/user-attachments/assets/aa31b3dc-e3a7-4b5c-a6aa-24b75970517b" />
 <img width="1919" height="866" alt="image" src="https://github.com/user-attachments/assets/1720daeb-8a36-4480-b01b-076440088185" />
 
-* Login de pacientes
+* **Login de pacientes**
 <img width="1918" height="865" alt="image" src="https://github.com/user-attachments/assets/876e1774-4fc4-4c2c-aca6-8bdbbb47cd7f" />
 
-* Login de colaboradores
+* **Login de colaboradores**
 <img width="1915" height="872" alt="image" src="https://github.com/user-attachments/assets/ceeb814b-a466-44ea-8d61-7e04aef9748d" />
 
-* Tela de detalhes dos colaboradores
+* **Tela de detalhes dos colaboradores**
 <img width="900" height="700" alt="image" src="https://github.com/user-attachments/assets/4788ea5b-6586-41bf-bd4f-d38d4ece97ff" />
 
-* Conteúdo de apoio
+* **Conteúdo de apoio**
 <img width="800" height="700" alt="image" src="https://github.com/user-attachments/assets/25a188b4-1b23-4ad0-8ff5-5968f571e2a8" />
 
-* Tela de Psicólogos
+* **Tela de Psicólogos**
 <img width="1919" height="872" alt="image" src="https://github.com/user-attachments/assets/f3a78396-b7c9-4dbb-936e-84ce6ae04400" />
 
-* Tela de Agendamento de Consultas
+* **Tela de Agendamento de Consultas**
 <img width="1913" height="870" alt="image" src="https://github.com/user-attachments/assets/1a8cf651-ee99-4665-aed6-3346ee1d382b" />
 <img width="1912" height="864" alt="image" src="https://github.com/user-attachments/assets/19d0e62a-5968-40b0-be1a-0bb5603e5489" />
 <img width="1915" height="865" alt="image" src="https://github.com/user-attachments/assets/4e23672f-b218-45c8-bb66-87f1e75b8725" />
 <img width="1919" height="870" alt="image" src="https://github.com/user-attachments/assets/ab819461-92b5-4830-9e92-7b2fce4d099c" />
 
-* Tela ao clicar em Agendar
+* **Tela ao clicar em Agendar**
 <img width="1800" height="515" alt="image" src="https://github.com/user-attachments/assets/6087fba2-7faf-4b78-8bed-165827f22fa6" />
 
-* Painel Colaborador (Atendentes)
+* **Painel Colaborador (Atendentes)**
 <img width="1800" height="508" alt="image" src="https://github.com/user-attachments/assets/6986a2f7-5836-44b1-ac4e-7135391a02fb" />
 
 ## User Flow: Protótipo Interativo**
