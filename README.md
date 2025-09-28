@@ -65,13 +65,20 @@ O PsyCare tem como público principal pessoas em situação de vulnerabilidade s
 
 | Persona 5 | Persona 6 |
 | --------- | --------- |
-| ![Persona5](https://github.com/user-attachments/assets/37805939-fd6e-4c2b-bf1f-bdcb8c98a028) | ![Persona6](https://github.com/user-attachments/assets/174c8360-200d-496b-b1f5-a28af4a837a4)
-|
+| ![Persona5](https://github.com/user-attachments/assets/37805939-fd6e-4c2b-bf1f-bdcb8c98a028) | ![Persona6](https://github.com/user-attachments/assets/174c8360-200d-496b-b1f5-a28af4a837a4)|
+
 ## Product Desing
 
 
-
-
+| EU COMO...`PERSONA` | QUERO/PRECISO ...`FUNCIONALIDADE`        | PARA ...`MOTIVO/VALOR`               |
+| --------------------- | ------------------------------------------ | -------------------------------------- |
+| Usuário: Psicólogo  | Ter uma sala de videoconferência segura | Realizar sessões online privadas e práticas para mim e para meus pacientes |
+| Usuário: Psicólogo  |  Definir meus horários disponíveis | Evitar agendamentos em conflito com minha agenda |
+| Usuário: Psicólogo  | Registrar anotações privadas sobre as sessões | Manter um histórico organizado e acessível de cada paciente |
+| Usuário: Paciente  | Filtrar psicólogos por valor da consulta | Encontrar profissionais que cabem no meu orçamento |
+| Usuário: Paciente  | Ter um histórico das minhas sessões e evolução | Acompanhar meu progresso ao longo do tempo |
+| Usuário: Paciente  | Ter acesso a materiais de apoio | Dar continuidade ao meu processo terapêutico entre as sessões |
+ 
 
 
 ## Instruções de utilização 
