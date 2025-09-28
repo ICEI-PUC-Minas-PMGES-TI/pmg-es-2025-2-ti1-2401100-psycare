@@ -49,6 +49,20 @@ O PsyCare tem como público principal pessoas em situação de vulnerabilidade s
 * **Entrevistas qualitativas:**
 * <img width="1393" height="1614" alt="image" src="https://github.com/user-attachments/assets/3bf4a933-5213-47d1-afb5-d09358b6b84b" />
 * <img width="1393" height="2024" alt="image" src="https://github.com/user-attachments/assets/61a6a6c6-ed0c-4cd7-a0cd-97457ee95f53" />
+* **Highlights de pesquisa**
+* <img width="2060" height="1092" alt="image" src="https://github.com/user-attachments/assets/d9d4e47d-1692-46be-8c5c-2538c67652f4" />
+
+## Etapa de Definição
+
+* **Personas**
+* <img width="2060" height="1092" alt="image" src="https://github.com/user-attachments/assets/e4b4285b-4bb6-4dc7-bdd8-f4dd9c2bc29c" />
+* <img width="1502" height="1497" alt="image" src="https://github.com/user-attachments/assets/8f7a6391-8f48-4723-b919-99e1866ae968" />
+* <img width="1657" height="1357" alt="image" src="https://github.com/user-attachments/assets/bae0475d-5b4b-4c70-963f-c017983a7dcc" />
+* <img width="1632" height="1377" alt="image" src="https://github.com/user-attachments/assets/3e98cb2b-efc7-4b35-9fa1-6be182b82933" />
+* <img width="1631" height="1378" alt="image" src="https://github.com/user-attachments/assets/37805939-fd6e-4c2b-bf1f-bdcb8c98a028" />
+* <img width="1651" height="1362" alt="image" src="https://github.com/user-attachments/assets/174c8360-200d-496b-b1f5-a28af4a837a4" />
+
+
 
 
 
