@@ -42,14 +42,14 @@ O PsyCare tem como público principal pessoas em situação de vulnerabilidade s
 
 ## Etapa de Entendimento
 
-* **Matriz CSD**
+**Matriz CSD**
 <img width="1165" height="765" alt="image" src="https://github.com/user-attachments/assets/6231e1af-4dd7-40b4-aaa6-1230424ecdd3" />
-* **Mapa de StakeHolders**
+**Mapa de StakeHolders**
 <img width="1165" height="765" alt="image" src="https://github.com/user-attachments/assets/82cb737e-9c42-4be2-9f5e-d4c525c572ad" />
-* **Entrevistas qualitativas:**
+**Entrevistas qualitativas:**
 <img width="1393" height="1614" alt="image" src="https://github.com/user-attachments/assets/3bf4a933-5213-47d1-afb5-d09358b6b84b" />
 <img width="1393" height="2024" alt="image" src="https://github.com/user-attachments/assets/61a6a6c6-ed0c-4cd7-a0cd-97457ee95f53" />
-* **Highlights de pesquisa**
+**Highlights de pesquisa**
 <img width="2060" height="1092" alt="image" src="https://github.com/user-attachments/assets/d9d4e47d-1692-46be-8c5c-2538c67652f4" />
 
 ## Etapa de Definição
