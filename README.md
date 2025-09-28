@@ -131,7 +131,7 @@ O PsyCare tem como público principal pessoas em situação de vulnerabilidade s
 * **Protótipo de tela**
 
 * Home Page
-* <img width="1000" height="2500" alt="image" src="https://github.com/user-attachments/assets/02ccded0-e370-42c1-958c-37c1c329ef6c" />
+* <img width="800" height="2500" alt="image" src="https://github.com/user-attachments/assets/02ccded0-e370-42c1-958c-37c1c329ef6c" />
 
 
 
