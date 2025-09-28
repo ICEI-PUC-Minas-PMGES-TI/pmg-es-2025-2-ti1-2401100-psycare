@@ -161,7 +161,7 @@ O PsyCare tem como público principal pessoas em situação de vulnerabilidade s
 * **Painel Colaborador (Atendentes)**
 <img width="1800" height="508" alt="image" src="https://github.com/user-attachments/assets/6986a2f7-5836-44b1-ac4e-7135391a02fb" />
 
-## User Flow: Protótipo Interativo**
+## User Flow: Protótipo Interativo
 * [Protótipo Interativo (Figma)](https://www.figma.com/proto/j5nm5aKOJQCnX30cXPmdSb/Sa%C3%BAde-Mental?node-id=3-44&t=wtntbEqNcDvFQ825-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=3%3A44)
 
 ## Metodologia 
