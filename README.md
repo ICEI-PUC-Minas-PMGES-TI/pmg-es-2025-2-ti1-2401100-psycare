@@ -48,7 +48,7 @@ O PsyCare tem como público principal pessoas em situação de vulnerabilidade s
 * <img width="1165" height="765" alt="image" src="https://github.com/user-attachments/assets/82cb737e-9c42-4be2-9f5e-d4c525c572ad" />
 * **Entrevistas qualitativas:**
 * <img width="1165" height="765" alt="image" src="https://github.com/user-attachments/assets/c9b0d171-2a56-4e28-b5ee-774ce48e11d5" />
-* <img width="1165" height="765" alt="image" src="https://github.com/user-attachments/assets/38a05820-8c0f-47be-b06d-d7093d40afcc" />
+* <img width="1165" height="760" alt="image" src="https://github.com/user-attachments/assets/38a05820-8c0f-47be-b06d-d7093d40afcc" />
 
 
 
