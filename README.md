@@ -56,15 +56,10 @@ O PsyCare tem como público principal pessoas em situação de vulnerabilidade s
 * ### Personas
 
 | Persona 1 | Persona 2 |
-| ------- | ------- |
 | ![Persona1](https://github.com/user-attachments/assets/164c7491-b835-4d20-8a22-0429a1d3d1a5)| ![Persona2](https://github.com/user-attachments/assets/8f7a6391-8f48-4723-b919-99e1866ae968) |
-
 | Persona 3 | Persona 4 |
-| --------- | --------- |
 | ![Persona3](https://github.com/user-attachments/assets/bae0475d-5b4b-4c70-963f-c017983a7dcc)| ![Persona4](https://github.com/user-attachments/assets/3e98cb2b-efc7-4b35-9fa1-6be182b82933) |
-
 | Persona 5 | Persona 6 |
-| --------- | --------- |
 | ![Persona5](https://github.com/user-attachments/assets/37805939-fd6e-4c2b-bf1f-bdcb8c98a028) | ![Persona6](https://github.com/user-attachments/assets/174c8360-200d-496b-b1f5-a28af4a837a4)|
 
 ## Product Desing
