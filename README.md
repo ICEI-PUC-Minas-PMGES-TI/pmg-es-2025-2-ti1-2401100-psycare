@@ -137,6 +137,17 @@ O PsyCare tem como público principal pessoas em situação de vulnerabilidade s
 <img width="1918" height="870" alt="image" src="https://github.com/user-attachments/assets/aa31b3dc-e3a7-4b5c-a6aa-24b75970517b" />
 <img width="1919" height="866" alt="image" src="https://github.com/user-attachments/assets/1720daeb-8a36-4480-b01b-076440088185" />
 
+* Login
+<img width="1918" height="865" alt="image" src="https://github.com/user-attachments/assets/876e1774-4fc4-4c2c-aca6-8bdbbb47cd7f" />
+
+* Tela de Psicólogos 
+<img width="416" height="391" alt="image" src="https://github.com/user-attachments/assets/9f5564e2-bbb0-416c-8b7b-b8c13256b6a8" />
+
+* Tela de Agendamento de Consultas
+<img width="229" height="198" alt="image" src="https://github.com/user-attachments/assets/4258e437-3441-48d7-a988-e80d620603a2" />
+<img width="231" height="305" alt="image" src="https://github.com/user-attachments/assets/fb384e07-3be8-4e57-bb1f-a6ff2c00d260" />
+
+
 
 
 
