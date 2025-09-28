@@ -1,14 +1,15 @@
-# PsyCare
+# Introdução
 
-## Alunos integrantes da equipe
-
-* Gabriel Eduardo de Oliveira
-* Júlia Carvalho Silva
-* Júlia do Carmo Costa Rocha e Silva
-* Lucas Cardoso
-* Nathaly Nagem Araujo
-* Pedro Henrique de Oliveira Silva
-* Yago Garzon Chaves
+* **Projeto**: PsyCare
+* **Repositório GitHub**: https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2025-2-ti1-2401100-psycare
+* **Membros integrantes da Equipe:**
+ * Gabriel Eduardo de Oliveira
+ * Júlia Carvalho Silva
+ * Júlia do Carmo Costa Rocha e Silva
+ * Lucas Cardoso
+ * Nathaly Nagem Araujo
+ * Pedro Henrique de Oliveira Silva
+ * Yago Garzon Chaves
 
 ## Contexto
 
