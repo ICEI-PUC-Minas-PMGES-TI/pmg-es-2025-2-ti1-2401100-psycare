@@ -1,8 +1,8 @@
 # Introdução
 
-* **Projeto**: PsyCare
-* **Repositório GitHub**: https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2025-2-ti1-2401100-psycare
-* **Membros integrantes da Equipe:**
+**Projeto**: PsyCare
+**Repositório GitHub**: https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2025-2-ti1-2401100-psycare
+**Membros integrantes da Equipe:**
  * Gabriel Eduardo de Oliveira
  * Júlia Carvalho Silva
  * Júlia do Carmo Costa Rocha e Silva
