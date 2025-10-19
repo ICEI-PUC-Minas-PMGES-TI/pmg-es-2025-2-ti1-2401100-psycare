@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sistema de prontuário médico da PSYCARE">
+    <link rel="stylesheet" href="style.css">
+    <title>Prontuário Médico - PSYCARE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="topbar" role="banner">
+    <div class="logo">PSY<span class="care">CARE</span></div>
+    <nav class="menu" role="navigation" aria-label="Menu principal">
+      <a href="#" aria-label="Página inicial">Início</a>
+      <a href="#" aria-label="Suporte">Suporte</a>
+      <a href="#" aria-label="Central de ajuda">Central de Ajuda</a>
+    </nav>
+    <div class="profile-icon">
+      <img src="https://www.svgrepo.com/show/508699/user-circle.svg" alt="Ícone do perfil do usuário">
+    </div>
+  </header>
+
+  <main class="container" role="main">
+    <h1>Prontuário e Anotações</h1>
+
+    <!-- Cartão da paciente -->
+    <section class="card" aria-labelledby="patient-name-1">
+      <div class="card-header">
+        <img src="images/camila.png" alt="Foto de Camila Gonçalves" class="avatar">
+        <div class="info">
+          <h2 id="patient-name-1">Camila Gonçalves</h2>
+          <div class="patient-details">
+            <span class="detail-item">IDADE: 25 anos</span>
+            <span class="detail-item">TELEFONE: (11) 98765-4321</span>
+            <span class="detail-item">E-MAIL: camila.g@email.com</span>
+            <span class="detail-item">INÍCIO DO ATENDIMENTO: 15/03/2025</span>
+            <span class="detail-item">ÚLTIMA CONSULTA: 12/10/2025</span>
+          </div>
+        </div>
+        <button class="expand-btn" aria-label="Expandir informações do paciente">⤢</button>
+      </div>
+
+      <div class="editor-bar">
+        <input type="text" placeholder="Digite um título" aria-label="Título das anotações">
+        <button class="btn blue" aria-label="Salvar anotações">Salvar Anotações</button>
+        <button class="btn green" aria-label="Exportar prontuário">Exportar</button>
+        <button class="btn red" aria-label="Excluir anotações">Excluir</button>
+      </div>
+
+      <div class="toolbar" role="toolbar" aria-label="Ferramentas de edição">
+        <button type="button" aria-label="Negrito">B</button>
+        <button type="button" aria-label="Itálico">I</button>
+        <button type="button" aria-label="Sublinhado">U</button>
+        <button type="button" aria-label="Alinhar texto">A</button>
+        <button type="button" aria-label="Lista com marcadores">•</button>
+        <button type="button" aria-label="Lista numerada">≡</button>
+        <button type="button" aria-label="Inserir imagem">🖼</button>
+        <button type="button" aria-label="Anexar arquivo">📎</button>
+      </div>
+
+      <div class="editor">
+        <p class="timestamp">Criado em 10/10/2023 · Última edição em 12/10/2023, às 14h40</p>
+        <p><strong>Informações Clínicas:</strong></p>
+        <div class="note-area" contenteditable="true" role="textbox" aria-label="Área para anotações médicas">
+          <p>Paciente relata melhora significativa nos sintomas de ansiedade após implementação das técnicas de respiração.</p>
+          <p>Medicação atual: Sertralina 50mg/dia.</p>
+          <p>Próxima consulta agendada para 26/10/2025.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="card small" aria-labelledby="patient-name-2">
+      <div class="card-header">
+        <img src="images/hugo.png" alt="Foto de Hugo" class="avatar">
+        <div class="info">
+          <h2 id="patient-name-2">Hugo</h2>
+          <div class="patient-details">
+            <span class="detail-item">IDADE: 20 anos</span>
+            <span class="detail-item">TELEFONE: (11) 91234-5678</span>
+            <span class="detail-item">E-MAIL: hugo.silva@email.com</span>
+            <span class="detail-item">INÍCIO DO ATENDIMENTO: 22/08/2023</span>
+            <span class="detail-item">ÚLTIMA CONSULTA: 10/10/2023</span>
+          </div>
+        </div>
+        <button class="expand-btn" aria-label="Expandir informações do paciente">⤢</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="footer-content">
+      <div>
+        <h4>PSYCARE</h4>
+        <p>Cuidar Da Mente <br> Nunca Tão Fácil</p>
+      </div>
+      <div>
+        <h4>Endereço</h4>
+        <p>Dom José Gaspar, 500, Belo Horizonte-BH, Brasil</p>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <p>(32) 3319-4444<br>suporte@psycare.com.br</p>
+      </div>
+      <div>
+        <h4>Links</h4>
+        <p><a href="#" aria-label="Política de privacidade">Política de Privacidade</a></p>
+        <p><a href="#" aria-label="Termos de uso">Termos de Uso</a></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
