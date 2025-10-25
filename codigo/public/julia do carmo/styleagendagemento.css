@@ -77,6 +77,18 @@ header {
   font-weight: bold;
 }
 
+div .cor-icon {
+  background: linear-gradient(135deg, #4a90e2, #6c63ff);
+  border-radius: 20px;
+}
+
+div>a>#icon {
+  display: flex;
+  filter: invert(100%);
+  justify-self: center;
+  padding: 5px;
+}
+
 .main-container {
   max-width: 1200px;
   margin: 50px auto;
@@ -345,4 +357,10 @@ footer div a {
 
 footer div a:hover {
   text-decoration: underline;
+}
+
+p.slogan {
+  color: #234A6B;
+  font-size: 18px !important;
+  font-weight: 550;
 }
