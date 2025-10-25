@@ -29,3 +29,4 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("resize", fixarBox);
   fixarBox();
 });
+

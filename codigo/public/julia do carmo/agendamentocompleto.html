@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Painel Paciente - PSYCARE</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styleagendagemento.css" />
+</head>
+
+<body>
+  <header>
+    <div class="menu">
+      <p id="logo">PSYCARE</p>
+      <nav> <a href="#">Início</a> <a href="#">Especialistas</a> <a href="#">Conteúdo de Apoio</a></nav>
+      <button>Login</button>
+    </div>
+  </header>
+
+  <main class="main-container">
+    <h1 class="page-title">Painel Paciente</h1>
+
+    <div class="content-area">
+      <section class="calendar-section">
+        <div class="calendar-header">
+          <div class="month-selector">
+            <button id="prevMonth"><i class="fas fa-chevron-left"></i></button>
+            <span id="currentMonthYear">Janeiro 2025</span>
+            <button id="nextMonth"><i class="fas fa-chevron-right"></i></button>
+          </div>
+          <div class="calendar-controls">
+            <button class="today-button">Mês</button>
+          </div>
+        </div>
+
+        <div class="calendar-grid">
+          <div class="day-header">DOM</div>
+          <div class="day-header">SEG</div>
+          <div class="day-header">TER</div>
+          <div class="day-header">QUA</div>
+          <div class="day-header">QUI</div>
+          <div class="day-header">SEX</div>
+          <div class="day-header">SAB</div>
+
+          <div class="calendar-cell outside-month"><span class="day-number">29</span></div>
+          <div class="calendar-cell outside-month"><span class="day-number">30</span></div>
+          <div class="calendar-cell outside-month"><span class="day-number">31</span></div>
+
+          <div class="calendar-cell"><span class="day-number">1</span></div>
+          <div class="calendar-cell"><span class="day-number">2</span></div>
+          <div class="calendar-cell"><span class="day-number">3</span></div>
+          <div class="calendar-cell"><span class="day-number">4</span></div>
+          <div class="calendar-cell"><span class="day-number">5</span></div>
+          <div class="calendar-cell"><span class="day-number">6</span></div>
+          <div class="calendar-cell"><span class="day-number">7</span></div>
+          <div class="calendar-cell"><span class="day-number">8</span></div>
+          <div class="calendar-cell"><span class="day-number">9</span></div>
+          <div class="calendar-cell day-appointment">
+            <span class="day-number">10</span>
+            <div class="appointment">Dr. Mariana Albuquerque</div>
+          </div>
+          <div class="calendar-cell"><span class="day-number">11</span></div>
+          <div class="calendar-cell"><span class="day-number">12</span></div>
+          <div class="calendar-cell"><span class="day-number">13</span></div>
+          <div class="calendar-cell"><span class="day-number">14</span></div>
+          <div class="calendar-cell"><span class="day-number">15</span></div>
+          <div class="calendar-cell"><span class="day-number">16</span></div>
+          <div class="calendar-cell"><span class="day-number">17</span></div>
+          <div class="calendar-cell"><span class="day-number">18</span></div>
+          <div class="calendar-cell"><span class="day-number">19</span></div>
+          <div class="calendar-cell"><span class="day-number">20</span></div>
+          <div class="calendar-cell"><span class="day-number">21</span></div>
+          <div class="calendar-cell"><span class="day-number">22</span></div>
+          <div class="calendar-cell"><span class="day-number">23</span></div>
+          <div class="calendar-cell"><span class="day-number">24</span></div>
+          <div class="calendar-cell"><span class="day-number">25</span></div>
+          <div class="calendar-cell"><span class="day-number">26</span></div>
+          <div class="calendar-cell"><span class="day-number">27</span></div>
+          <div class="calendar-cell"><span class="day-number">28</span></div>
+          <div class="calendar-cell"><span class="day-number">29</span></div>
+          <div class="calendar-cell"><span class="day-number">30</span></div>
+          <div class="calendar-cell"><span class="day-number">31</span></div>
+        </div>
+      </section>
+
+      <aside class="sidebar">
+        <div class="card profile-card">
+          <img src="img/Rodrigo.jpg" alt="Foto de João Carlos Santos">
+          <h3>João Carlos Santos</h3>
+          <span class="role">Paciente</span>
+        </div>
+
+        <div class="card doctor-card">
+          <img src="img/Psicologa.png" alt="Foto da psicóloga">
+          <h4>Dr. Ana Paula</h4>
+          <p>Psicóloga clínica especializada em TCC para ansiedade e depressão.</p>
+          <p class="agenda-button">Agendado</p>
+        </div>
+      </aside>
+    </div>
+  </main>
+  <footer>
+    <div class="ultimas-informacoes">
+      <p id="logo">PSYCARE</p>
+      <p class="slogan">Cuidar Da Mente<br>Nunca Foi Tão Fácil</p>
+      <div class="logos-redes">
+        <a href="#"><img src="img/youtube.png" alt="YouTube"></a>
+        <a href="#"><img src="img/facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="img/whatsapp.png" alt="WhatsApp"></a>
+      </div>
+    </div>
+
+    <div class="informacoes-contato">
+      <h4>Endereço</h4>
+      <p>Dom José Gaspar, 500,<br>Belo Horizonte-MG, Brasil</p>
+      <h4>Contato</h4>
+      <p>(31) 3319-4444</p>
+      <a href="mailto:sac@psycare.com.br">sac@psycare.com.br</a>
+    </div>
+
+    <div class="politicas">
+      <a href="#">Política de Privacidade</a>
+      <a href="#">Termos de Uso</a>
+    </div>
+  </footer>
+
+</html>
