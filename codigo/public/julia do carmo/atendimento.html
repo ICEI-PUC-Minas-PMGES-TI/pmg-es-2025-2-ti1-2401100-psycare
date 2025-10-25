@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Agendar atendimento</title>
 </head>
 
@@ -22,42 +23,47 @@
       <div class="agendar-consulta">
         <h3 class="agende">Agende sua consulta</h3>
         <div class="informacoes-psicologo">
-          <div>
+          <div class="pacientes-atendidos">
             <h5>Pacientes atendidos</h5>
             <h5 class="numero-pacientes">+120</h5>
           </div>
-          <div>
+          <div class="pacientes-atendidos">
             <h5>Experiência</h5>
             <h5 class="anos-experiencia">+ 3 anos</h5>
           </div>
-          <div>
+          <div class="pacientes-rating">
             <h5>Avaliação</h5>
             <h5 class="rating">4.7 ★</h5>
           </div>
         </div>
 
-        <p>Selecione uma data</p>
+        <p class="selecione-data">Selecione uma data</p>
         <div class="data-consulta">
           <button>
-            <p>SEG<br>13</p>
+            <p class="dia-semana">SEG</p>
+            <p class="dia">13</p>
           </button>
           <button>
-            <p>TER<br>14</p>
+            <p class="dia-semana">TER</p>
+            <p class="dia">14</p>
           </button>
           <button>
-            <p>QUA<br>15</p>
+            <p class="dia-semana">QUA</p>
+            <p class="dia">15</p>
           </button>
           <button>
-            <p>QUI<br>16</p>
+            <p class="dia-semana">QUI</p>
+            <p class="dia">16</p>
           </button>
           <button>
-            <p>SEX<br>17</p>
+            <p class="dia-semana">SEX</p>
+            <p class="dia">17</p>
           </button>
           <button>
-            <p>SÁB<br>18</p>
+            <p class="dia-semana">SAB</p>
+            <p class="dia">18</p>
           </button>
         </div>
-
         <p class="selecionar-horario">Selecione um horário</p>
         <div class="horarios">
           <button>09:00</button>
@@ -72,6 +78,24 @@
     </aside>
     <div class="coluna-esquerda">
       <div class="imagem-psicologo"> <img src="img/Psicologa.png" alt="Imagem do psicologo"> </div>
+      <div class="psicologo-rating">
+        <div class="tags">
+          <button>
+            Psicóloga
+          </button>
+          <button>
+            Minas Gerais
+          </button>
+        </div>
+        <div class="avaliacao-psicologo">
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star checked"></span>
+          <span class="fa fa-star"></span>
+          <p>(42)</p>
+        </div>
+      </div>
       <p class="nome-do-psicologo"> Dr. Mariana Albuquerque </p>
       <div class="descricao-psicologo">
         <h3>Sobre</h3>
@@ -141,34 +165,43 @@
     <div class="depoimentos">
       <h3 class="depoimentos-nome">Depoimentos</h3>
       <div class="depoimento-primeiro">
-        <p>O atendimento foi transformador. Passei por um período de depressão e não tinha
+        <p class="depoimento-texto">O atendimento foi transformador. Passei por um período de depressão e não tinha
           condições financeiras para
           buscar ajuda
           particular. Encontrar esse serviço foi um divisor de águas na minha vida.</p>
         <div class="depoimentos-pacientes-info">
           <img src="img/Joao.png" alt="Foto de perfil">
-          <p class="nome-depoimento">João Santos</p>
-          <p>45 anos</p>
+          <div class="pacientes-detalhes">
+            <p class="nome-depoimento">João Santos</p>
+            <p class="paciente-idade">45 anos</p>
+          </div>
         </div>
       </div>
       <div class="depoimento-segundo">
-        <p>Sempre achei que terapia fosse algo distante da minha realidade. Com o apoio acessível que encontrei aqui,
+        <p class="depoimento-texto">Sempre achei que terapia fosse algo distante da minha realidade. Com o apoio
+          acessível que encontrei aqui,
           consegui
           iniciar meu processo de autocuidado e hoje me sinto muito mais preparada para lidar com a ansiedade.</p>
         <div class="depoimentos-pacientes-info">
           <img src="img/Maria.jpg" alt="Foto de perfil">
-          <p class="nome-depoimento">Maria Oliveira</p>
-          <p>32 anos</p>
+          <div class="pacientes-detalhes">
+            <p class="nome-depoimento">Maria Oliveira</p>
+            <p class="paciente-idade">32 anos</p>
+          </div>
         </div>
       </div>
       <div class="depoimento-terceiro">
-        <p>Eu tinha preconceito com terapia, achava que não era para mim. Hoje, depois de algumas sessões, percebo como
+        <p class="depoimento-texto">Eu tinha preconceito com terapia, achava que não era para mim. Hoje, depois de
+          algumas sessões, percebo
+          como
           é
           importante falar sobre o que sentimos e buscar orientação profissiona</p>
         <div class="depoimentos-pacientes-info">
           <img src="img/Rodrigo.jpg" alt="Foto de perfil">
-          <p class="nome-depoimento">Rodrigo Almeira</p>
-          <p>39 anos</p>
+          <div class="pacientes-detalhes">
+            <p class="nome-depoimento">Rodrigo Almeira</p>
+            <p class="paciente-idade">39 anos</p>
+          </div>
         </div>
       </div>
     </div>
@@ -177,7 +210,7 @@
 <footer>
   <div class="ultimas-informacoes">
     <p id="logo">PSYCARE</p>
-    <p class="slogan">Cuidar da mente nunca foi tão fácil</p>
+    <p class="slogan">Cuidar Da Mente <br> Nunca Foi Tão Fácil</p>
     <div class="logos-redes">
       <a href="#"><img src="img/youtube.png" alt="Logo do Youtube"></a>
       <a href="#"><img src="img/facebook.png" alt="Logo do Facebook"></a>
@@ -189,8 +222,8 @@
     <p>Dom José Gaspar, 500,
       Belo Horizonte-MH, Brasil</p>
     <h4>Contato</h4>
-    <p>(31) 3319-4444
-      sac.com.br
+    <p>(31) 3319-4444 <br>
+      <a href="mailto:sac.co.br">sac.com.br</a>
     </p>
   </div>
   <div class="politicas">

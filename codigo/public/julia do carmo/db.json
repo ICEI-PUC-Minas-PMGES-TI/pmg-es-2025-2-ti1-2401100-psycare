@@ -1,0 +1,29 @@
+{
+  "agendamento_id": "123456",
+  "paciente": {
+    "id": "pac01",
+    "nome": "Carlos da Silva",
+    "email": "carlos.silva@email.com",
+    "celular": "+55 11 91234-5678",
+    "Sobre_a_Consulta": "Minha primeira consulta, gostaria de falar sobre a minha família."
+  },
+  "psicologo": {
+    "id": "psi01",
+    "nome": "Dra. Ana Paula Souza",
+    "crp": "06/12345",
+    "especialidade": "Psicoterapia Cognitivo-Comportamental"
+  },
+  "consulta": {
+    "data": "2025-10-20",
+    "hora_inicio": "14:00",
+    "local": {
+      "tipo": "online",
+      "plataforma": "Zoom",
+      "link": "https://zoom.us/consulta123",
+      "endereco": null
+    },
+    "status": "agendado",
+    "observacoes": "Primeira sessão."
+  },
+  "data_agendamento": "2025-10-10T16:35:00"
+}
