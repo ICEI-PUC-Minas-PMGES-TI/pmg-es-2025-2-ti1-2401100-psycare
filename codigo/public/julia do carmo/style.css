@@ -75,14 +75,10 @@ header {
   font-weight: bold;
 }
 
-aside {
-  right: 40px;
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-}
-
 .agendar-consulta {
+  position: fixed;
+  right: 40px;
+  top: 120px;
   background: #ffffff;
   border-radius: 16px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
@@ -93,23 +89,21 @@ aside {
   flex-direction: column;
   align-items: center;
   gap: 12px;
-  margin-right: 30px;
-  position: absolute;
+  z-index: 999;
 }
-
 
 .agendar-consulta .agende {
   font-size: 18px;
   font-weight: 600;
   color: #333;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 }
 
 .informacoes-psicologo {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 .informacoes-psicologo>div {
@@ -170,7 +164,7 @@ aside {
   gap: 8px;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 10px 0 20px 0;
+  margin: 5px 0 5px 0;
 }
 
 .agendar-consulta .data-consulta button {
@@ -208,7 +202,7 @@ aside {
   flex-wrap: wrap;
   gap: 8px;
   justify-content: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .agendar-consulta .horarios button {
@@ -217,7 +211,7 @@ aside {
   border-radius: 8px;
   padding: 6px 14px;
   cursor: pointer;
-  font-size: 12px;
+  font-size: 14px;
   color: #444;
   transition: all 0.2s ease;
 }
@@ -226,10 +220,6 @@ aside {
 .agendar-consulta .horarios button.active {
   background: linear-gradient(135deg, #4a90e2, #6c63ff);
   color: #fff;
-}
-
-.agendar-consulta .selecionar-horario {
-  margin-bottom: 15px;
 }
 
 .agendar-consulta .botao-agendar {
@@ -667,6 +657,12 @@ footer div p {
   color: #234A6B;
   line-height: 1.5;
   margin-bottom: 12px;
+}
+
+footer div a {
+  font-size: 14px !important;
+  color: #234A6B !important;
+  line-height: 1.5 !important;
 }
 
 .informacoes-contato {
