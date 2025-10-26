@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PsyCare - Triagem de Saúde Mental</title>
+    <style>
+        :root {
+            --primary: #1e88e5;
+            --primary-dark: #1565c0;
+            --light: #f5f5f5;
+            --white: #ffffff;
+            --text: #333;
+            --success: #4caf50;
+            --warning: #ff9800;
+            --danger: #f44336;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            background-color: var(--light);
+            color: var(--text);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 15px 0;
+        }
+        
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--primary);
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 15px;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text);
+            padding: 8px 15px;
+            border-radius: 4px;
+        }
+        
+        .nav-links a.active, .nav-links a:hover {
+            background-color: var(--primary);
+            color: var(--white);
+        }
+        
+        .section {
+            padding: 40px 0;
+        }
+        
+        .hidden {
+            display: none;
+        }
+        
+        .card {
+            background-color: var(--white);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        .card-header {
+            background-color: var(--primary);
+            color: var(--white);
+            padding: 10px 15px;
+            margin: -20px -20px 15px -20px;
+            border-radius: 8px 8px 0 0;
+        }
+        
+        .btn {
+            background-color: var(--primary);
+            color: var(--white);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        
+        .btn:hover {
+            background-color: var(--primary-dark);
+        }
+        
+        .form-group {
+            margin-bottom: 15px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        input, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        th {
+            background-color: var(--primary);
+            color: var(--white);
+        }
+        
+        tr:hover {
+            background-color: #f9f9f9;
+        }
+        
+        .priority-low { color: var(--success); }
+        .priority-medium { color: var(--warning); }
+        .priority-high { color: var(--danger); }
+        
+        .alert {
+            padding: 10px 15px;
+            border-radius: 4px;
+            margin-bottom: 15px;
+        }
+        
+        .alert-success {
+            background-color: #e8f5e9;
+            color: var(--success);
+            border-left: 4px solid var(--success);
+        }
+        
+        .alert-error {
+            background-color: #ffebee;
+            color: var(--danger);
+            border-left: 4px solid var(--danger);
+        }
+        
+        footer {
+            background-color: var(--primary-dark);
+            color: var(--white);
+            padding: 20px 0;
+            text-align: center;
+        }
+        
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">🧠 PsyCare</div>
+                <div class="nav-links">
+                    <a href="#" class="active" id="nav-home">Início</a>
+                    <a href="#" id="nav-register">Cadastrar</a>
+                    <a href="#" id="nav-patients">Pacientes</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="section" id="home-section">
+        <div class="container">
+            <h2>Bem-vindo ao PsyCare</h2>
+            <p>Sistema de triagem de saúde mental para identificação de prioridades de atendimento.</p>
+            
+            <div class="card">
+                <div class="card-header">
+                    <h3>Nossos Serviços</h3>
+                </div>
+                <p>Triagem de saúde mental, cadastro de pacientes e gestão de casos por prioridade.</p>
+                <button class="btn" id="start-btn">Iniciar Triagem</button>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section hidden" id="register-section">
+        <div class="container">
+            <h2>Cadastro e Triagem</h2>
+            
+            <div class="card">
+                <div class="card-header">
+                    <h3>Dados do Paciente</h3>
+                </div>
+                <form id="patient-form">
+                    <div class="form-group">
+                        <label for="name">Nome Completo</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="birthdate">Data de Nascimento</label>
+                        <input type="date" id="birthdate" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Telefone</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+                    
+                    <div class="card-header">
+                        <h3>Questionário de Triagem</h3>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>1. Com que frequência se sentiu deprimido nas últimas semanas?</label>
+                        <select id="q1">
+                            <option value="0">Nenhum dia</option>
+                            <option value="1">Vários dias</option>
+                            <option value="2">Mais da metade dos dias</option>
+                            <option value="3">Quase todos os dias</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>2. Com que frequência teve pouco interesse em atividades?</label>
+                        <select id="q2">
+                            <option value="0">Nenhum dia</option>
+                            <option value="1">Vários dias</option>
+                            <option value="2">Mais da metade dos dias</option>
+                            <option value="3">Quase todos os dias</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>3. Pensou em se machucar ou em suicídio recentemente?</label>
+                        <select id="q3">
+                            <option value="0">Não</option>
+                            <option value="3">Sim, sem planos</option>
+                            <option value="6">Sim, com algum plano</option>
+                            <option value="9">Sim, com plano específico</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="btn">Cadastrar Paciente</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section hidden" id="patients-section">
+        <div class="container">
+            <h2>Lista de Pacientes</h2>
+            
+            <div class="form-group">
+                <input type="text" id="search-patient" placeholder="Buscar paciente...">
+            </div>
+            
+            <div class="card">
+                <table id="patients-table">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Idade</th>
+                            <th>Pontuação</th>
+                            <th>Prioridade</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="patients-list">
+                        <!-- Pacientes carregados via JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>PsyCare - Cuidando da saúde mental &copy; 2023</p>
+        </div>
+    </footer>
+
+    <script>
+        // Elementos da interface
+        const navHome = document.getElementById('nav-home');
+        const navRegister = document.getElementById('nav-register');
+        const navPatients = document.getElementById('nav-patients');
+        const startBtn = document.getElementById('start-btn');
+        
+        const homeSection = document.getElementById('home-section');
+        const registerSection = document.getElementById('register-section');
+        const patientsSection = document.getElementById('patients-section');
+        
+        const patientForm = document.getElementById('patient-form');
+        const patientsList = document.getElementById('patients-list');
+        const searchPatient = document.getElementById('search-patient');
+        
+        // URL da API JSON Server
+        const API_URL = 'http://localhost:3000/patients';
+        
+        // Navegação entre seções
+        function showSection(section) {
+            homeSection.classList.add('hidden');
+            registerSection.classList.add('hidden');
+            patientsSection.classList.add('hidden');
+            
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.classList.remove('active');
+            });
+            
+            section.classList.remove('hidden');
+            
+            if (section === homeSection) navHome.classList.add('active');
+            if (section === registerSection) navRegister.classList.add('active');
+            if (section === patientsSection) {
+                navPatients.classList.add('active');
+                loadPatients();
+            }
+        }
+        
+        // Event listeners de navegação
+        navHome.addEventListener('click', (e) => {
+            e.preventDefault();
+            showSection(homeSection);
+        });
+        
+        navRegister.addEventListener('click', (e) => {
+            e.preventDefault();
+            showSection(registerSection);
+        });
+        
+        navPatients.addEventListener('click', (e) => {
+            e.preventDefault();
+            showSection(patientsSection);
+        });
+        
+        startBtn.addEventListener('click', () => {
+            showSection(registerSection);
+        });
+        
+        // Calcular pontuação da triagem
+        function calculateScore() {
+            const q1 = parseInt(document.getElementById('q1').value);
+            const q2 = parseInt(document.getElementById('q2').value);
+            const q3 = parseInt(document.getElementById('q3').value);
+            return q1 + q2 + q3;
+        }
+        
+        // Determinar prioridade
+        function getPriority(score) {
+            if (score <= 5) return { level: 'Baixa', class: 'priority-low' };
+            if (score <= 10) return { level: 'Média', class: 'priority-medium' };
+            return { level: 'Alta', class: 'priority-high' };
+        }
+        
+        // Calcular idade
+        function calculateAge(birthdate) {
+            const today = new Date();
+            const birthDate = new Date(birthdate);
+            let age = today.getFullYear() - birthDate.getFullYear();
+            const monthDiff = today.getMonth() - birthDate.getMonth();
+            if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+                age--;
+            }
+            return age;
+        }
+        
+        // Cadastrar paciente
+        patientForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const score = calculateScore();
+            const priority = getPriority(score);
+            
+            const patientData = {
+                name: document.getElementById('name').value,
+                birthdate: document.getElementById('birthdate').value,
+                phone: document.getElementById('phone').value,
+                score: score,
+                priority: priority.level,
+                registrationDate: new Date().toISOString().split('T')[0]
+            };
+            
+            try {
+                const response = await fetch(API_URL, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(patientData)
+                });
+                
+                if (response.ok) {
+                    patientForm.reset();
+                    showAlert('Paciente cadastrado com sucesso!', 'success');
+                    setTimeout(() => showSection(patientsSection), 1500);
+                } else {
+                    throw new Error('Erro ao cadastrar');
+                }
+            } catch (error) {
+                showAlert('Erro ao cadastrar paciente', 'error');
+            }
+        });
+        
+        // Carregar pacientes
+        async function loadPatients() {
+            try {
+                const response = await fetch(API_URL);
+                const patients = await response.json();
+                
+                patientsList.innerHTML = '';
+                
+                if (patients.length === 0) {
+                    patientsList.innerHTML = '<tr><td colspan="5" style="text-align: center;">Nenhum paciente cadastrado</td></tr>';
+                    return;
+                }
+                
+                patients.forEach(patient => {
+                    const age = calculateAge(patient.birthdate);
+                    const priority = getPriority(patient.score);
+                    
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td>${patient.name}</td>
+                        <td>${age} anos</td>
+                        <td>${patient.score}</td>
+                        <td class="${priority.class}">${patient.priority}</td>
+                        <td>
+                            <button class="btn" onclick="editPatient(${patient.id})">Editar</button>
+                            <button class="btn" style="background: var(--danger)" onclick="deletePatient(${patient.id})">Excluir</button>
+                        </td>
+                    `;
+                    
+                    patientsList.appendChild(row);
+                });
+            } catch (error) {
+                showAlert('Erro ao carregar pacientes', 'error');
+            }
+        }
+        
+        // Buscar pacientes
+        searchPatient.addEventListener('input', async (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+            
+            try {
+                const response = await fetch(API_URL);
+                const patients = await response.json();
+                
+                const filteredPatients = patients.filter(patient => 
+                    patient.name.toLowerCase().includes(searchTerm)
+                );
+                
+                patientsList.innerHTML = '';
+                
+                if (filteredPatients.length === 0) {
+                    patientsList.innerHTML = '<tr><td colspan="5" style="text-align: center;">Nenhum paciente encontrado</td></tr>';
+                    return;
+                }
+                
+                filteredPatients.forEach(patient => {
+                    const age = calculateAge(patient.birthdate);
+                    const priority = getPriority(patient.score);
+                    
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td>${patient.name}</td>
+                        <td>${age} anos</td>
+                        <td>${patient.score}</td>
+                        <td class="${priority.class}">${patient.priority}</td>
+                        <td>
+                            <button class="btn" onclick="editPatient(${patient.id})">Editar</button>
+                            <button class="btn" style="background: var(--danger)" onclick="deletePatient(${patient.id})">Excluir</button>
+                        </td>
+                    `;
+                    
+                    patientsList.appendChild(row);
+                });
+            } catch (error) {
+                console.error('Erro ao buscar pacientes:', error);
+            }
+        });
+        
+        // Funções globais para os botões
+        window.editPatient = (id) => {
+            alert(`Editar paciente ID: ${id}\nFuncionalidade em desenvolvimento.`);
+        };
+        
+        window.deletePatient = async (id) => {
+            if (confirm('Tem certeza que deseja excluir este paciente?')) {
+                try {
+                    const response = await fetch(`${API_URL}/${id}`, { method: 'DELETE' });
+                    
+                    if (response.ok) {
+                        showAlert('Paciente excluído com sucesso!', 'success');
+                        loadPatients();
+                    } else {
+                        throw new Error('Erro ao excluir');
+                    }
+                } catch (error) {
+                    showAlert('Erro ao excluir paciente', 'error');
+                }
+            }
+        };
+        
+        // Mostrar alertas
+        function showAlert(message, type) {
+            const alert = document.createElement('div');
+            alert.className = `alert alert-${type}`;
+            alert.textContent = message;
+            
+            const container = document.querySelector('.container');
+            container.insertBefore(alert, container.firstChild);
+            
+            setTimeout(() => alert.remove(), 3000);
+        }
+        
+        // Inicializar
+        document.addEventListener('DOMContentLoaded', () => {
+            showSection(homeSection);
+        });
+    </script>
+</body>
+</html>
