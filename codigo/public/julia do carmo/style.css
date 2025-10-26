@@ -358,7 +358,7 @@ p.nome-do-psicologo {
   line-height: 25px;
   padding: 25px;
   border: 1px solid lightgrey;
-  margin-top: 10px;
+  margin-top: 30px;
   width: 100%;
 }
 
@@ -565,13 +565,18 @@ textarea:focus {
 form button {
   padding: 14px;
   background: linear-gradient(135deg, #1976d2, #1565c0);
-  color: white;
   border: none;
   border-radius: 50px;
   font-size: 1rem;
   font-weight: 550;
   cursor: pointer;
   transition: all 0.3s;
+  text-decoration: none !important;
+}
+
+form button>a {
+  text-decoration: none !important;
+  color: white !important;
 }
 
 form button:hover {

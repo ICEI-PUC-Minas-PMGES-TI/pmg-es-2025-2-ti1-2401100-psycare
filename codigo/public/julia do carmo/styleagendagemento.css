@@ -187,13 +187,14 @@ div>a>#icon {
 .appointment {
   background-color: #d4f6d4;
   color: #2e8b57;
-  border-radius: 50px;
+  border-radius: 20px;
   text-align: center;
   padding: 4px 8px;
   font-size: 0.8rem;
   font-weight: 600;
   margin-top: 10px;
   display: inline-block;
+  width: 100%;
 }
 
 .sidebar {
@@ -363,4 +364,109 @@ p.slogan {
   color: #234A6B;
   font-size: 18px !important;
   font-weight: 550;
+}
+
+/* Estilos do Month Picker (painel aberto pelo botão .today-button) */
+#monthPicker {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 3000;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+#monthPicker.open {
+  display: flex;
+}
+
+#monthPicker .mp-content {
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  width: 360px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  outline: none;
+}
+
+#monthPicker .mp-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+#monthPicker .mp-header button {
+  background: none;
+  border: none;
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+#monthPicker .mp-year-input {
+  width: 90px;
+  padding: 6px 8px;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-weight: 600;
+}
+
+#monthPicker .mp-months-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+#monthPicker .mp-month {
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  background: #fff;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+#monthPicker .mp-month:hover {
+  background: #f3f8ff;
+  border-color: #cfe0ff;
+}
+
+#monthPicker .mp-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+#monthPicker .mp-footer button {
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+#monthPicker .mp-footer .mp-today {
+  background: #007bff;
+  color: #fff;
+}
+
+#monthPicker .mp-footer .mp-cancel {
+  background: #f1f1f1;
+  color: #333;
+}
+
+/* destaque do dia atual e seleção */
+.calendar-cell.today-cell {
+  background-color: #e6f0ff;
+  border: 1px solid #007bff;
+}
+
+.calendar-cell.selected {
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.14);
+  border: 2px solid #007bff;
 }

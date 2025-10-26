@@ -65,7 +65,8 @@
           id="celular" name="celular" required><br><br> <label for="email">E-mail:</label><br> <input type="email"
           id="email" name="email" required><br><br> <label for="mensagem">Conte-nos um pouco sobre o que você está
           enfrentando:</label><br> <textarea id="mensagem" name="mensagem" rows="4" cols="200"></textarea><br><br>
-        <button type="submit">Agendar</button>
+        <button type="submit" id="btnAgendarConsulta" class="botao-agendar"> <a
+            href="agendamentocompleto.html">Agendar</a></button>
       </form>
     </div>
     <div class="localizacao">
@@ -146,7 +147,7 @@
     <p class="selecionar-horario">Selecione um horário</p>
     <div class="horarios"> <button>09:00</button> <button>10:00</button> <button>11:00</button> <button>15:00</button>
       <button>16:30</button>
-    </div> <a href="agendamentocompleto.html"> <button class="botao-agendar">Agendar Consulta
+    </div> <a href="agendamentocompleto.html"> <button id="btnAgendarConsulta" class="botao-agendar">Agendar Consulta
       </button></a>
   </div>
   <script src="app.js"></script>
