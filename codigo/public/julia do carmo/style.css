@@ -26,9 +26,8 @@ header {
 }
 
 .menu>#logo {
-  color: #007bff;
-  font-size: 25px;
-  font-weight: bolder;
+  width: 100px;
+  height: fit-content;
   margin-top: 5px;
 }
 
