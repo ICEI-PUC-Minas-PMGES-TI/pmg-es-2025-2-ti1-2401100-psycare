@@ -1,37 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const agendarBox = document.querySelector(".agendar-consulta");
-  const header = document.querySelector("header");
-  const footer = document.querySelector("footer");
-  function fixarBox() {
-    const headerHeight = header.offsetHeight;
-    const footerTop = footer.getBoundingClientRect().top + window.scrollY;
-    const scrollTop = window.scrollY;
-    const windowHeight = window.innerHeight;
-    const boxHeight = agendarBox.offsetHeight;
-    const marginTop = 20;
-    const marginBottom = 20;
-
-    const boxBottomPos = scrollTop + headerHeight + marginTop + boxHeight + marginBottom;
-
-
-    if (boxBottomPos < footerTop) {
-      agendarBox.style.position = "fixed";
-      agendarBox.style.top = `${headerHeight + marginTop}px`;
-      agendarBox.style.bottom = "auto";
-    } else {
-
-      agendarBox.style.position = "absolute";
-      agendarBox.style.top = `${footerTop - boxHeight - marginBottom}px`;
-    }
-  }
-
-  window.addEventListener("scroll", fixarBox);
-  window.addEventListener("resize", fixarBox);
-  fixarBox();
-});
-
 // código para o calendario funcionar
-// script.js - calendário com seletor de mês ativado pelo botão .today-button
 
 // Seletores
 const currentMonthYear = document.getElementById("currentMonthYear");
@@ -125,7 +92,6 @@ nextMonthBtn.addEventListener("click", () => {
   renderCalendar(currentDate);
 });
 
-// ---------- Seletor de mês/ano ativado pelo .today-button ----------
 
 // Cria o painel de seleção (DOM)
 const monthPicker = document.createElement("div");
@@ -216,3 +182,101 @@ document.addEventListener("keydown", (e) => {
 // Inicializa
 renderCalendar(currentDate);
 
+const API_URL = "http://localhost:3000/consultas";
+
+document.addEventListener("DOMContentLoaded", () => {
+  const calendarCells = document.querySelectorAll(".calendar-cell");
+  const consultaCard = document.getElementById("consultaCard");
+  const consultaInfo = document.getElementById("consultaInfo");
+  const diaConsulta = document.querySelector(".dia-da-consulta");
+  const psicologaConsulta = document.querySelector(".psicologa-da-consulta");
+  const assuntoConsulta = document.querySelector(".assunto-da-consulta");
+
+  const btnAtualizar = document.querySelector(".btn-atualizar");
+  const btnDeletar = document.querySelector(".btn-deletar");
+  const btnHistorico = document.querySelector(".btn-historico");
+  const todayButton = document.querySelector(".today-button");
+
+  let consultas = [];
+  let consultaSelecionada = null;
+
+  //  Carregar consultas
+  async function carregarConsultas() {
+    try {
+      const res = await fetch(API_URL);
+      consultas = await res.json();
+      marcarConsultasNoCalendario();
+    } catch (err) {
+      console.error("Erro ao carregar consultas", err);
+    }
+  }
+
+  // Mostrar no calendário
+  function marcarConsultasNoCalendario() {
+    consultas.forEach(c => {
+      calendarCells.forEach(cell => {
+        const numero = cell.querySelector(".day-number").innerText.trim();
+        if (numero === c.dia) {
+          cell.style.backgroundColor = "#a3c9ff";
+          cell.style.borderRadius = "8px";
+          cell.dataset.consultaId = c.id;
+        }
+      });
+    });
+  }
+
+  // Clique no dia
+  calendarCells.forEach(cell => {
+    cell.addEventListener("click", () => {
+      const consultaId = cell.dataset.consultaId;
+      if (!consultaId) return;
+
+      consultaSelecionada = consultas.find(c => c.id == consultaId);
+      if (!consultaSelecionada) return;
+
+      consultaCard.classList.remove("hidden");
+      consultaInfo.innerText = `Data selecionada: ${consultaSelecionada.dia}/${new Date().getMonth() + 1}`;
+      diaConsulta.innerText = `Dia: ${consultaSelecionada.dia}`;
+      psicologaConsulta.innerText = `Psicóloga: ${consultaSelecionada.psicologo}`;
+      assuntoConsulta.innerText = `Assunto: ${consultaSelecionada.assunto}`;
+    });
+  });
+
+  //  Atualizar
+  btnAtualizar.addEventListener("click", async () => {
+    if (!consultaSelecionada) return alert("Nenhuma consulta selecionada.");
+
+    const novoAssunto = prompt("Atualize o assunto:", consultaSelecionada.assunto);
+    if (novoAssunto === null) return;
+
+    consultaSelecionada.assunto = novoAssunto;
+    await fetch(`${API_URL}/${consultaSelecionada.id}`, {
+      method: "PUT",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(consultaSelecionada)
+    });
+
+    alert("Consulta atualizada!");
+    carregarConsultas();
+  });
+
+  //  Deletar
+  btnDeletar.addEventListener("click", async () => {
+    if (!consultaSelecionada) return alert("Nenhuma consulta selecionada.");
+
+    if (confirm("Deseja realmente deletar esta consulta?")) {
+      await fetch(`${API_URL}/${consultaSelecionada.id}`, { method: "DELETE" });
+      alert("Consulta deletada!");
+      consultaCard.classList.add("hidden");
+      carregarConsultas();
+    }
+  });
+
+  //  Histórico 
+  btnHistorico.addEventListener("click", () => {
+    let historico = consultas.map(c => `${c.dia} - ${c.horario} (${c.psicologo})`).join("\n");
+    alert("Histórico de Consultas:\n" + historico);
+  });
+
+  carregarConsultas();
+});
