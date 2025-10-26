@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PSYCARE - Disponibilidade</title>
-    <link rel="stylesheet" href="ar_psi.css"> <link rel="stylesheet" href="cd_psi.css"> </head>
+    <link rel="stylesheet" href="style_cdPsi.css"> </head>
 <body>
-    <header class="navbar">
-        <div class="logo">PSYCARE</div>
+ <header class="navbar">
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo PSYCARE" class="logo-img">
+        </div>
         <nav class="nav-links">
             <a href="#">Início</a>
             <a href="#">Especialista</a>
@@ -21,8 +23,26 @@
             <div class="grid-container">
                 
                 <div class="left-column">
-                    <label for="disponibilidade-calendario" class="section-label">Disponibilidade *</label>
-                    <div class="calendar-card" id="disponibilidade-calendario">
+                    <label for="disponibilidade-config" class="section-label">Configuração de Disponibilidade *</label>
+                    
+                    <div class="calendar-card" id="disponibilidade-config">
+                        
+                        <label for="dias-disponiveis" class="section-label" style="margin-top: 0;">Dias da Semana</label>
+                        <div id="dias-disponiveis" class="dias-checkboxes">
+                            <label><input type="checkbox" name="dias" value="Segunda"> Segunda</label>
+                            <label><input type="checkbox" name="dias" value="Terca"> Terça</label>
+                            <label><input type="checkbox" name="dias" value="Quarta"> Quarta</label>
+                            <label><input type="checkbox" name="dias" value="Quinta"> Quinta</label>
+                            <label><input type="checkbox" name="dias" value="Sexta"> Sexta</label>
+                            <label><input type="checkbox" name="dias" value="Sabado"> Sábado</label>
+                            <label><input type="checkbox" name="dias" value="Domingo"> Domingo</label>
+                        </div>
+                        
+                        <label for="horarios-disponiveis" class="section-label" style="margin-top: 20px;">Horários (Ex: 09:00-12:00, 14:00-18:00)</label>
+                        <input type="text" id="horarios-disponiveis" name="horarios" placeholder="Horários de atendimento separados por vírgula">
+                        
+                        
+                        <h4 class="section-label" style="margin-top: 30px; border-top: 1px solid #eee; padding-top: 20px; color: var(--text-dark);">Datas Específicas</h4>
                         
                         <div class="calendar-header">
                             <div class="month-selector">
@@ -31,96 +51,83 @@
                                 <span class="nav-arrow">&gt;</span>
                             </div>
                             <div class="view-toggle">
-                                <button type="button" class="btn-toggle active">Dia</button>
+                                <button type="button" class="btn-toggle active">Mês</button>
                                 <button type="button" class="btn-toggle">Semana</button>
-                                <button type="button" class="btn-toggle">Mês</button>
                             </div>
                         </div>
 
                         <div class="calendar-grid">
-                            <div class="day-name">DOM</div>
-                            <div class="day-name">SEG</div>
-                            <div class="day-name">TER</div>
-                            <div class="day-name">QUA</div>
-                            <div class="day-name">QUI</div>
-                            <div class="day-name">SEX</div>
-                            <div class="day-name">SAB</div>
-                            
-                            <div class="day faded">25</div>
-                            <div class="day faded">26</div>
-                            <div class="day faded">27</div>
-                            <div class="day faded">28</div>
+                            <div class="day-name">Dom</div>
+                            <div class="day-name">Seg</div>
+                            <div class="day-name">Ter</div>
+                            <div class="day-name">Qua</div>
+                            <div class="day-name">Qui</div>
+                            <div class="day-name">Sex</div>
+                            <div class="day-name">Sáb</div>
                             <div class="day faded">29</div>
                             <div class="day faded">30</div>
                             <div class="day faded">31</div>
-                            
                             <div class="day">1</div>
                             <div class="day">2</div>
                             <div class="day">3</div>
                             <div class="day">4</div>
                             <div class="day">5</div>
-                            <div class="day selected-date">6</div>
+                            <div class="day">6</div>
                             <div class="day">7</div>
-
                             <div class="day">8</div>
                             <div class="day">9</div>
-                            <div class="day">10</div>
+                            <div class="day available">10</div>
                             <div class="day">11</div>
                             <div class="day">12</div>
-                            <div class="day available">13</div>
+                            <div class="day selected-date">13</div>
                             <div class="day">14</div>
-
-                            <div class="day available">15</div>
-                            <div class="day">16</div>
+                            <div class="day">15</div>
+                            <div class="day available">16</div>
                             <div class="day">17</div>
                             <div class="day">18</div>
                             <div class="day">19</div>
-                            <div class="day available">20</div>
+                            <div class="day">20</div>
                             <div class="day">21</div>
-
-                            <div class="day selected-date">22</div>
+                            <div class="day">22</div>
                             <div class="day">23</div>
-                            <div class="day available">24</div>
+                            <div class="day">24</div>
                             <div class="day">25</div>
                             <div class="day">26</div>
                             <div class="day">27</div>
                             <div class="day">28</div>
-
                             <div class="day">29</div>
-                            <div class="day faded">30</div>
-                            <div class="day faded">31</div>
+                            <div class="day">30</div>
+                            <div class="day">31</div>
                             <div class="day faded">1</div>
-                            <div class="day faded">2</div>
-                            <div class="day faded">3</div>
-                            <div class="day faded">4</div>
                         </div>
+                        
                     </div>
                 </div>
 
                 <div class="right-column">
-                    <label for="sobre" class="section-label">Sobre *</label>
-                    <textarea id="sobre" name="sobre" rows="10" required></textarea>
+                    <label for="descricaoProfissional" class="section-label">Descrição Profissional (Sobre) *</label>
+                    <textarea id="descricaoProfissional" name="descricaoProfissional" rows="10" required></textarea>
 
-                    <label for="especialidades" class="section-label">Especialidades *</label>
-                    <textarea id="especialidades" name="especialidades" rows="5" required></textarea>
+                    <label for="especialidade" class="section-label">Especialidade Principal *</label>
+                    <textarea id="especialidade" name="especialidade" rows="5" required></textarea>
                 </div>
 
             </div>
 
             <div class="next-button-container">
-                <button type="submit" class="next-button">Próximo</button>
+                <button type="submit" class="next-button">Concluir</button>
             </div>
         </form>
     </main>
 
     <footer class="footer">
         <div class="footer-section ola-mundo">
-            <div class="logo-text">OLÁMUNDO</div>
+         <div class="logo">
+            <img src="img/logo.png" alt="Logo PSYCARE" class="logo-img">
+        </div>
             <p>Cuidar Da Mente Nunca Foi Tão Fácil</p>
             <div class="social-icons">
-                <span>&#9654;</span> 
-                <span>&#9638;</span> 
-                <span>&#9993;</span> 
+                <span>&#9654;</span> <span>&#9638;</span> <span>&#9993;</span> 
             </div>
         </div>
         <div class="footer-section endereco">
@@ -134,11 +141,13 @@
             <p>sac.com.br</p>
         </div>
         <div class="footer-section links">
-            <p><a href="#">Política de Privacidade</a></p>
-            <p><a href="#">Termos de uso</a></p>
+            <p>Links</p>
+            <a href="#">Início</a>
+            <a href="#">Especialista</a>
+            <a href="#">Conteúdo de Apoio</a>
         </div>
     </footer>
 
-    <script src="disponibilidade.js"></script>
+    <script src="area_psi.js"></script>
 </body>
 </html>

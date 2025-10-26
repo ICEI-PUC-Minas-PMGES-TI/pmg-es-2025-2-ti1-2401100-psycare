@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro Psicológo</title>
-    <link rel="stylesheet" href="cd_psi.css">
+    <title>PSYCARE - Colaborador</title>
+    <link rel="stylesheet" href="style_cdPsi.css">
     </head>
 <body>
-    <header class="navbar">
-        <div class="logo">PSYCARE</div>
+<header class="navbar">
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo PSYCARE" class="logo-img">
+        </div>
         <nav class="nav-links">
             <a href="#">Início</a>
             <a href="#">Especialista</a>
@@ -21,12 +23,39 @@
         <div class="form-container">
             <h1 class="form-title">Colaborador</h1>
             <form id="colaborador-form">
+                
                 <div class="form-group">
                     <label for="nome">Nome completo: *</label>
                     <input type="text" id="nome" name="nome" required>
                 </div>
                 <div class="form-group">
-                    <label for="usuario">Usuário: *</label>
+                    <label for="crp">CRP (Registro Profissional): *</label>
+                    <input type="text" id="crp" name="crp" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail: *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Telefone: *</label>
+                    <input type="tel" id="telefone" name="telefone" required placeholder="(XX) XXXXX-XXXX">
+                </div>
+                <div class="form-group">
+                    <label for="dataNascimento">Data de Nascimento: *</label>
+                    <input type="date" id="dataNascimento" name="dataNascimento" required>
+                </div>
+                <div class="form-group">
+                    <label for="genero">Gênero: *</label>
+                    <select id="genero" name="genero" required>
+                        <option value="">Selecione</option>
+                        <option value="Feminino">Feminino</option>
+                        <option value="Masculino">Masculino</option>
+                        <option value="Outro">Outro</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="usuario">Usuário (Login): *</label>
                     <input type="text" id="usuario" name="usuario" required>
                 </div>
                 <div class="form-group">
@@ -37,18 +66,42 @@
                     <label for="confirma-senha">Confirme sua senha: *</label>
                     <input type="password" id="confirma-senha" name="confirma-senha" required>
                 </div>
+                
+                <div class="form-group">
+                    <label for="formacao">Formação Principal (Ex: Psicologia - USP): *</label>
+                    <input type="text" id="formacao" name="formacao" required>
+                </div>
+                <div class="form-group">
+                    <label for="tempoExperiencia">Tempo de Experiência (Anos): *</label>
+                    <input type="number" id="tempoExperiencia" name="tempoExperiencia" min="0" required>
+                </div>
+                 <div class="form-group">
+                    <label for="modalidadeAtendimento">Modalidade de Atendimento: *</label>
+                    <select id="modalidadeAtendimento" name="modalidadeAtendimento" required>
+                        <option value="">Selecione</option>
+                        <option value="Remoto">Remoto (Online)</option>
+                        <option value="Presencial">Presencial</option>
+                        <option value="Hibrido">Híbrido</option>
+                    </select>
+                </div>
 
                 <button type="submit" class="next-button">Próximo</button>
+                
+
             </form>
         </div>
     </main>
 
+   ...
     <footer class="footer">
         <div class="footer-section ola-mundo">
-            <div class="logo-text">OLÁMUNDO</div>
+           <div class="logo">
+            <img src="img/logo.png" alt="Logo PSYCARE" class="logo-img">
+        </div>
             <p>Cuidar Da Mente Nunca Foi Tão Fácil</p>
             <div class="social-icons">
-                <span>&#9654;</span> <span>&#9638;</span> <span>&#9993;</span> </div>
+                <span>&#9654;</span> <span>&#9638;</span> <span>&#9993;</span> 
+            </div>
         </div>
         <div class="footer-section endereco">
             <p>Endereço</p>
@@ -61,11 +114,13 @@
             <p>sac.com.br</p>
         </div>
         <div class="footer-section links">
-            <p><a href="#">Política de Privacidade</a></p>
-            <p><a href="#">Termos de uso</a></p>
+            <p>Links</p>
+            <a href="#">Início</a>
+            <a href="#">Especialista</a>
+            <a href="#">Conteúdo de Apoio</a>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="cadastro_psi.js"></script>
 </body>
 </html>
