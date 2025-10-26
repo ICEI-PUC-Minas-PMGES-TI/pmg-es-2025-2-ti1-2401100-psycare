@@ -57,9 +57,9 @@ startBtn.addEventListener('click', () => {
 
 // Calcular pontuação da triagem
 function calculateScore() {
-    const q1 = parseInt(document.getElementById('q1').value);
-    const q2 = parseInt(document.getElementById('q2').value);
-    const q3 = parseInt(document.getElementById('q3').value);
+    const q1 = parseInt(document.getElementById('q1').value) || 0;
+    const q2 = parseInt(document.getElementById('q2').value) || 0;
+    const q3 = parseInt(document.getElementById('q3').value) || 0;
     return q1 + q2 + q3;
 }
 
@@ -101,7 +101,9 @@ patientForm.addEventListener('submit', async (e) => {
     try {
         const response = await fetch(API_URL, {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
+            headers: { 
+                'Content-Type': 'application/json',
+            },
             body: JSON.stringify(patientData)
         });
         
@@ -113,7 +115,8 @@ patientForm.addEventListener('submit', async (e) => {
             throw new Error('Erro ao cadastrar');
         }
     } catch (error) {
-        showAlert('Erro ao cadastrar paciente', 'error');
+        console.error('Erro:', error);
+        showAlert('Erro ao cadastrar paciente. Verifique se o JSON Server está rodando.', 'error');
     }
 });
 
@@ -121,6 +124,8 @@ patientForm.addEventListener('submit', async (e) => {
 async function loadPatients() {
     try {
         const response = await fetch(API_URL);
+        if (!response.ok) throw new Error('Erro na requisição');
+        
         const patients = await response.json();
         
         patientsList.innerHTML = '';
@@ -149,7 +154,8 @@ async function loadPatients() {
             patientsList.appendChild(row);
         });
     } catch (error) {
-        showAlert('Erro ao carregar pacientes', 'error');
+        console.error('Erro:', error);
+        patientsList.innerHTML = '<tr><td colspan="5" style="text-align: center; color: red;">Erro ao carregar pacientes. Verifique o JSON Server.</td></tr>';
     }
 }
 
@@ -203,7 +209,9 @@ window.editPatient = (id) => {
 window.deletePatient = async (id) => {
     if (confirm('Tem certeza que deseja excluir este paciente?')) {
         try {
-            const response = await fetch(`${API_URL}/${id}`, { method: 'DELETE' });
+            const response = await fetch(`${API_URL}/${id}`, { 
+                method: 'DELETE' 
+            });
             
             if (response.ok) {
                 showAlert('Paciente excluído com sucesso!', 'success');
@@ -219,6 +227,10 @@ window.deletePatient = async (id) => {
 
 // Mostrar alertas
 function showAlert(message, type) {
+    // Remove alertas existentes
+    const existingAlerts = document.querySelectorAll('.alert');
+    existingAlerts.forEach(alert => alert.remove());
+    
     const alert = document.createElement('div');
     alert.className = `alert alert-${type}`;
     alert.textContent = message;
@@ -229,7 +241,7 @@ function showAlert(message, type) {
     setTimeout(() => alert.remove(), 3000);
 }
 
-// Estilo para botão de excluir
+// Adicionar estilos para alertas e botão de excluir
 const style = document.createElement('style');
 style.textContent = `
     .delete-btn {
@@ -237,6 +249,22 @@ style.textContent = `
     }
     .delete-btn:hover {
         background-color: #d32f2f !important;
+    }
+    .alert {
+        padding: 12px 16px;
+        border-radius: 4px;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
+    .alert-success {
+        background-color: #d4edda;
+        color: #155724;
+        border: 1px solid #c3e6cb;
+    }
+    .alert-error {
+        background-color: #f8d7da;
+        color: #721c24;
+        border: 1px solid #f5c6cb;
     }
 `;
 document.head.appendChild(style);
