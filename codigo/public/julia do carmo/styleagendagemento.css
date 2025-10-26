@@ -370,6 +370,12 @@ p.slogan {
   margin-top: 30px;
 }
 
+#consultaCard button {
+  font-size: 15px;
+  font-weight: bolder;
+  margin-right: 25px;
+}
+
 div .btn-atualizar {
   background-color: #34a853;
   color: white !important;
@@ -389,7 +395,7 @@ div .btn-deletar {
 }
 
 div .btn-historico {
-  background-color: rgb(0, 0, 0);
+  background-color: #234A6B;
   color: white !important;
   border-radius: 6px;
   padding: 10px;
