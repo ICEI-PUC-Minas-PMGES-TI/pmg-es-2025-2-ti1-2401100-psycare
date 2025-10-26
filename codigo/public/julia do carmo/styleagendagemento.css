@@ -366,6 +366,40 @@ p.slogan {
   font-weight: 550;
 }
 
+#consultaCard {
+  margin-top: 30px;
+}
+
+div .btn-atualizar {
+  background-color: #34a853;
+  color: white !important;
+  border-radius: 6px;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid lightgrey;
+}
+
+div .btn-deletar {
+  background-color: red;
+  color: white !important;
+  border-radius: 6px;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid lightgrey;
+}
+
+div .btn-historico {
+  background-color: rgb(0, 0, 0);
+  color: white !important;
+  border-radius: 6px;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid lightgrey;
+}
+
+
+
+
 /* Estilos do Month Picker (painel aberto pelo botão .today-button) */
 #monthPicker {
   position: fixed;

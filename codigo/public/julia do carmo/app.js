@@ -215,3 +215,4 @@ document.addEventListener("keydown", (e) => {
 
 // Inicializa
 renderCalendar(currentDate);
+
