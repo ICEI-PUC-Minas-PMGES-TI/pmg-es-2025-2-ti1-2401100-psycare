@@ -1,0 +1,22 @@
+{
+  "pacientes": [
+    {
+      "id": 1,
+      "nome": "João Silva",
+      "usuario": "joao123",
+      "email": "joao@example.com",
+      "senha": "hashed_password_simulado",
+      "valorMaximo": 10.00,
+      "descricao": "Estou passando por ansiedade e procuro ajuda para gerenciar o estresse."
+    },
+    {
+      "id": 2,
+      "nome": "Maria Oliveira",
+      "usuario": "maria456",
+      "email": "maria@example.com",
+      "senha": "hashed_password_simulado",
+      "valorMaximo": 20.00,
+      "descricao": "Problemas de depressão e dificuldade em socializar."
+    }
+  ]
+}
