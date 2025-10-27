@@ -1,0 +1,15 @@
+{
+  "name": "psycare-mental-health",
+  "version": "1.0.0",
+  "description": "Sistema de triagem de saúde mental",
+  "main": "script.js",
+  "scripts": {
+    "start": "json-server --watch db.json --port 3000",
+    "dev": "json-server --watch db.json --port 3000 --host localhost"
+  },
+  "dependencies": {
+    "json-server": "^0.17.4"
+  },
+  "author": "",
+  "license": "ISC"
+}
