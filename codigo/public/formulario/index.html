@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PsyCare - Triagem de Saúde Mental</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="logo">🧠 PsyCare</div>
+                <div class="nav-links">
+                    <a href="#" class="active" id="nav-home">Início</a>
+                    <a href="#" id="nav-register">Cadastrar</a>
+                    <a href="#" id="nav-patients">Pacientes</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="section" id="home-section">
+        <div class="container">
+            <h2>Bem-vindo ao PsyCare</h2>
+            <p>Sistema de triagem de saúde mental para identificação de prioridades de atendimento.</p>
+            
+            <div class="card">
+                <div class="card-header">
+                    <h3>Nossos Serviços</h3>
+                </div>
+                <p>Triagem de saúde mental, cadastro de pacientes e gestão de casos por prioridade.</p>
+                <button class="btn" id="start-btn">Iniciar Triagem</button>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section hidden" id="register-section">
+        <div class="container">
+            <h2>Cadastro e Triagem</h2>
+            
+            <div class="card">
+                <div class="card-header">
+                    <h3>Dados do Paciente</h3>
+                </div>
+                <form id="patient-form">
+                    <div class="form-group">
+                        <label for="name">Nome Completo</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="birthdate">Data de Nascimento</label>
+                        <input type="date" id="birthdate" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Telefone</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+                    
+                    <div class="card-header">
+                        <h3>Questionário de Triagem</h3>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>1. Com que frequência se sentiu deprimido nas últimas semanas?</label>
+                        <select id="q1">
+                            <option value="0">Nenhum dia</option>
+                            <option value="1">Vários dias</option>
+                            <option value="2">Mais da metade dos dias</option>
+                            <option value="3">Quase todos os dias</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>2. Com que frequência teve pouco interesse em atividades?</label>
+                        <select id="q2">
+                            <option value="0">Nenhum dia</option>
+                            <option value="1">Vários dias</option>
+                            <option value="2">Mais da metade dos dias</option>
+                            <option value="3">Quase todos os dias</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>3. Pensou em se machucar ou em suicídio recentemente?</label>
+                        <select id="q3">
+                            <option value="0">Não</option>
+                            <option value="3">Sim, sem planos</option>
+                            <option value="6">Sim, com algum plano</option>
+                            <option value="9">Sim, com plano específico</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="btn">Cadastrar Paciente</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <section class="section hidden" id="patients-section">
+        <div class="container">
+            <h2>Lista de Pacientes</h2>
+            
+            <div class="form-group">
+                <input type="text" id="search-patient" placeholder="Buscar paciente...">
+            </div>
+            
+            <div class="card">
+                <table id="patients-table">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Idade</th>
+                            <th>Pontuação</th>
+                            <th>Prioridade</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="patients-list">
+                        <!-- Pacientes carregados via JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="container">
+            <p>PsyCare - Cuidando da saúde mental &copy; 2023</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
