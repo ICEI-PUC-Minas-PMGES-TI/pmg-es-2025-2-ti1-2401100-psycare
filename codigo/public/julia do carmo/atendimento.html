@@ -5,98 +5,43 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <title>Agendar atendimento</title>
 </head>
 
 <body>
   <header>
     <div class="menu">
-      <p id="logo">PSYCARE</p>
+      <img src="img/logo.png" alt="Logo" id="logo">
       <nav> <a href="#">Início</a> <a href="#">Especialistas</a> <a href="#">Conteúdo de Apoio</a></nav>
       <button>Login</button>
     </div>
   </header>
-
   <main>
-    <aside>
-      <div class="agendar-consulta">
-        <h3 class="agende">Agende sua consulta</h3>
-        <div class="informacoes-psicologo">
-          <div>
-            <h5>Pacientes atendidos</h5>
-            <h5 class="numero-pacientes">+120</h5>
-          </div>
-          <div>
-            <h5>Experiência</h5>
-            <h5 class="anos-experiencia">+ 3 anos</h5>
-          </div>
-          <div>
-            <h5>Avaliação</h5>
-            <h5 class="rating">4.7 ★</h5>
-          </div>
-        </div>
-
-        <p>Selecione uma data</p>
-        <div class="data-consulta">
-          <button>
-            <p>SEG<br>13</p>
-          </button>
-          <button>
-            <p>TER<br>14</p>
-          </button>
-          <button>
-            <p>QUA<br>15</p>
-          </button>
-          <button>
-            <p>QUI<br>16</p>
-          </button>
-          <button>
-            <p>SEX<br>17</p>
-          </button>
-          <button>
-            <p>SÁB<br>18</p>
-          </button>
-        </div>
-
-        <p class="selecionar-horario">Selecione um horário</p>
-        <div class="horarios">
-          <button>09:00</button>
-          <button>10:00</button>
-          <button>11:00</button>
-          <button>15:00</button>
-          <button>16:30</button>
-        </div>
-
-        <button class="botao-agendar">Agendar Consulta</button>
-      </div>
-    </aside>
     <div class="coluna-esquerda">
       <div class="imagem-psicologo"> <img src="img/Psicologa.png" alt="Imagem do psicologo"> </div>
+      <div class="psicologo-rating">
+        <div class="tags"> <button> Psicóloga </button> <button> Minas Gerais </button> </div>
+        <div class="avaliacao-psicologo"> <span class="fa fa-star checked"></span> <span
+            class="fa fa-star checked"></span> <span class="fa fa-star checked"></span> <span
+            class="fa fa-star checked"></span> <span class="fa fa-star"></span>
+          <p>(42)</p>
+        </div>
+      </div>
       <p class="nome-do-psicologo"> Dr. Mariana Albuquerque </p>
       <div class="descricao-psicologo">
-        <h3>Sobre</h3>
-        Dra. Mariana Albuquerque é psicóloga clínica formada pela Universidade de São
-        Paulo (USP), com mais de 3 anos
-        de
-        experiência no acompanhamento de adultos, adolescentes e jovens adultos. Especializada em saúde mental, ela atua
-        no
-        desenvolvimento de estratégias terapêuticas personalizadas para lidar com ansiedade, depressão, estresse,
-        conflitos
-        familiares e desafios de relacionamento.
-
-        Sua abordagem é centrada no indivíduo, combinando técnicas da Terapia Cognitivo-Comportamental (TCC),
-        psicoterapia
-        humanista e mindfulness, visando promover autoconhecimento, resiliência emocional e qualidade de vida. Mariana
-        acredita
-        que cada pessoa possui recursos internos para superar suas dificuldades, e seu papel como psicóloga é orientar e
-        apoiar
-        esse processo de transformação de forma acolhedora e segura.
-
-        Além das consultas presenciais, oferece atendimento online, facilitando o acesso à terapia para quem busca
-        cuidado
-        emocional com flexibilidade e conforto. Sua prática é guiada pelo respeito, empatia e ética profissional, sempre
-        com
-        foco no bem-estar e crescimento pessoal de cada paciente.
+        <h3>Sobre</h3> Dra. Mariana Albuquerque é psicóloga clínica formada pela Universidade de São Paulo (USP), com
+        mais de 3 anos de experiência no acompanhamento de adultos, adolescentes e jovens adultos. Especializada em
+        saúde mental, ela atua no desenvolvimento de estratégias terapêuticas personalizadas para lidar com ansiedade,
+        depressão, estresse, conflitos familiares e desafios de relacionamento. Sua abordagem é centrada no indivíduo,
+        combinando técnicas da Terapia Cognitivo-Comportamental (TCC), psicoterapia humanista e mindfulness, visando
+        promover autoconhecimento, resiliência emocional e qualidade de vida. Mariana acredita que cada pessoa possui
+        recursos internos para superar suas dificuldades, e seu papel como psicóloga é orientar e apoiar esse processo
+        de transformação de forma acolhedora e segura. Além das consultas presenciais, oferece atendimento online,
+        facilitando o acesso à terapia para quem busca cuidado emocional com flexibilidade e conforto. Sua prática é
+        guiada pelo respeito, empatia e ética profissional, sempre com foco no bem-estar e crescimento pessoal de cada
+        paciente.
       </div>
       <div class="especialidades">
         <h3>Especilidades</h3>
@@ -113,90 +58,115 @@
         </ul>
       </div>
     </div>
-
     <div class="informacoes-paciente">
       <h3>Informações do Paciente</h3>
-      <form action="/enviar-dados" method="post">
-
-        <label for="nome">Nome Completo:</label><br>
-        <input type="text" id="nome" name="nome" required><br><br>
-
-        <label for="celular">Celular:</label><br>
-        <input type="tel" id="celular" name="celular" required><br><br>
-
-        <label for="email">E-mail:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
-
-        <label for="mensagem">Conte-nos um pouco sobre o que você está enfrentando:</label><br>
-        <textarea id="mensagem" name="mensagem" rows="4" cols="200"></textarea><br><br>
-
-        <button type="submit">Agendar</button>
-
+      <form action="/enviar-dados" method="post"> <label for="nome">Nome Completo:</label><br> <input type="text"
+          id="nome" name="nome" required><br><br> <label for="celular">Celular:</label><br> <input type="tel"
+          id="celular" name="celular" required><br><br> <label for="email">E-mail:</label><br> <input type="email"
+          id="email" name="email" required><br><br> <label for="mensagem">Conte-nos um pouco sobre o que você está
+          enfrentando:</label><br> <textarea id="mensagem" name="mensagem" rows="4" cols="200"></textarea><br><br>
+        <button type="submit" id="btnAgendarConsulta" class="botao-agendar"> <a
+            href="agendamentocompleto.html">Agendar</a></button>
       </form>
     </div>
     <div class="localizacao">
-      <h3>Localização</h3>
-      <img src="img/localizacao.png" alt="Localização">
+      <h3>Localização</h3> <img src="img/localizacao.png" alt="Localização">
     </div>
     <div class="depoimentos">
       <h3 class="depoimentos-nome">Depoimentos</h3>
       <div class="depoimento-primeiro">
-        <p>O atendimento foi transformador. Passei por um período de depressão e não tinha
-          condições financeiras para
-          buscar ajuda
-          particular. Encontrar esse serviço foi um divisor de águas na minha vida.</p>
-        <div class="depoimentos-pacientes-info">
-          <img src="img/Joao.png" alt="Foto de perfil">
-          <p class="nome-depoimento">João Santos</p>
-          <p>45 anos</p>
+        <p class="depoimento-texto">O atendimento foi transformador. Passei por um período de depressão e não tinha
+          condições financeiras para buscar ajuda particular. Encontrar esse serviço foi um divisor de águas na minha
+          vida.</p>
+        <div class="depoimentos-pacientes-info"> <img src="img/Joao.png" alt="Foto de perfil">
+          <div class="pacientes-detalhes">
+            <p class="nome-depoimento">João Santos</p>
+            <p class="paciente-idade">45 anos</p>
+          </div>
         </div>
       </div>
       <div class="depoimento-segundo">
-        <p>Sempre achei que terapia fosse algo distante da minha realidade. Com o apoio acessível que encontrei aqui,
-          consegui
-          iniciar meu processo de autocuidado e hoje me sinto muito mais preparada para lidar com a ansiedade.</p>
-        <div class="depoimentos-pacientes-info">
-          <img src="img/Maria.jpg" alt="Foto de perfil">
-          <p class="nome-depoimento">Maria Oliveira</p>
-          <p>32 anos</p>
+        <p class="depoimento-texto">Sempre achei que terapia fosse algo distante da minha realidade. Com o apoio
+          acessível que encontrei aqui, consegui iniciar meu processo de autocuidado e hoje me sinto muito mais
+          preparada para lidar com a ansiedade.</p>
+        <div class="depoimentos-pacientes-info"> <img src="img/Maria.jpg" alt="Foto de perfil">
+          <div class="pacientes-detalhes">
+            <p class="nome-depoimento">Maria Oliveira</p>
+            <p class="paciente-idade">32 anos</p>
+          </div>
         </div>
       </div>
       <div class="depoimento-terceiro">
-        <p>Eu tinha preconceito com terapia, achava que não era para mim. Hoje, depois de algumas sessões, percebo como
-          é
-          importante falar sobre o que sentimos e buscar orientação profissiona</p>
-        <div class="depoimentos-pacientes-info">
-          <img src="img/Rodrigo.jpg" alt="Foto de perfil">
-          <p class="nome-depoimento">Rodrigo Almeira</p>
-          <p>39 anos</p>
+        <p class="depoimento-texto">Eu tinha preconceito com terapia, achava que não era para mim. Hoje, depois de
+          algumas sessões, percebo como é importante falar sobre o que sentimos e buscar orientação profissional.</p>
+        <div class="depoimentos-pacientes-info"> <img src="img/Rodrigo.jpg" alt="Foto de perfil">
+          <div class="pacientes-detalhes">
+            <p class="nome-depoimento">Rodrigo Almeira</p>
+            <p class="paciente-idade">39 anos</p>
+          </div>
         </div>
       </div>
     </div>
   </main>
+  <div class="agendar-consulta">
+    <h3 class="agende">Agende sua consulta</h3>
+    <div class="informacoes-psicologo">
+      <div class="pacientes-atendidos">
+        <h5>Pacientes atendidos</h5>
+        <h5 class="numero-pacientes">+120</h5>
+      </div>
+      <div class="pacientes-atendidos">
+        <h5>Experiência</h5>
+        <h5 class="anos-experiencia">+ 3 anos</h5>
+      </div>
+      <div class="pacientes-rating">
+        <h5>Avaliação</h5>
+        <h5 class="rating">4.7 ★</h5>
+      </div>
+    </div>
+    <p class="selecione-data">Selecione uma data</p>
+    <div class="data-consulta"> <button>
+        <p class="dia-semana">SEG</p>
+        <p class="dia">13</p>
+      </button> <button>
+        <p class="dia-semana">TER</p>
+        <p class="dia">14</p>
+      </button> <button>
+        <p class="dia-semana">QUA</p>
+        <p class="dia">15</p>
+      </button> <button>
+        <p class="dia-semana">QUI</p>
+        <p class="dia">16</p>
+      </button> <button>
+        <p class="dia-semana">SEX</p>
+        <p class="dia">17</p>
+      </button> <button>
+        <p class="dia-semana">SAB</p>
+        <p class="dia">18</p>
+      </button> </div>
+    <p class="selecionar-horario">Selecione um horário</p>
+    <div class="horarios"> <button>09:00</button> <button>10:00</button> <button>11:00</button> <button>15:00</button>
+      <button>16:30</button>
+    </div>
+
+  </div>
+  <script src="atendimento.js"></script>
 </body>
 <footer>
   <div class="ultimas-informacoes">
-    <p id="logo">PSYCARE</p>
-    <p class="slogan">Cuidar da mente nunca foi tão fácil</p>
-    <div class="logos-redes">
-      <a href="#"><img src="img/youtube.png" alt="Logo do Youtube"></a>
-      <a href="#"><img src="img/facebook.png" alt="Logo do Facebook"></a>
-      <a href="#"><img src="img/whatsapp.png" alt=" Logo do Whatsapp"></a>
-    </div>
+    <img src="img/logo.png" alt="Logo" id="logo">
+    <p class="slogan">Cuidar Da Mente <br> Nunca Foi Tão Fácil</p>
+    <div class="logos-redes"> <a href="#"><img src="img/youtube.png" alt="Logo do Youtube"></a> <a href="#"><img
+          src="img/facebook.png" alt="Logo do Facebook"></a> <a href="#"><img src="img/whatsapp.png"
+          alt=" Logo do Whatsapp"></a> </div>
   </div>
   <div class="informacoes-contato">
     <h4>Endereço</h4>
-    <p>Dom José Gaspar, 500,
-      Belo Horizonte-MH, Brasil</p>
+    <p>Dom José Gaspar, 500, Belo Horizonte-MH, Brasil</p>
     <h4>Contato</h4>
-    <p>(31) 3319-4444
-      sac.com.br
-    </p>
+    <p>(31) 3319-4444 </p> <a href="mailto:sac.co.br">sac.com.br</a>
   </div>
-  <div class="politicas">
-    <a href="#">Politica de Privacidade</a>
-    <a href="#">Termos de uso</a>
-  </div>
+  <div class="politicas"> <a href="#">Politica de Privacidade</a> <a href="#">Termos de uso</a> </div>
 </footer>
 
 </html>
