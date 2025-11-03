@@ -23,23 +23,6 @@
   <main>
     <div class="top-section">
       <h2>Especialista em Minas Gerais</h2>
-      <div class="filter-state">
-        <label for="stateSelect">Escolha o estado:</label>
-        <select id="stateSelect" aria-label="Selecione o estado para filtrar especialistas">
-          <!-- Opções serão preenchidas via JS -->
-        </select>
-      </div>
-    </div>
-
-    <div class="cards-carousel" aria-live="polite" aria-atomic="true" aria-relevant="all">
-      <div class="cards-wrapper" id="cardsWrapper">
-        <!-- Cards gerados por JS -->
-      </div>
-    </div>
-
-    <div class="carousel-controls">
-      <button aria-label="Anterior" id="prevBtn" class="carousel-button" disabled>&lt;</button>
-      <button aria-label="Próximo" id="nextBtn" class="carousel-button">&gt;</button>
     </div>
   </main>
 
@@ -101,33 +84,6 @@
       }
     ];
 
-    const itemsPerPage = 9;
-    const stateSelect = document.getElementById("stateSelect");
-    const cardsWrapper = document.getElementById("cardsWrapper");
-    const prevBtn = document.getElementById("prevBtn");
-    const nextBtn = document.getElementById("nextBtn");
-    const title = document.querySelector(".top-section h2");
-
-    let currentPage = 0;
-    let filteredEspecialistas = [];
-    let selectedState = "Minas Gerais";
-
-    // Preenche o select com estados distintos
-    function populateStates() {
-      const estadosUnicos = [...new Set(especialistas.map(e => e.estado))].sort();
-      if (estadosUnicos.includes("Minas Gerais")) {
-        estadosUnicos.splice(estadosUnicos.indexOf("Minas Gerais"), 1);
-        estadosUnicos.unshift("Minas Gerais");
-      }
-      estadosUnicos.forEach(estado => {
-        const option = document.createElement("option");
-        option.value = estado;
-        option.textContent = estado;
-        stateSelect.appendChild(option);
-      });
-      stateSelect.value = selectedState;
-    }
-
     function createCard(especialista) {
       const card = document.createElement("div");
       card.className = "card-psicologo";
@@ -164,56 +120,6 @@
 
       return card;
     }
-
-    function renderPage(page = 0) {
-      cardsWrapper.innerHTML = "";
-      const start = page * itemsPerPage;
-      const end = start + itemsPerPage;
-      const slice = filteredEspecialistas.slice(start, end);
-      if (slice.length === 0 && page > 0) {
-        currentPage--;
-        renderPage(currentPage);
-        return;
-      }
-      slice.forEach(e => {
-        cardsWrapper.appendChild(createCard(e));
-      });
-
-      prevBtn.disabled = page === 0;
-      nextBtn.disabled = end >= filteredEspecialistas.length;
-
-      title.textContent = `Especialistas em ${selectedState}`;
-    }
-
-    function filterByState(estado) {
-      selectedState = estado;
-      filteredEspecialistas = especialistas.filter(e => e.estado === estado);
-      currentPage = 0;
-      renderPage(currentPage);
-    }
-
-    prevBtn.addEventListener("click", () => {
-      if (currentPage > 0) {
-        currentPage--;
-        renderPage(currentPage);
-      }
-    });
-
-    nextBtn.addEventListener("click", () => {
-      if ((currentPage + 1) * itemsPerPage < filteredEspecialistas.length) {
-        currentPage++;
-        renderPage(currentPage);
-      }
-    });
-
-    stateSelect.addEventListener("change", (e) => {
-      filterByState(e.target.value);
-    });
-
-    window.onload = () => {
-      populateStates();
-      filterByState(selectedState);
-    };
   </script>
 </body>
 
