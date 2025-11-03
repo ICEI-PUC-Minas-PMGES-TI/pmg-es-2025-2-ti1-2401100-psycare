@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat de Atendimneto - PSYCARE</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="topbar" role="banner">
+    <div class="logo">PSY<span class="care">CARE</span></div>
+    <nav class="menu" role="navigation" aria-label="Menu principal">
+      <a href="#" aria-label="Página inicial">Início</a>
+      <a href="#" aria-label="Suporte">Suporte</a>
+      <a href="#" aria-label="Central de ajuda">Central de Ajuda</a>
+    </nav>
+    <div class="profile-icon">
+      <img src="#" alt="Ícone do perfil do usuário">
+    </div>
+  </header>
+
+  <main class="container" role="main">
+    <h1>Chat de Atendimento</h1>
+    
+    <div class="chat-info">
+      <p>Converse com nossa equipe médica em tempo real. Estamos aqui para ajudar!</p>
+    </div>
+
+    <div class="chat-container">
+      <div class="chat-header">
+        <div class="chat-title">
+          <h2>Atendimento PSYCARE</h2>
+          <div class="chat-status">
+            <span class="status-indicator"></span>
+            <span>Online - Dra. Sarah Freitas</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="chat-messages" id="chatMessages">
+
+        <!-- Mensagens iniciais -->
+        <div class="message system-message">
+          <div class="message-content">
+            <p>💙 Bem-vindo ao chat PSYCARE! Conectado com Dra. Sarah Freitas.</p>
+            <span class="message-time" id="currentTime"></span>
+          </div>
+        </div>
+        
+        <div class="message received-message">
+          <div class="message-avatar">
+            <img src="images/sarah-freitas.jpg" alt="Dra. Sarah Freitas">
+          </div>
+          <div class="message-content">
+            <strong>Dra. Sarah Freitas</strong>
+            <p>Olá! Sou o Dra. Sarah Freitas. Como posso ajudá-lo hoje?</p>
+            <span class="message-time" id="startTime"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="chat-input-container">
+        <div class="chat-tools">
+          <button type="button" aria-label="Emoji" title="Inserir emoji">😊</button>
+          <button type="button" aria-label="Anexar arquivo" title="Anexar arquivo">📎</button>
+          <button type="button" aria-label="Enviar imagem" title="Enviar imagem">🖼️</button>
+        </div>
+        <div class="input-wrapper">
+          <input 
+            type="text" 
+            id="chatInput" 
+            placeholder="Digite sua mensagem..." 
+            aria-label="Campo de mensagem do chat"
+            maxlength="500"
+          >
+          <button id="sendMessage" aria-label="Enviar mensagem" title="Enviar mensagem">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+            </svg>
+          </button>
+        </div>
+        <div class="char-counter">
+          <span id="charCount">0/500</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="chat-features">
+      <div class="feature-card">
+        <h3>⚡ Resposta Rápida</h3>
+        <p>Nossa equipe responde em até 5 minutos durante o horário comercial</p>
+      </div>
+      <div class="feature-card">
+        <h3>🔒 Privacidade Garantida</h3>
+        <p>Todas as conversas são criptografadas e protegidas</p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="footer-content">
+      <div>
+        <h4>PSYCARE</h4>
+        <p>Cuidar Da Mente <br> Nunca Tão Fácil</p>
+      </div>
+      <div>
+        <h4>Endereço</h4>
+        <p>Dom José Gaspar, 500, Belo Horizonte-BH, Brasil</p>
+      </div>
+      <div>
+        <h4>Contato</h4>
+        <p>(32) 3319-4444<br>suporte@psycare.com.br</p>
+      </div>
+      <div>
+        <h4>Links</h4>
+        <p><a href="#" aria-label="Política de privacidade">Política de Privacidade</a></p>
+        <p><a href="#" aria-label="Termos de uso">Termos de Uso</a></p>
+      </div>
+    </div>
+  </footer> 
+
+  <script src="chat.js"></script>
+</body>
+</html>
