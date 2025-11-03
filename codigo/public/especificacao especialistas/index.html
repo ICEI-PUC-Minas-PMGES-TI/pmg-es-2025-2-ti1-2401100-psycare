@@ -11,7 +11,7 @@
 
 <body>
   <header>
-    <img src="imgs/logo.png" alt="Logo PSYCARE" id="logo" />
+    <img src="imgs/logo.png" alt="PSYCARE" id="logo" />
     <nav>
       <a href="#">Início</a>
       <a href="#" class="active">Especialistas</a>
@@ -23,6 +23,8 @@
   <main>
     <div class="top-section">
       <h2>Especialista em Minas Gerais</h2>
+    </div>
+    <div class="cards-wrapper" id="cardsWrapper">
     </div>
   </main>
 
@@ -84,6 +86,8 @@
       }
     ];
 
+    const cardsWrapper = document.getElementById("cardsWrapper");
+
     function createCard(especialista) {
       const card = document.createElement("div");
       card.className = "card-psicologo";
@@ -120,6 +124,17 @@
 
       return card;
     }
+
+    function renderAll() {
+      cardsWrapper.innerHTML = "";
+      especialistas.forEach(e => {
+        cardsWrapper.appendChild(createCard(e));
+      });
+    }
+
+    window.onload = () => {
+      renderAll();
+    };
   </script>
 </body>
 
