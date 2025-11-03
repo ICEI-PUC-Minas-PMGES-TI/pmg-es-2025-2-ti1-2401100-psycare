@@ -1,0 +1,246 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fcfdff;
+  color: #1a284e;
+  line-height: 1.4;
+}
+
+header {
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 36px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+header img#logo {
+  height: 32px;
+  font-weight: 700;
+  color: #0056d2;
+  cursor: pointer;
+}
+
+nav a {
+  margin: 0 20px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  color: #162255;
+  transition: color 0.3s ease;
+}
+
+nav a.active,
+nav a:hover {
+  color: #5676f9;
+}
+
+header button {
+  background-color: #5676f9;
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 8px 22px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+}
+
+header button:hover {
+  background-color: #3c58d9;
+}
+
+main {
+  max-width: 1100px;
+  margin: 50px auto 80px;
+  padding: 0 24px;
+}
+
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+  gap: 15px;
+}
+
+.top-section h2 {
+  font-weight: 700;
+  font-size: 24px;
+  color: #1a284e;
+}
+
+.filter-state {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  color: #2f3d73;
+  user-select: none;
+}
+
+.filter-state label {
+  font-size: 16px;
+}
+
+.filter-state select {
+  padding: 6px 14px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 2px solid #a0afef;
+  cursor: pointer;
+  outline: none;
+  transition: border-color 0.3s ease;
+  background-color: #f5f7ff;
+  color: #1a284e;
+}
+
+.filter-state select:focus {
+  border-color: #5676f9;
+  box-shadow: 0 0 8px #a0b6ff50;
+}
+
+.cards-carousel {
+  overflow: hidden;
+}
+
+.cards-wrapper {
+  display: flex;
+  gap: 28px;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.card-psicologo {
+  background: white;
+  border-radius: 22px;
+  width: 320px;
+  padding: 25px 28px 30px;
+  box-shadow: 0px 7px 15px -5px rgba(45, 79, 238, 0.18);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s ease;
+}
+
+.card-psicologo:hover {
+  transform: translateY(-8px);
+}
+
+.card-psicologo img {
+  width: 124px;
+  height: 124px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #8ea6ff;
+  margin-bottom: 18px;
+}
+
+.tags {
+  font-size: 12px;
+  font-weight: 700;
+  background-color: #eca1ff;
+  color: white;
+  padding: 5px 14px;
+  border-radius: 25px;
+  display: inline-block;
+  margin: 0 6px 12px 6px;
+  user-select: none;
+  min-width: 80px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.card-psicologo .tags:nth-child(3) {
+  background-color: #8ea6ff;
+}
+
+.card-psicologo h3 {
+  font-weight: 700;
+  font-size: 18px;
+  text-align: center;
+  color: #2f3d73;
+  margin-bottom: 12px;
+}
+
+.description {
+  font-size: 14px;
+  color: #616a8b;
+  text-align: center;
+  min-height: 65px;
+  margin-bottom: 22px;
+  line-height: 1.2;
+}
+
+.btn-agendarconsulta {
+  background-color: #5676f9;
+  border: none;
+  color: white;
+  font-weight: 600;
+  padding: 14px 0;
+  width: 100%;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+  user-select: none;
+  box-shadow: 0 4px 18px -4px rgba(79, 61, 178, 0.5);
+}
+
+.btn-agendarconsulta:hover,
+.btn-agendarconsulta:focus {
+  background-color: #2f4fe7;
+  outline: none;
+}
+
+.carousel-controls {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  gap: 34px;
+}
+
+.carousel-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 28px;
+  color: #5676f9;
+  user-select: none;
+  transition: color 0.3s ease;
+}
+
+.carousel-button:disabled {
+  color: #c4c4c4;
+  cursor: not-allowed;
+}
+
+.carousel-button:hover:not(:disabled),
+.carousel-button:focus:not(:disabled) {
+  color: #2f4fe7;
+  outline: none;
+}
+
+/* Responsivo */
+@media (max-width: 1024px) {
+  .cards-wrapper {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 380px) {
+  .card-psicologo {
+    width: 90vw;
+  }
+}
