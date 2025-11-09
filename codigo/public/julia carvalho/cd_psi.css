@@ -1,0 +1,190 @@
+
+:root {
+    --primary-blue: #007bff; /* Azul vibrante para botões e links */
+    --light-blue: #e0f0ff; /* Azul muito claro, se necessário */
+    --text-dark: #333; /* Texto principal */
+    --text-light: #555; /* Texto secundário */
+    --border-color: #ccc;
+    --background-light: #f9f9f9;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif; 
+}
+
+body {
+    background-color: #fff;
+    color: var(--text-dark);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    border-bottom: 1px solid #eee;
+    background-color: #fff;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--primary-blue);
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-light);
+    margin-left: 30px;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: var(--primary-blue);
+}
+
+.login-button {
+    background-color: var(--primary-blue);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* -------------------
+   Conteúdo Principal (Formulário)
+   ------------------- */
+.content {
+    flex-grow: 1; 
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+}
+
+.form-container {
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+ 
+}
+
+.form-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 28px;
+    font-weight: normal;
+}
+
+.form-group {
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: var(--text-dark);
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 20px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+    
+}
+
+.form-group input:focus {
+    border-color: var(--primary-blue);
+}
+
+.next-button {
+    width: 100%;
+    background-color: var(--primary-blue);
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.next-button:hover {
+    background-color: #0056b3;
+}
+
+.footer {
+    background-color: #fff; /* Fundo branco, como na imagem */
+    border-top: 1px solid #eee;
+    padding: 40px 8%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Para responsividade */
+    gap: 20px;
+    font-size: 14px;
+    color: var(--text-light);
+}
+
+.footer-section {
+    min-width: 150px;
+}
+
+.footer-section p {
+    margin-top: 5px;
+}
+
+.footer-section a {
+    color: var(--text-light);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.footer-section a:hover {
+    color: var(--primary-blue);
+}
+
+.ola-mundo .logo-text {
+    font-weight: bold;
+    font-size: 18px;
+    color: var(--primary-blue);
+    margin-bottom: 5px;
+}
+
+.ola-mundo p {
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.social-icons span {
+    font-size: 20px;
+    margin-right: 15px;
+    cursor: pointer;
+    color: var(--primary-blue);
+}
+
+.endereco p:first-child,
+.contato p:first-child {
+    font-weight: bold;
+    color: var(--text-dark);
+    margin-bottom: 5px;
+}
+
+.links p {
+    margin-bottom: 5px;
+}

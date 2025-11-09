@@ -1,20 +1,22 @@
-# Nome do projeto
+# PsyCare
 
-Escreva um ou dois parágrafo resumindo o objetivo do seu projeto.
+O PsyCare tem como objetivo ser um espaço digital acessível e inclusivo que ofereça apoio inicial em saúde mental para qualquer pessoa que precise de acolhimento. A plataforma busca reduzir barreiras sociais, financeiras e informacionais, conectando indivíduos a conteúdos confiáveis, orientações práticas e profissionais capacitados, de forma simples e disponível a qualquer hora.
 
 ## Alunos integrantes da equipe
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Gabriel Eduardo de Oliveira
+* Júlia Carvalho Silva
+* Júlia do Carmo Costa Rocha e Silva
+* Lucas Cardoso
+* Nathaly Nagem Araujo
+* Pedro Henrique de Oliveira Silva
+* Yago Garzon Chaves
 
 ## Professores responsáveis
 
-* Nome completo do professor 1
-* Nome completo do professor 2
-
-
+* Daniel Machado Osório Pereira
+* Lucca Soares de Paiva Lacerda
+* Michelle Hanne Soares de Andrade
 
 ## Instruções de utilização 
 
@@ -32,3 +34,4 @@ Toda a documentação do projeto é estruturada por meio da linguagem Markdown a
 
 * [Sintaxe básica de gravação e formatação no GitHub - GitHub Docs](https://docs.github.com/pt/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 * [Markdown® Básico: Sintaxe, Uso &amp; Exemplos [Passo a Passo]](https://markdown.net.br/sintaxe-basica/)
+.
