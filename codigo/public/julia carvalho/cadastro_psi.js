@@ -23,19 +23,17 @@ document.addEventListener('DOMContentLoaded', () => {
         const senha = document.getElementById('senha').value;
         const confirmaSenha = document.getElementById('confirma-senha').value;
 
-        // Validações (incluindo estado obrigatório)
         if (senha !== confirmaSenha) {
             alert("Erro de validação: A senha e a confirmação de senha não coincidem!");
             document.getElementById('senha').focus();
             return;
         }
 
-        if (!nome || !crp || !email || !estado || !usuario || !senha || !formacao || !modalidadeAtendimento) {  // Adicionado !estado
+        if (!nome || !crp || !email || !estado || !usuario || !senha || !formacao || !modalidadeAtendimento) {
             alert("Erro de validação: Por favor, preencha todos os campos obrigatórios (*).");
             return;
         }
 
-        // Cria objeto do psicólogo (incluindo estado)
         const psicologoData = {
             id: Math.floor(Math.random() * 1000) + 1,
             nome: nome,
@@ -44,7 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
             telefone: telefone,
             dataNascimento: dataNascimento,
             genero: genero,
-            estado: estado,  // Novo campo
+            estado: estado,
             formacao: formacao,
             tempoExperiencia: tempoExperiencia,
             modalidadeAtendimento: modalidadeAtendimento,
@@ -56,13 +54,12 @@ document.addEventListener('DOMContentLoaded', () => {
             },
             datasEspecificas: [],
             usuario: usuario,
-            senha: `hash_da_senha_segura_${usuario}`,  // Simulação de hash
+            senha: `hash_da_senha_segura_${usuario}`,
             dataCadastro: new Date().toISOString(),
             status: "pendente"
         };
 
         try {
-            // Envia para a API via POST
             const response = await fetch(API_URL, {
                 method: 'POST',
                 headers: {
@@ -76,10 +73,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 console.log("Psicólogo cadastrado com sucesso:", data);
                 alert("Cadastro inicial concluído! Prosseguindo para o perfil e disponibilidade.");
                 
-                // Salva temporariamente no localStorage para a próxima tela (opcional, se precisar)
                 localStorage.setItem('dadosPsicologo', JSON.stringify({ psicologo: psicologoData }));
                 
-                // Redireciona
                 window.location.href = 'area_psi.html';
             } else {
                 throw new Error(`Erro na API: ${response.status} ${response.statusText}`);
