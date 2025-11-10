@@ -25,23 +25,45 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
         }
+        
+        if (psicologo.datasEspecificas && Array.isArray(psicologo.datasEspecificas)) {
+             datasSelecionadas = psicologo.datasEspecificas;
+        }
     }
+
+    function renderizarCalendario() {
+        const mes = dataAtual.getMonth() + 1;
+        const ano = dataAtual.getFullYear();
+        
+        calendarGrid.querySelectorAll('.day:not(.faded)').forEach(dayElement => {
+            const day = dayElement.textContent.trim();
+            const fullDate = `${ano}-${String(mes).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
+            
+            dayElement.classList.remove('selected-date');
+
+            if (datasSelecionadas.includes(fullDate)) {
+                dayElement.classList.add('selected-date');
+            }
+        });
+    }
+
 
     function toggleDaySelection(dayElement) {
         if (dayElement.classList.contains('faded')) return;
         
-        const day = dayElement.textContent;
+        const day = dayElement.textContent.trim();
         const month = dataAtual.getMonth() + 1;
         const year = dataAtual.getFullYear();
         const fullDate = `${year}-${String(month).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
         
-        dayElement.classList.toggle('selected-date');
         
         const index = datasSelecionadas.indexOf(fullDate);
         if (index > -1) {
             datasSelecionadas.splice(index, 1);
+            dayElement.classList.remove('selected-date');
         } else {
             datasSelecionadas.push(fullDate);
+            dayElement.classList.add('selected-date');
         }
         console.log("Datas específicas selecionadas:", datasSelecionadas);
     }
@@ -54,15 +76,16 @@ document.addEventListener('DOMContentLoaded', () => {
             const ano = dataAtual.getFullYear();
             currentMonthSpan.textContent = `${mes} ${ano}`;
         }
+        renderizarCalendario();
     }
 
     const dadosArmazenados = JSON.parse(localStorage.getItem('dadosPsicologo') || '{"psicologo":{}}');
-    carregarDadosExistentes(dadosArmazenados);
-    updateMonthDisplay();
+    carregarDadosExistentes(dadosArmazenados); 
+    updateMonthDisplay(); 
 
     dayElements.forEach(day => {
         day.addEventListener('click', () => {
-            toggleDaySelection(day);
+             toggleDaySelection(day);
         });
     });
 
@@ -70,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
         arrow.addEventListener('click', function() {
             const isNext = this.textContent.trim() === '>';
             dataAtual.setMonth(dataAtual.getMonth() + (isNext ? 1 : -1));
-            updateMonthDisplay();
+            updateMonthDisplay(); 
         });
     });
 
@@ -99,6 +122,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 dias: diasSelecionados,
                 horarios: horariosProcessados
             };
+            
+            dadosFinais.psicologo.datasEspecificas = datasSelecionadas.sort();
             
             dadosFinais.psicologo.status = "ativo";
             dadosFinais.psicologo.ultimaAtualizacao = new Date().toISOString();

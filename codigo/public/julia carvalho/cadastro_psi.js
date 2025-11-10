@@ -19,7 +19,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const confirmaSenha = document.getElementById('confirma-senha').value;
 
         const tempoExperienciaInput = document.getElementById('tempoExperiencia').value;
-        // O parseInt retorna 0 se o campo estiver vazio, mas como é 'required', vamos verificar o input original.
         const tempoExperiencia = parseInt(tempoExperienciaInput) || 0; 
         
         const modalidadeAtendimento = document.getElementById('modalidadeAtendimento').value;
@@ -30,14 +29,11 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        // --- CORREÇÃO AQUI: INCLUINDO TODOS OS CAMPOS COM 'required' do HTML ---
-        if (!nome || !crp || !email || !telefone || !dataNascimento || !genero || !formacao || !usuario || !senha || !tempoExperienciaInput || !modalidadeAtendimento) {
+        if (!nome || !crp || !email || !dataNascimento || !genero || !formacao || !usuario || !senha || !tempoExperienciaInput || !modalidadeAtendimento) {
             alert("Erro de validação: Por favor, preencha todos os campos obrigatórios (*).");
-            // Se o campo de telefone é o único 'required' que você deseja tornar opcional, remova ele desta linha e do HTML.
             return;
         }
-        // ---------------------------------------------------------------------
-
+        
         const dadosPsicologo = {
             psicologo: {
                 id: Math.floor(Math.random() * 1000) + 1, 
@@ -57,11 +53,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     dias: [],
                     horarios: []
                 },
+                datasEspecificas: [], 
                 
                 usuario: usuario,
                 senha: `hash_da_senha_segura_${usuario}`, 
                 dataCadastro: new Date().toISOString(),
-                status: "pendente"
+                status: "pendente" 
             }
         };
         
