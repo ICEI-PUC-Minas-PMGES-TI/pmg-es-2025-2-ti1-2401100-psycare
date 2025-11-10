@@ -1,0 +1,83 @@
+{
+  "configuracao_disponibilidade": {
+    "dias_da_semana": [
+      "Segunda",
+      "Sábado",
+      "Domingo"
+    ],
+    "horarios_atendimento": "09:00-12:00, 14:00-18:00",
+    "datas_especificas": {
+      "2025": {
+        "01": {
+          "mes_nome": "Janeiro",
+          "dias_selecionados": [6, 11, 12, 13, 18, 19, 20, 25, 26, 27],
+          "dias_bloqueados": [1]
+        },
+        "02": {
+          "mes_nome": "Fevereiro",
+          "dias_selecionados": [1, 2, 3, 8, 9, 10, 15, 16, 17, 22, 23, 24],
+          "dias_bloqueados": []
+        },
+        "03": {
+          "mes_nome": "Março",
+          "dias_selecionados": [1, 2, 3, 8, 9, 10, 15, 16, 17, 22, 23, 24, 29, 30, 31],
+          "dias_bloqueados": []
+        },
+        "04": {
+          "mes_nome": "Abril",
+          "dias_selecionados": [5, 6, 7, 12, 13, 14, 19, 20, 21, 26, 27, 28],
+          "dias_bloqueados": [21]
+        },
+        "05": {
+          "mes_nome": "Maio",
+          "dias_selecionados": [3, 4, 5, 10, 11, 12, 17, 18, 19, 24, 25, 26, 31],
+          "dias_bloqueados": [1]
+        },
+        "06": {
+          "mes_nome": "Junho",
+          "dias_selecionados": [1, 2, 7, 8, 9, 14, 15, 16, 21, 22, 23, 28, 29, 30],
+          "dias_bloqueados": []
+        },
+        "07": {
+          "mes_nome": "Julho",
+          "dias_selecionados": [5, 6, 7, 12, 13, 14, 19, 20, 21, 26, 27, 28],
+          "dias_bloqueados": []
+        },
+        "08": {
+          "mes_nome": "Agosto",
+          "dias_selecionados": [2, 3, 4, 9, 10, 11, 16, 17, 18, 23, 24, 25, 30, 31],
+          "dias_bloqueados": []
+        },
+        "09": {
+          "mes_nome": "Setembro",
+          "dias_selecionados": [1, 6, 7, 8, 13, 14, 15, 20, 21, 22, 27, 28, 29],
+          "dias_bloqueados": [7]
+        },
+        "10": {
+          "mes_nome": "Outubro",
+          "dias_selecionados": [10, 13, 16],
+          "dias_bloqueados": [12]
+        },
+        "11": {
+          "mes_nome": "Novembro",
+          "dias_selecionados": [1, 2, 3, 8, 9, 10, 15, 16, 17, 22, 23, 24, 29, 30],
+          "dias_bloqueados": [2, 15]
+        },
+        "12": {
+          "mes_nome": "Dezembro",
+          "dias_selecionados": [1, 6, 7, 8, 13, 14, 15, 20, 21, 22, 27, 28, 29],
+          "dias_bloqueados": [25]
+        }
+      }
+    }
+  },
+  "informacoes_profissionais": {
+    "descricao_profissional": "IYÇJL",
+    "especialidade_principal": "GUOB-JL"
+  },
+  "metadata_sistema": {
+    "sistema": "PSYCARE",
+    "versao_dados": "2025_completo"
+  }
+}
+
