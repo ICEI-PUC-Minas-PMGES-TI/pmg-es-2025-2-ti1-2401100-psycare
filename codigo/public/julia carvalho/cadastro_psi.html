@@ -3,122 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PSYCARE - Colaborador</title>
+    <title>Cadastro de Psicólogo - PsyCare</title>
     <link rel="stylesheet" href="style_cdPsi.css">
-    </head>
+</head>
 <body>
-<header class="navbar">
-        <div class="logo">
-            <img src="img/logo.png" alt="Logo PSYCARE" class="logo-img">
-        </div>
-        <nav class="nav-links">
-            <a href="#">Início</a>
-            <a href="#">Especialista</a>
-            <a href="#">Conteúdo de Apoio</a>
-        </nav>
-        <button class="login-button">Login</button>
+    <header>
+        <h1>Cadastro de Psicólogo</h1>
+        <p>Preencha os dados abaixo para iniciar seu cadastro.</p>
     </header>
 
-    <main class="content">
-        <div class="form-container">
-            <h1 class="form-title">Colaborador</h1>
-            <form id="colaborador-form">
-                
-                <div class="form-group">
-                    <label for="nome">Nome completo: *</label>
-                    <input type="text" id="nome" name="nome" required>
-                </div>
-                <div class="form-group">
-                    <label for="crp">CRP (Registro Profissional): *</label>
-                    <input type="text" id="crp" name="crp" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">E-mail: *</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="telefone">Telefone: *</label>
-                    <input type="tel" id="telefone" name="telefone" required placeholder="(XX) XXXXX-XXXX">
-                </div>
-                <div class="form-group">
-                    <label for="dataNascimento">Data de Nascimento: *</label>
-                    <input type="date" id="dataNascimento" name="dataNascimento" required>
-                </div>
-                <div class="form-group">
-                    <label for="genero">Gênero: *</label>
-                    <select id="genero" name="genero" required>
-                        <option value="">Selecione</option>
-                        <option value="Feminino">Feminino</option>
-                        <option value="Masculino">Masculino</option>
-                        <option value="Outro">Outro</option>
-                    </select>
-                </div>
+    <main>
+        <form id="colaborador-form">
+            <label for="nome">Nome Completo *</label>
+            <input type="text" id="nome" name="nome" required>
 
-                <div class="form-group">
-                    <label for="usuario">Usuário (Login): *</label>
-                    <input type="text" id="usuario" name="usuario" required>
-                </div>
-                <div class="form-group">
-                    <label for="senha">Senha: *</label>
-                    <input type="password" id="senha" name="senha" required>
-                </div>
-                <div class="form-group">
-                    <label for="confirma-senha">Confirme sua senha: *</label>
-                    <input type="password" id="confirma-senha" name="confirma-senha" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="formacao">Formação Principal (Ex: Psicologia - USP): *</label>
-                    <input type="text" id="formacao" name="formacao" required>
-                </div>
-                <div class="form-group">
-                    <label for="tempoExperiencia">Tempo de Experiência (Anos): *</label>
-                    <input type="number" id="tempoExperiencia" name="tempoExperiencia" min="0" required>
-                </div>
-                 <div class="form-group">
-                    <label for="modalidadeAtendimento">Modalidade de Atendimento: *</label>
-                    <select id="modalidadeAtendimento" name="modalidadeAtendimento" required>
-                        <option value="">Selecione</option>
-                        <option value="Remoto">Remoto (Online)</option>
-                        <option value="Presencial">Presencial</option>
-                        <option value="Hibrido">Híbrido</option>
-                    </select>
-                </div>
+            <label for="crp">CRP *</label>
+            <input type="text" id="crp" name="crp" required>
 
-                <button type="submit" class="next-button">Próximo</button>
-                
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required>
 
-            </form>
-        </div>
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone">
+
+            <label for="dataNascimento">Data de Nascimento</label>
+            <input type="date" id="dataNascimento" name="dataNascimento">
+
+            <label for="genero">Gênero</label>
+            <select id="genero" name="genero">
+                <option value="">Selecione</option>
+                <option value="Masculino">Masculino</option>
+                <option value="Feminino">Feminino</option>
+                <option value="Outro">Outro</option>
+            </select>
+
+            <label for="estado">Estado *</label>
+            <select id="estado" name="estado" required>
+                <option value="">Selecione um estado</option>
+                <option value="AC">Acre (AC)</option>
+                <option value="AL">Alagoas (AL)</option>
+                <option value="AP">Amapá (AP)</option>
+                <option value="AM">Amazonas (AM)</option>
+                <option value="BA">Bahia (BA)</option>
+                <option value="CE">Ceará (CE)</option>
+                <option value="DF">Distrito Federal (DF)</option>
+                <option value="ES">Espírito Santo (ES)</option>
+                <option value="GO">Goiás (GO)</option>
+                <option value="MA">Maranhão (MA)</option>
+                <option value="MT">Mato Grosso (MT)</option>
+                <option value="MS">Mato Grosso do Sul (MS)</option>
+                <option value="MG">Minas Gerais (MG)</option>
+                <option value="PA">Pará (PA)</option>
+                <option value="PB">Paraíba (PB)</option>
+                <option value="PR">Paraná (PR)</option>
+                <option value="PE">Pernambuco (PE)</option>
+                <option value="PI">Piauí (PI)</option>
+                <option value="RJ">Rio de Janeiro (RJ)</option>
+                <option value="RN">Rio Grande do Norte (RN)</option>
+                <option value="RS">Rio Grande do Sul (RS)</option>
+                <option value="RO">Rondônia (RO)</option>
+                <option value="RR">Roraima (RR)</option>
+                <option value="SC">Santa Catarina (SC)</option>
+                <option value="SP">São Paulo (SP)</option>
+                <option value="SE">Sergipe (SE)</option>
+                <option value="TO">Tocantins (TO)</option>
+            </select>
+
+            <label for="formacao">Formação *</label>
+            <input type="text" id="formacao" name="formacao" required>
+
+            <label for="tempoExperiencia">Tempo de Experiência (anos)</label>
+            <input type="number" id="tempoExperiencia" name="tempoExperiencia" min="0">
+
+            <label for="modalidadeAtendimento">Modalidade de Atendimento *</label>
+            <select id="modalidadeAtendimento" name="modalidadeAtendimento" required>
+                <option value="">Selecione</option>
+                <option value="Presencial">Presencial</option>
+                <option value="Remoto">Remoto</option>
+                <option value="Hibrido">Híbrido</option>
+            </select>
+
+            <label for="usuario">Usuário *</label>
+            <input type="text" id="usuario" name="usuario" required>
+
+            <label for="senha">Senha *</label>
+            <input type="password" id="senha" name="senha" required>
+
+            <label for="confirma-senha">Confirme a Senha *</label>
+            <input type="password" id="confirma-senha" name="confirma-senha" required>
+
+            <button type="submit">Cadastrar</button>
+        </form>
     </main>
 
-   ...
-    <footer class="footer">
-        <div class="footer-section ola-mundo">
-           <div class="logo">
-            <img src="img/logo.png" alt="Logo PSYCARE" class="logo-img">
-        </div>
-            <p>Cuidar Da Mente Nunca Foi Tão Fácil</p>
-            <div class="social-icons">
-                <span>&#9654;</span> <span>&#9638;</span> <span>&#9993;</span> 
-            </div>
-        </div>
-        <div class="footer-section endereco">
-            <p>Endereço</p>
-            <p>Dom José Gaspar, 500,</p>
-            <p>Belo Horizonte-MH, Brasil</p>
-        </div>
-        <div class="footer-section contato">
-            <p>Contato</p>
-            <p>(31) 3319-4444</p>
-            <p>sac.com.br</p>
-        </div>
-        <div class="footer-section links">
-            <p>Links</p>
-            <a href="#">Início</a>
-            <a href="#">Especialista</a>
-            <a href="#">Conteúdo de Apoio</a>
-        </div>
+    <footer>
+        <p>&copy; 2025 PsyCare. Todos os direitos reservados.</p>
     </footer>
 
     <script src="cadastro_psi.js"></script>

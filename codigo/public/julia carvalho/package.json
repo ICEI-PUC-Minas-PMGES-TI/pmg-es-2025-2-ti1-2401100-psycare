@@ -1,0 +1,12 @@
+{
+  "name": "psycare-psicologos",
+  "version": "1.0.0",
+  "description": "Banco de dados de psicólogos para PsyCare",
+  "main": "index.js",
+  "scripts": {
+    "start": "json-server --watch db.json --port 3001"
+  },
+  "dependencies": {
+    "json-server": "^0.17.4"
+  }
+}
