@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>PSYCARE - Especialistas</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especificação de Especialistas - PsyCare</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
   <header>
     <img alt="PSYCARE" id="logo" />
@@ -19,123 +16,51 @@
     </nav>
     <button>Login</button>
   </header>
+    <header>
+        <h1>Especificação de Especialistas</h1>
+        <p>Selecione um estado para filtrar psicólogos disponíveis.</p>
+    </header>
 
-  <main>
-    <div class="top-section">
-      <h2>Especialista em Minas Gerais</h2>
-    </div>
-    <div class="cards-wrapper" id="cardsWrapper">
-    </div>
-  </main>
+    <main>
+        <label for="filtro-estado">Filtrar por Estado:</label>
+        <select id="filtro-estado">
+            <option value="todos">Todos</option>
+            <option value="AC">Acre (AC)</option>
+            <option value="AL">Alagoas (AL)</option>
+            <option value="AP">Amapá (AP)</option>
+            <option value="AM">Amazonas (AM)</option>
+            <option value="BA">Bahia (BA)</option>
+            <option value="CE">Ceará (CE)</option>
+            <option value="DF">Distrito Federal (DF)</option>
+            <option value="ES">Espírito Santo (ES)</option>
+            <option value="GO">Goiás (GO)</option>
+            <option value="MA">Maranhão (MA)</option>
+            <option value="MT">Mato Grosso (MT)</option>
+            <option value="MS">Mato Grosso do Sul (MS)</option>
+            <option value="MG">Minas Gerais (MG)</option>
+            <option value="PA">Pará (PA)</option>
+            <option value="PB">Paraíba (PB)</option>
+            <option value="PR">Paraná (PR)</option>
+            <option value="PE">Pernambuco (PE)</option>
+            <option value="PI">Piauí (PI)</option>
+            <option value="RJ">Rio de Janeiro (RJ)</option>
+            <option value="RN">Rio Grande do Norte (RN)</option>
+            <option value="RS">Rio Grande do Sul (RS)</option>
+            <option value="RO">Rondônia (RO)</option>
+            <option value="RR">Roraima (RR)</option>
+            <option value="SC">Santa Catarina (SC)</option>
+            <option value="SP">São Paulo (SP)</option>
+            <option value="SE">Sergipe (SE)</option>
+            <option value="TO">Tocantins (TO)</option>
+        </select>
+        <div id="lista-psicologos">
+        </div>
+    </main>
 
-  <script>
-    const especialistas = [
-      {
-        id: 1,
-        nome: "Dra. Mariana Castro",
-        cargo: "Psicóloga",
-        estado: "Minas Gerais",
-        descricao: "Psicóloga clínica especializada em TCC para ansiedade e depressão.",
-        imagem: "imgs/drmariana.jpg",
-        especialidades: ["Psicologia", "TCC", "Ansiedade", "Depressão"],
-      },
-      {
-        id: 2,
-        nome: "Dr. Ricardo Nunes",
-        cargo: "Psiquiatra",
-        estado: "Minas Gerais",
-        descricao: "Psiquiatra com foco em transtornos do humor e saúde mental.",
-        imagem: "imgs/drricardo.jpg",
-        especialidades: ["Psiquiatria", "Transtornos do Humor", "Saúde Mental"],
-      },
-      {
-        id: 3,
-        nome: "Dra. Juliana Prado",
-        cargo: "Psicóloga infantil",
-        estado: "Minas Gerais",
-        descricao: "Psicóloga infantil, atua com crianças e lidar com emoções.",
-        imagem: "imgs/drjuliana.jpg",
-        especialidades: ["Psicologia", "Infantil", "Emoções"],
-      },
-      {
-        id: 4,
-        nome: "Dr. Felipe Andrade",
-        cargo: "Terapeuta",
-        estado: "Minas Gerais",
-        descricao: "Terapeuta familiar, atua em mediação de conflitos e relações saudáveis.",
-        imagem: "imgs/drfelipe.jpg",
-        especialidades: ["Terapia Familiar", "Mediação", "Relações Saudáveis"],
-      },
-      {
-        id: 5,
-        nome: "Dra. Camila Torres",
-        cargo: "Psicóloga clínica",
-        estado: "Minas Gerais",
-        descricao: "Psicóloga clínica, atendimento de jovens adultos em crise de identidade.",
-        imagem: "imgs/drcamila.jpg",
-        especialidades: ["Psicologia", "Jovens Adultos", "Crise de Identidade"],
-      },
-      {
-        id: 6,
-        nome: "Dr. Bruno Martins",
-        cargo: "Consultor",
-        estado: "Minas Gerais",
-        descricao: "Consultor para adultas e MT, orientação pessoal e profissional.",
-        imagem: "imgs/drbruno.jpg",
-        especialidades: ["Consultoria", "Orientação Pessoal", "Profissional"],
-      }
-    ];
+    <footer>
+        <p>&copy; 2025 PsyCare. Todos os direitos reservados.</p>
+    </footer>
 
-    const cardsWrapper = document.getElementById("cardsWrapper");
-
-    function createCard(especialista) {
-      const card = document.createElement("div");
-      card.className = "card-psicologo";
-
-      const img = document.createElement("img");
-      img.src = especialista.imagem;
-      img.alt = `Foto de ${especialista.nome}`;
-      card.appendChild(img);
-
-      const tagCargo = document.createElement("div");
-      tagCargo.className = "tags";
-      tagCargo.textContent = especialista.cargo;
-      card.appendChild(tagCargo);
-
-      const tagEstado = document.createElement("div");
-      tagEstado.className = "tags";
-      tagEstado.textContent = especialista.estado;
-      card.appendChild(tagEstado);
-
-      const nome = document.createElement("h3");
-      nome.textContent = especialista.nome;
-      card.appendChild(nome);
-
-      const desc = document.createElement("p");
-      desc.className = "description";
-      desc.textContent = especialista.descricao;
-      card.appendChild(desc);
-
-      const btn = document.createElement("button");
-      btn.className = "btn-agendarconsulta";
-      btn.textContent = "Agendar Consulta";
-      btn.setAttribute("aria-label", `Agendar consulta com ${especialista.nome}`);
-      card.appendChild(btn);
-
-      return card;
-    }
-
-    function renderAll() {
-      cardsWrapper.innerHTML = "";
-      especialistas.forEach(e => {
-        cardsWrapper.appendChild(createCard(e));
-      });
-    }
-
-    window.onload = () => {
-      renderAll();
-    };
-  </script>
+    <script src="especificacao.js"></script>
 </body>
-
 </html>
