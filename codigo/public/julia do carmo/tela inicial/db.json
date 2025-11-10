@@ -1,0 +1,16 @@
+[
+  {
+    "img": "imgs/dranapaula.png",
+    "cargo": "Psicóloga",
+    "estado": "Minas Gerais",
+    "nome": "Dr. Ana Paula",
+    "descricao": "Psicóloga clínica, atendimento de jovens adultos em crise de identidade."
+  },
+  {
+    "img": "imgs/drmariasantos.jpg",
+    "cargo": "Terapeuta",
+    "estado": "São Paulo",
+    "nome": "Dr. Maria Santos Lima",
+    "descricao": "Terapeuta familiar, atua em mediação de conflitos e relações saudáveis."
+  }
+]
