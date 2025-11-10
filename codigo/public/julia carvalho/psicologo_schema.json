@@ -1,38 +1,31 @@
 {
-  "descricao": "Esquema da estrutura de dados para o objeto 'psicologo'. Este é um arquivo de modelo, os dados reais são salvos no localStorage pelo JavaScript.",
-  "estrutura": {
-    "psicologo": {
-      "id": "number",
-      "nome": "string",
-      "crp": "string",
-      "email": "string",
-      "telefone": "string",
-      "dataNascimento": "string (YYYY-MM-DD)",
-      "genero": "string",
-      "formacao": "string",
-      "tempoExperiencia": "number (anos)",
-      "modalidadeAtendimento": "string (online/presencial/ambos)",
-      
-      "descricaoProfissional": "string",
-      "especialidade": "string",
-      
-      "disponibilidade": {
-        "dias": [
-          "string (ex: Segunda, Terca)"
-        ],
-        "horarios": [
-          "string (ex: 09:00-12:00)"
-        ]
-      },
-      
-      "datasEspecificas": [
-        "string (ex: 2025-01-13) - Opcional, do calendário visual"
-      ],
-      
-      "usuario": "string",
-      "senha": "string (hash simulado)",
-      "dataCadastro": "string (ISO 8601)",
-      "status": "string (pendente/ativo)"
-    }
-  }
+  "type": "object",
+  "properties": {
+    "id": { "type": "integer" },
+    "nome": { "type": "string" },
+    "crp": { "type": "string" },
+    "email": { "type": "string", "format": "email" },
+    "telefone": { "type": "string" },
+    "dataNascimento": { "type": "string", "format": "date" },
+    "genero": { "type": "string", "enum": ["Masculino", "Feminino", "Outro"] },
+    "estado": { "type": "string", "enum": ["AC", "AL", "AP", "AM", "BA", "CE", "DF", "ES", "GO", "MA", "MT", "MS", "MG", "PA", "PB", "PR", "PE", "PI", "RJ", "RN", "RS", "RO", "RR", "SC", "SP", "SE", "TO"] },
+    "formacao": { "type": "string" },
+    "tempoExperiencia": { "type": "integer" },
+    "modalidadeAtendimento": { "type": "string", "enum": ["Presencial", "Remoto", "Hibrido"] },
+    "descricaoProfissional": { "type": "string" },
+    "especialidade": { "type": "string" },
+    "disponibilidade": {
+      "type": "object",
+      "properties": {
+        "dias": { "type": "array", "items": { "type": "string" } },
+        "horarios": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "datasEspecificas": { "type": "array", "items": { "type": "string", "format": "date" } },
+    "usuario": { "type": "string" },
+    "senha": { "type": "string" },
+    "dataCadastro": { "type": "string", "format": "date-time" },
+    "status": { "type": "string", "enum": ["ativo", "pendente"] }
+  },
+  "required": ["nome", "crp", "email", "estado", "formacao", "modalidadeAtendimento", "usuario", "senha"]
 }
