@@ -1,246 +1,241 @@
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
-
 body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #fcfdff;
-  color: #1a284e;
-  line-height: 1.4;
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f8fc;
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-header {
+/* Header */
+.header {
   background: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 18px 36px;
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgb(0 0 0 / 0.1);
   position: sticky;
   top: 0;
   z-index: 100;
 }
-
-header img#logo {
-  height: 32px;
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+.logo {
   font-weight: 700;
-  color: #0056d2;
-  cursor: pointer;
+  font-size: 1.8rem;
+  color: #2f80ed;
+  letter-spacing: 2px;
 }
-
-nav a {
-  margin: 0 20px;
+.nav-menu a {
+  margin: 0 15px;
   text-decoration: none;
+  color: #555;
   font-weight: 600;
-  font-size: 16px;
-  color: #162255;
-  transition: color 0.3s ease;
+  padding: 8px 5px;
+  border-radius: 6px;
+  transition: background-color 0.3s;
 }
-
-nav a.active,
-nav a:hover {
-  color: #5676f9;
+.nav-menu a:hover,
+.nav-menu a.active {
+  background-color: #2f80ed;
+  color: #fff;
 }
-
-header button {
-  background-color: #5676f9;
+.btn-login {
+  background-color: #2f80ed;
   border: none;
+  padding: 8px 20px;
   color: white;
   font-weight: 600;
-  padding: 8px 22px;
-  border-radius: 30px;
+  border-radius: 40px;
   cursor: pointer;
-  font-size: 15px;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.25s ease;
+}
+.btn-login:hover {
+  background-color: #1565c0;
 }
 
-header button:hover {
-  background-color: #3c58d9;
+/* Main content */
+.main-content {
+  padding: 40px 0;
 }
-
-main {
-  max-width: 1100px;
-  margin: 50px auto 80px;
-  padding: 0 24px;
-}
-
-.top-section {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+.main-content h2 {
+  font-size: 2rem;
+  font-weight: 700;
   margin-bottom: 25px;
+  color: #222;
+}
+
+/* Filter */
+.filter-container {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
   gap: 15px;
 }
-
-.top-section h2 {
-  font-weight: 700;
-  font-size: 24px;
-  color: #1a284e;
-}
-
-.filter-state {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+.filter-container label {
   font-weight: 600;
-  color: #2f3d73;
-  user-select: none;
+  font-size: 1.1rem;
 }
-
-.filter-state label {
-  font-size: 16px;
-}
-
-.filter-state select {
-  padding: 6px 14px;
-  font-size: 14px;
+.filter-container select {
+  padding: 8px 12px;
+  font-size: 1rem;
   border-radius: 8px;
-  border: 2px solid #a0afef;
-  cursor: pointer;
-  outline: none;
-  transition: border-color 0.3s ease;
-  background-color: #f5f7ff;
-  color: #1a284e;
+  border: 1px solid #bbb;
+  min-width: 180px;
 }
 
-.filter-state select:focus {
-  border-color: #5676f9;
-  box-shadow: 0 0 8px #a0b6ff50;
+/* Grid dos cards */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
+  gap: 30px;
 }
 
-.cards-carousel {
-  overflow: hidden;
-}
-
-.cards-wrapper {
-  display: flex;
-  gap: 28px;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-}
-
-.card-psicologo {
-  background: white;
-  border-radius: 22px;
-  width: 320px;
-  padding: 25px 28px 30px;
-  box-shadow: 0px 7px 15px -5px rgba(45, 79, 238, 0.18);
+/* Cards */
+.psicologo-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(47, 128, 237, 0.15);
+  padding: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: transform 0.2s ease;
+  text-align: center;
+  transition: transform 0.3s ease;
 }
-
-.card-psicologo:hover {
+.psicologo-card:hover {
   transform: translateY(-8px);
 }
 
-.card-psicologo img {
-  width: 124px;
-  height: 124px;
-  border-radius: 50%;
+/* Imagem do psicólogo */
+.psicologo-card img {
+  width: 100%;
+  max-width: 260px;
+  border-radius: 12px;
   object-fit: cover;
-  border: 3px solid #8ea6ff;
-  margin-bottom: 18px;
+  margin-bottom: 15px;
+  aspect-ratio: 4/3;
+}
+
+/* Nome */
+.psicologo-card h3 {
+  margin-bottom: 12px;
+  font-weight: 700;
+  color: #2f80ed;
+  font-size: 1.4rem;
+}
+
+/* Tags de especialidade */
+.tags-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 15px;
+}
+.tag {
+  background-color: #edf2ff;
+  color: #2f80ed;
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 4px 12px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+/* Descrição */
+.psicologo-card p.descricao {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 20px;
+  min-height: 56px; /* altura consistente */
+}
+
+/* Botão */
+.btn-agendar {
+  background-color: #2f80ed;
+  border: none;
+  outline: none;
+  padding: 12px 28px;
+  border-radius: 50px;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0px 12px 12px -10px rgba(47, 128, 237, 0.4);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 260px;
+}
+.btn-agendar:hover {
+  background-color: #1565c0;
+  box-shadow: 0px 16px 20px -12px rgba(21, 101, 192, 0.5);
+}
+
+/* Footer */
+.footer {
+  background-color: #222;
+  color: #eee;
+  padding: 20px 0;
+  text-align: center;
+  margin-top: auto;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+  .filter-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.tags-container {
+  display: flex;
+  justify-content: center;
+  margin: 5px 0 10px 0;
+  gap: 8px;
 }
 
 .tags {
-  font-size: 12px;
-  font-weight: 700;
-  background-color: #eca1ff;
+  background-color: #9ac7ff;
   color: white;
-  padding: 5px 14px;
-  border-radius: 25px;
+  font-weight: 600;
+  font-size: 12px;
+  padding: 6px 20px;
+  border-radius: 50px;
+  white-space: nowrap;
   display: inline-block;
-  margin: 0 6px 12px 6px;
-  user-select: none;
-  min-width: 80px;
-  text-align: center;
-  text-transform: capitalize;
-}
-
-.card-psicologo .tags:nth-child(3) {
-  background-color: #8ea6ff;
-}
-
-.card-psicologo h3 {
-  font-weight: 700;
-  font-size: 18px;
-  text-align: center;
-  color: #2f3d73;
-  margin-bottom: 12px;
-}
-
-.description {
-  font-size: 14px;
-  color: #616a8b;
-  text-align: center;
-  min-height: 65px;
-  margin-bottom: 22px;
-  line-height: 1.2;
 }
 
 .btn-agendarconsulta {
-  background-color: #5676f9;
-  border: none;
+  background: linear-gradient(135deg, #4a90e2, #6c63ff);
   color: white;
-  font-weight: 600;
-  padding: 14px 0;
+  font-size: 14px;
+  padding: 12px 0;
   width: 100%;
-  border-radius: 40px;
-  cursor: pointer;
-  font-size: 15px;
-  transition: background-color 0.3s ease;
-  user-select: none;
-  box-shadow: 0 4px 18px -4px rgba(79, 61, 178, 0.5);
-}
-
-.btn-agendarconsulta:hover,
-.btn-agendarconsulta:focus {
-  background-color: #2f4fe7;
-  outline: none;
-}
-
-.carousel-controls {
-  margin-top: 24px;
-  display: flex;
-  justify-content: center;
-  gap: 34px;
-}
-
-.carousel-button {
-  background-color: transparent;
+  max-width: 300px; /* Garantir largura igual aos cards */
   border: none;
+  border-radius: 50px;
   cursor: pointer;
-  font-size: 28px;
-  color: #5676f9;
-  user-select: none;
-  transition: color 0.3s ease;
+  font-weight: 600;
+  margin-top: 40px;
+  box-shadow: 0 8px 15px rgba(74,144,226,0.4);
+  transition: background 0.25s ease;
+  display: block;
+  text-align: center;
 }
-
-.carousel-button:disabled {
-  color: #c4c4c4;
-  cursor: not-allowed;
-}
-
-.carousel-button:hover:not(:disabled),
-.carousel-button:focus:not(:disabled) {
-  color: #2f4fe7;
-  outline: none;
-}
-
-/* Responsivo */
-@media (max-width: 1024px) {
-  .cards-wrapper {
-    justify-content: center;
-  }
-}
-
-@media (max-width: 380px) {
-  .card-psicologo {
-    width: 90vw;
-  }
+.btn-agendarconsulta:hover {
+  background: linear-gradient(135deg, #356ecf, #514dd9);
+  box-shadow: 0 10px 20px rgba(53,110,207,0.5);
 }

@@ -1,61 +1,75 @@
-const API_URL = 'http://localhost:3001/especialistas';
+const API_URL = 'http://localhost:3001/psicologos';
 
 let psicologos = [];
 
+const imagens = {
+};
+
 async function carregarPsicologos() {
-    try {
-        const response = await fetch(API_URL);
-        if (!response.ok) throw new Error(`Erro na API: ${response.status}`);
-        psicologos = await response.json();
-        aplicarFiltro();
-    } catch (error) {
-        console.error("Erro ao carregar psicólogos:", error);
-        document.getElementById('lista-psicologos').innerHTML = '<p>Erro ao carregar dados. Verifique se o JSON Server está rodando na porta 3001.</p>';
-    }
+  try {
+    const response = await fetch(API_URL);
+    if (!response.ok) throw new Error(`Erro na API: ${response.status}`);
+    psicologos = await response.json();
+    aplicarFiltro();
+  } catch (err) {
+    console.error(err);
+    document.getElementById('lista-psicologos').innerHTML =
+      '<p>Erro ao carregar dados. Verifique o servidor.</p>';
+  }
 }
 
 function aplicarFiltro() {
-    const filtro = document.getElementById('filtro-estado').value;
-    let filtrados = psicologos;
+  const filtro = document.getElementById('filtro-estado').value;
+  let filtrados = psicologos;
 
-    if (filtro !== 'todos') {
-        filtrados = psicologos.filter(psicologo => psicologo.estado === filtro);
-    }
+  if (filtro !== 'todos') {
+    filtrados = psicologos.filter((p) => p.estado === filtro);
+  }
 
-    renderizarLista(filtrados);
+  renderizarLista(filtrados);
 }
 
 function renderizarLista(lista) {
-    const container = document.getElementById('lista-psicologos');
-    container.innerHTML = '';
+  const container = document.getElementById('lista-psicologos');
+  container.innerHTML = '';
 
-    if (lista.length === 0) {
-        container.innerHTML = '<p>Nenhum psicólogo encontrado para o filtro selecionado.</p>';
-        return;
-    }
+  if (lista.length === 0) {
+    container.innerHTML = '<p>Nenhum psicólogo encontrado para o filtro selecionado.</p>';
+    return;
+  }
 
-    lista.forEach(psicologo => {
-        const item = document.createElement('div');
-        item.className = 'psicologo-item';
-        item.innerHTML = `
-            <h3>${psicologo.nome}</h3>
-            <p><strong>CRP:</strong> ${psicologo.crp}</p>
-            <p><strong>Email:</strong> ${psicologo.email}</p>
-            <p><strong>Telefone:</strong> ${psicologo.telefone}</p>
-            <p><strong>Estado:</strong> ${psicologo.estado}</p>
-            <p><strong>Formação:</strong> ${psicologo.formacao}</p>
-            <p><strong>Tempo de Experiência:</strong> ${psicologo.tempoExperiencia} anos</p>
-            <p><strong>Modalidade:</strong> ${psicologo.modalidadeAtendimento}</p>
-            <p><strong>Status:</strong> ${psicologo.status}</p>
-            <p><strong>Especialidade:</strong> ${psicologo.especialidade || 'Não informado'}</p>
-            <p><strong>Descrição:</strong> ${psicologo.descricaoProfissional || 'Não informado'}</p>
-        `;
-        container.appendChild(item);
-    });
+  lista.forEach((psicologo) => {
+    const card = document.createElement('article');
+    card.className = 'psicologo-card';
+
+    // Definir imagem — usar a do map ou fallback genérico
+    const imgSrc = imagens[psicologo.nome] || 'https://via.placeholder.com/400x300?text=Imagem+Não+Disponível';
+
+    // Obter especialidades em array (se tiver; aqui simulo com especialidade e modalidade)
+    let tags = [];
+    if (psicologo.especialidade) tags.push(psicologo.especialidade);
+    if (psicologo.modalidadeAtendimento) tags.push(psicologo.modalidadeAtendimento);
+
+    card.innerHTML = `
+    <img src="${imgSrc}" alt="Foto de ${psicologo.nome}">
+    <h3>${psicologo.nome}</h3>
+    <div class="tags-container"> 
+        <span class="tags">${psicologo.especialidade || ''}</span>
+    </div>
+    <div class="tags-container">
+        <span class="tags">${psicologo.modalidadeAtendimento || ''}</span>
+    </div>
+    <p>${psicologo.descricaoProfissional || 'Sem descrição disponível.'}</p>
+    <button class="btn-agendarconsulta">Agendar Consulta</button>
+    `;
+
+
+    container.appendChild(card);
+  });
 }
 
 document.addEventListener('DOMContentLoaded', () => {
+  carregarPsicologos();
 
-    carregarPsicologos();
-    document.getElementById('filtro-estado').addEventListener('change', aplicarFiltro);
+  document.getElementById('filtro-estado').addEventListener('change', aplicarFiltro);
 });
