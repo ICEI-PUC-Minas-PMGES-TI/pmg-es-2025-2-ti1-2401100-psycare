@@ -8,12 +8,14 @@
     --highlight-green: #4CAF50;
 }
 
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
+
 
 body {
     background-color: #fff;
@@ -22,6 +24,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
+
 
 .navbar {
     display: flex;
@@ -34,11 +37,15 @@ body {
 
 
 
+
+
+
 .logo-img {
     height: 30px;
     width: auto;
     display: block;
 }
+
 
 .nav-links a {
     text-decoration: none;
@@ -47,9 +54,11 @@ body {
     font-size: 16px;
 }
 
+
 .nav-links a:hover {
     color: var(--primary-blue);
 }
+
 
 .login-button {
     background-color: var(--primary-blue);
@@ -62,9 +71,11 @@ body {
     transition: background-color 0.3s;
 }
 
+
 .login-button:hover {
     background-color: #0056b3;
 }
+
 
 .content {
     flex-grow: 1;
@@ -72,6 +83,7 @@ body {
     justify-content: center;
     padding: 50px 20px;
 }
+
 
 .form-container {
     width: 100%;
@@ -81,6 +93,7 @@ body {
     border-radius: 10px;
 }
 
+
 .form-title {
     text-align: center;
     margin-bottom: 40px;
@@ -88,9 +101,11 @@ body {
     font-weight: normal;
 }
 
+
 .form-group {
     margin-bottom: 25px;
 }
+
 
 .form-group label,
 .section-label {
@@ -100,6 +115,7 @@ body {
     color: var(--text-dark);
     font-weight: bold;
 }
+
 
 .form-group input:not([type="checkbox"]),
 .form-group select,
@@ -115,12 +131,14 @@ body {
     background-color: var(--card-background);
 }
 
+
 .right-column textarea,
 .left-column #horarios-disponiveis {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.03);
     resize: vertical;
 }
+
 
 .form-group select {
     appearance: none;
@@ -130,6 +148,7 @@ body {
     padding-right: 35px;
 }
 
+
 .form-group input:focus,
 .form-group select:focus,
 .right-column textarea:focus,
@@ -137,6 +156,7 @@ body {
     border-color: var(--primary-blue);
     box-shadow: 0 0 0 1px var(--primary-blue);
 }
+
 
 .content-disponibilidade {
     flex-grow: 1;
@@ -146,6 +166,7 @@ body {
     width: 100%;
 }
 
+
 .grid-container {
     display: flex;
     gap: 40px;
@@ -153,15 +174,18 @@ body {
     max-width: 1200px;
 }
 
+
 .left-column {
     flex: 2;
     min-width: 400px;
 }
 
+
 .right-column {
     flex: 1.5;
     min-width: 300px;
 }
+
 
 .calendar-card {
     background-color: var(--card-background);
@@ -171,12 +195,14 @@ body {
     border: 1px solid var(--border-color);
 }
 
+
 .dias-checkboxes {
     display: flex;
     flex-wrap: wrap;
     gap: 10px 20px;
     margin-bottom: 20px;
 }
+
 
 .dias-checkboxes label {
     display: flex;
@@ -187,6 +213,7 @@ body {
     padding: 5px 0;
 }
 
+
 .dias-checkboxes input[type="checkbox"] {
     margin-right: 8px;
     width: 18px;
@@ -195,12 +222,14 @@ body {
     accent-color: var(--primary-blue);
 }
 
+
 .calendar-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
 }
+
 
 .month-selector {
     display: flex;
@@ -210,6 +239,7 @@ body {
     color: var(--text-dark);
 }
 
+
 .nav-arrow {
     cursor: pointer;
     font-size: 24px;
@@ -218,11 +248,13 @@ body {
     user-select: none;
 }
 
+
 .view-toggle {
     display: flex;
     border: 1px solid var(--primary-blue);
     border-radius: 5px;
 }
+
 
 .btn-toggle {
     background-color: white;
@@ -233,10 +265,12 @@ body {
     font-size: 14px;
 }
 
+
 .btn-toggle.active {
     background-color: var(--primary-blue);
     color: white;
 }
+
 
 .calendar-grid {
     display: grid;
@@ -246,12 +280,14 @@ body {
     margin-top: 20px;
 }
 
+
 .day-name {
     font-weight: bold;
     color: var(--text-light);
     padding: 10px 0;
     font-size: 12px;
 }
+
 
 .day {
     padding: 10px 0;
@@ -264,9 +300,11 @@ body {
     border: 1px solid transparent;
 }
 
+
 .day:hover:not(.faded) {
     background-color: #f0f0f0;
 }
+
 
 .day.faded {
     color: #ccc;
@@ -274,11 +312,13 @@ body {
     background-color: #f9f9f9;
 }
 
+
 .day.available {
     border: 1px solid var(--highlight-green);
     color: var(--highlight-green);
     font-weight: bold;
 }
+
 
 .day.selected-date {
     border: 1px solid var(--primary-blue);
@@ -287,11 +327,13 @@ body {
     font-weight: bold;
 }
 
+
 .next-button-container {
     text-align: center;
     margin-top: 40px;
     width: 100%;
 }
+
 
 .next-button {
     width: 100%;
@@ -310,9 +352,11 @@ body {
     text-decoration: none;
 }
 
+
 .next-button:hover {
     background-color: #0056b3;
 }
+
 
 .footer {
     background-color: var(--card-background);
@@ -326,13 +370,16 @@ body {
     color: var(--text-light);
 }
 
+
 .footer-section {
     min-width: 150px;
 }
 
+
 .footer-section p {
     margin-top: 5px;
 }
+
 
 .footer-section a {
     color: var(--text-light);
@@ -341,15 +388,18 @@ body {
     margin-bottom: 5px;
 }
 
+
 .footer-section a:hover {
     color: var(--primary-blue);
 }
 
+
 .footer-logo-img {
-    height: 30px; 
+    height: 30px;
     width: auto;
-    margin-bottom: 5px; 
+    margin-bottom: 5px;
 }
+
 
 .social-icons span {
     font-size: 20px;
@@ -358,6 +408,7 @@ body {
     color: var(--primary-blue);
 }
 
+
 .endereco p:first-child,
 .contato p:first-child {
     font-weight: bold;
@@ -365,9 +416,11 @@ body {
     margin-bottom: 5px;
 }
 
+
 .links p {
     margin-bottom: 5px;
 }
+
 
 @media (max-width: 900px) {
     .grid-container {
@@ -375,11 +428,13 @@ body {
         gap: 30px;
     }
 
+
     .left-column, .right-column {
         min-width: 100%;
         width: 100%;
     }
 }
+
 
 @media (max-width: 600px) {
     .navbar {
