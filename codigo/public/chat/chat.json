@@ -1,0 +1,70 @@
+{
+  "respostasAutomaticas": [
+    {
+      "id": "saudacao",
+      "triggers": ["oi", "olá", "ola", "bom dia", "boa tarde", "boa noite"],
+      "respostas": [
+        "Olá! É um prazer conversar com você. Como você está se sentindo hoje?",
+        "Oi! Fico feliz em falar com você. Em que posso ajudar?",
+        "Olá! Sou a Dra. Sarah Freitas. Como posso ajudá-lo hoje?"
+      ]
+    },
+    {
+      "id": "ansiedade",
+      "triggers": ["ansiedade", "ansioso", "ansiosa", "nervoso", "nervosa", "preocupado", "preocupada"],
+      "respostas": [
+        "Entendo que a ansiedade pode ser desafiadora. Podemos trabalhar juntos em técnicas para gerenciar esses sentimentos.",
+        "A ansiedade é uma resposta natural do corpo. Vamos conversar sobre o que tem desencadeado isso em você.",
+        "Muitas pessoas experienciam ansiedade. É importante identificar os gatilhos e desenvolver estratégias de coping."
+      ]
+    },
+    {
+      "id": "depressao",
+      "triggers": ["depressão", "depressao", "deprimido", "deprimida", "triste", "tristeza", "desanimado"],
+      "respostas": [
+        "A depressão é uma condição séria, mas tratável. É muito corajoso da sua parte buscar ajuda.",
+        "Entendo que você pode estar passando por um momento difícil. Vamos conversar sobre o que você tem experienciado.",
+        "A depressão afeta muitas pessoas e é importante buscar apoio. Estou aqui para ajudar."
+      ]
+    },
+    {
+      "id": "consulta",
+      "triggers": ["consulta", "horário", "horario", "agendar", "marcar", "disponibilidade"],
+      "respostas": [
+        "Posso ajudá-lo a agendar uma consulta. Temos disponibilidade nos próximos dias. Você prefere horário pela manhã ou à tarde?",
+        "Para marcar uma consulta, você pode ligar para (32) 3319-4444 ou acessar nosso site.",
+        "Tenho disponibilidade na próxima semana. Gostaria de ver os horários?"
+      ]
+    },
+    {
+      "id": "medicacao",
+      "triggers": ["remédio", "remedio", "medicamento", "medicação", "medicacao", "tarja preta", "ansiolítico"],
+      "respostas": [
+        "Sobre medicações, é importante conversarmos detalhadamente. Posso esclarecer dúvidas, mas ajustes devem ser discutidos em consulta.",
+        "Medicações psiquiátricas exigem acompanhamento profissional. Vamos agendar uma consulta para discutir isso adequadamente.",
+        "Cada caso requer uma avaliação individual para a prescrição medicamentosa. Posso te orientar sobre isso em consulta."
+      ]
+    },
+    {
+      "id": "agradecimento",
+      "triggers": ["obrigado", "obrigada", "grato", "grata", "valeu", "agradeço"],
+      "respostas": [
+        "De nada! Estou aqui para ajudar. Se tiver mais alguma dúvida ou preocupação, fique à vontade para compartilhar.",
+        "Fico feliz em poder ajudar! Não hesite em me procurar se precisar de mais orientações.",
+        "Por nada! Cuidar da sua saúde mental é muito importante. Estou à disposição."
+      ]
+    },
+    {
+      "id": "padrao",
+      "triggers": ["*"],
+      "respostas": [
+        "Entendo. Pode me contar um pouco mais sobre isso?",
+        "Obrigada por compartilhar. Como isso tem afetado seu dia a dia?",
+        "Compreendo sua preocupação. Vamos trabalhar juntos nisso.",
+        "Pode explicar um pouco melhor o que você está sentindo?",
+        "Estou aqui para ouvir e ajudar. Continue compartilhando.",
+        "Isso soa importante. Gostaria de explorar mais esse assunto?"
+      ]
+    }
+  ]
+}

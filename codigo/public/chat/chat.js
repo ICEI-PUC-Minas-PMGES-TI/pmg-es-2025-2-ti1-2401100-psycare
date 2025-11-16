@@ -16,6 +16,17 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     console.log('Todos os elementos encontrados');
+
+    // Carregar o JSON
+fetch('chat-data.json')
+  .then(response => response.json())
+  .then(data => {
+    console.log(data.configuracoes.medico.nome);
+    console.log(data.respostasAutomaticas);
+  })
+  .catch(error => {
+    console.error('Erro ao carregar JSON:', error);
+  });
     
     // hora atual
     function updateCurrentTime() {
@@ -100,6 +111,68 @@ document.addEventListener('DOMContentLoaded', function() {
         return div.innerHTML;
     }
     
+    // Simular digitação da médica
+    function showTypingIndicator() {
+        if (!chatMessages) return;
+        
+        const typingDiv = document.createElement('div');
+        typingDiv.className = 'message received-message typing';
+        typingDiv.id = 'typing-indicator';
+        typingDiv.innerHTML = '<div class="message-avatar"><img src="images/sarah-freitas.jpg" alt="Dra. Sarah Freitas" onerror="this.style.display=\'none\'"></div><div class="message-content"><strong>Dra. Sarah Freitas</strong><p>Digitando...</p></div>';
+        
+        chatMessages.appendChild(typingDiv);
+        scrollToBottom();
+    }
+    
+    // Remover indicador de digitação
+    function hideTypingIndicator() {
+        const typingIndicator = document.getElementById('typing-indicator');
+        if (typingIndicator) {
+            typingIndicator.remove();
+        }
+    }
+    
+    // Simular resposta automática
+    function simulateDoctorResponse(userMessage) {
+        showTypingIndicator();
+        
+        const typingTime = Math.random() * 2000 + 1000;
+        
+        setTimeout(function() {
+            hideTypingIndicator();
+            
+            let response;
+            const lowerMessage = userMessage.toLowerCase();
+            
+            // Respostas baseadas no conteúdo da mensagem
+            if (lowerMessage.includes('oi') || lowerMessage.includes('olá') || lowerMessage.includes('ola')) {
+                response = "Olá! É um prazer conversar com você. Como você está se sentindo hoje?";
+            } else if (lowerMessage.includes('ansiedade') || lowerMessage.includes('ansioso')) {
+                response = "Entendo que a ansiedade pode ser desafiadora. Podemos trabalhar juntos em técnicas para gerenciar esses sentimentos.";
+            } else if (lowerMessage.includes('depressão') || lowerMessage.includes('deprimido')) {
+                response = "A depressão é uma condição séria, mas tratável. É muito corajoso da sua parte buscar ajuda.";
+            } else if (lowerMessage.includes('obrigado') || lowerMessage.includes('obrigada')) {
+                response = "De nada! Estou aqui para ajudar. Se tiver mais alguma dúvida, fique à vontade.";
+            } else if (lowerMessage.includes('horário') || lowerMessage.includes('consulta')) {
+                response = "Posso ajudá-lo a agendar uma consulta. Temos disponibilidade nos próximos dias.";
+            } else if (lowerMessage.includes('remédio') || lowerMessage.includes('medicação')) {
+                response = "Sobre medicações, é importante conversarmos detalhadamente em consulta.";
+            } else {
+                // Respostas genéricas
+                const genericResponses = [
+                    "Entendo. Pode me contar um pouco mais sobre isso?",
+                    "Obrigada por compartilhar. Como isso tem afetado seu dia a dia?",
+                    "Compreendo sua preocupação. Vamos trabalhar juntos nisso.",
+                    "Pode explicar um pouco melhor o que você está sentindo?",
+                    "Estou aqui para ouvir e ajudar. Continue compartilhando."
+                ];
+                response = genericResponses[Math.floor(Math.random() * genericResponses.length)];
+            }
+            
+            addMessage(response, 'received');
+        }, typingTime);
+    }
+
     function sendMessage() {
         console.log('Função sendMessage chamada');
         
