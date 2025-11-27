@@ -1,31 +1,41 @@
 cff-version: 1.0.1
 message: Please cite this software using these metadata.
-title: 
+title: PsyCare
 authors:
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names:
-  - name-suffix: Professor
+  - family-names: Oliveira
+    given-names: Gabriel Eduardo de
+  - family-names: Silva
+    given-names: Júlia Carvalho
+  - family-names: Rocha e Silva
+    given-names: Júlia do Carmo Costa
+  - family-names: Cardoso
+    given-names: Lucas
+  - family-names: Araujo
+    given-names: Nathaly Nagem
+  - family-names: Silva
+    given-names: Pedro Henrique de Oliveira
+  - family-names: Chaves
+    given-names: Yago Garzon
+  - family-names: Pereira
+    given-names: Pedro Henrique Dias
+    name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
-  - name-suffix: Professor
+  - family-names: Andrade
+    given-names: Michelle Hanne Soares de
+    name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
+  - family-names: Lacerda
+    given-names: Lucca Soares de Paiva
+    name-suffix: Professor
+    affiliation: PUC Minas
+  - family-names: Pereira
+    given-names: Daniel Machado Osório
+    name-suffix: Professor
+    affiliation: PUC Minas
 keywords:
-  - 
-  - 
-repository-code: 
+  - saúde mental
+  - apoio psicológico
+repository-code: https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2025-2-ti1-2401100-psycare
 license: CC-BY-4.0
 version: 1.0.0
-date-released: 2022-07-14
+date-released: 2025-11-27
