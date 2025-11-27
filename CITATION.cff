@@ -16,10 +16,6 @@ authors:
     given-names: Pedro Henrique de Oliveira
   - family-names: Chaves
     given-names: Yago Garzon
-  - family-names: Pereira
-    given-names: Pedro Henrique Dias
-    name-suffix: Professor
-    affiliation: PUC Minas
   - family-names: Andrade
     given-names: Michelle Hanne Soares de
     name-suffix: Professor
@@ -39,3 +35,4 @@ repository-code: https://github.com/ICEI-PUC-Minas-PMGES-TI/pmg-es-2025-2-ti1-24
 license: CC-BY-4.0
 version: 1.0.0
 date-released: 2025-11-27
+
