@@ -10,7 +10,6 @@
  * Júlia do Carmo Costa Rocha e Silva
  * Lucas Cardoso
  * Nathaly Nagem Araujo
- * Pedro Henrique de Oliveira Silva
  * Yago Garzon Chaves
 
 ## Contexto
