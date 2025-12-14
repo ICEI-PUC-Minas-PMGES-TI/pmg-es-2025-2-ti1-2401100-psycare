@@ -1,5 +1,5 @@
 
-const API_URL = "http://localhost:3001/psicologos";
+const API_URL = "http://localhost:3000/psicologos";
 
 async function carregarPsicologos() {
   try {

@@ -21,5 +21,167 @@
       "email": "rommel@gmail.com",
       "id": 3
     }
+  ],
+  "pacientes": [
+    {
+      "id": 1,
+      "nome": "João Silva",
+      "usuario": "joao123",
+      "email": "joao@example.com",
+      "senha": "hashed_password_simulado",
+      "valorMaximo": 10.00,
+      "descricao": "Estou passando por ansiedade e procuro ajuda para gerenciar o estresse."
+    },
+    {
+      "id": 2,
+      "nome": "Maria Oliveira",
+      "usuario": "maria456",
+      "email": "maria@example.com",
+      "senha": "hashed_password_simulado",
+      "valorMaximo": 20.00,
+      "descricao": "Problemas de depressão e dificuldade em socializar."
+    }
+  ],
+  "psicologos": [
+    {
+      "id": 1,
+      "nome": "Dra. Mariana Castro",
+      "crp": "06/12345",
+      "email": "mariana.castro@psycare.com",
+      "telefone": "(31) 98765-4321",
+      "dataNascimento": "1985-03-15",
+      "genero": "Feminino",
+      "estado": "MG",
+      "formacao": "Psicologia - USP",
+      "tempoExperiencia": 8,
+      "modalidadeAtendimento": "Hibrido",
+      "descricaoProfissional": "Psicóloga clínica especializada em TCC para ansiedade e depressão, com foco em adultos jovens.",
+      "especialidade": "Terapia Cognitivo-Comportamental (TCC)",
+      "disponibilidade": {
+        "dias": ["Segunda", "Quarta", "Sexta"],
+        "horarios": ["09:00-12:00", "14:00-18:00"]
+      },
+      "datasEspecificas": ["2025-01-13", "2025-01-20"],
+      "usuario": "mariana123",
+      "senha": "hash_simulado_mariana",
+      "dataCadastro": "2025-01-01T10:00:00.000Z",
+      "status": "ativo"
+    },
+    {
+      "id": 2,
+      "nome": "Dr. Ricardo Nunes",
+      "crp": "06/67890",
+      "email": "ricardo.nunes@psycare.com",
+      "telefone": "(31) 91234-5678",
+      "dataNascimento": "1978-07-22",
+      "genero": "Masculino",
+      "estado": "SP",
+      "formacao": "Psiquiatria - UFMG",
+      "tempoExperiencia": 12,
+      "modalidadeAtendimento": "Presencial",
+      "descricaoProfissional": "Psiquiatra com foco em transtornos do humor e saúde mental geral.",
+      "especialidade": "Psiquiatria e Transtornos do Humor",
+      "disponibilidade": {
+        "dias": ["Terça", "Quinta"],
+        "horarios": ["08:00-11:00", "15:00-17:00"]
+      },
+      "datasEspecificas": ["2025-01-15"],
+      "usuario": "ricardo456",
+      "senha": "hash_simulado_ricardo",
+      "dataCadastro": "2025-01-02T14:30:00.000Z",
+      "status": "ativo"
+    },
+    {
+      "id": 3,
+      "nome": "Dra. Juliana Prado",
+      "crp": "06/54321",
+      "email": "juliana.prado@psycare.com",
+      "telefone": "(31) 99876-5432",
+      "dataNascimento": "1990-11-08",
+      "genero": "Feminino",
+      "estado": "RJ",
+      "formacao": "Psicologia Infantil - PUC Minas",
+      "tempoExperiencia": 5,
+      "modalidadeAtendimento": "Remoto",
+      "descricaoProfissional": "Psicóloga infantil especializada em lidar com emoções e dificuldades escolares em crianças.",
+      "especialidade": "Psicologia Infantil e Emoções",
+      "disponibilidade": {
+        "dias": ["Segunda", "Quarta", "Sexta"],
+        "horarios": ["10:00-13:00"]
+      },
+      "datasEspecificas": [],
+      "usuario": "juliana789",
+      "senha": "hash_simulado_juliana",
+      "dataCadastro": "2025-01-03T09:15:00.000Z",
+      "status": "pendente"
+    }
+  ],
+  "patients": [
+    {
+      "id": "9c66",
+      "name": "gabriel",
+      "birthdate": "2006-02-04",
+      "phone": "31975783024",
+      "score": 7,
+      "priority": "Média",
+      "registrationDate": "2025-10-26"
+    }
+  ],
+  "consultas": [
+    {
+      "nome": "Rosilene do Carmo Silva",
+      "celular": "(31) 974584545",
+      "email": "rodocarm@gmail.com",
+      "mensagem": "Quero falar sobre minha familia",
+      "dia": "13",
+      "horario": "10:00",
+      "psicologo": "Dr. Mariana Albuquerque",
+      "assunto": "Consulta comigo",
+      "id": 1
+    },
+    {
+      "nome": "Julia Teste",
+      "celular": "(31) 99744-74898",
+      "email": "juliatest@test.com",
+      "mensagem": "Quero falar sobre mim",
+      "dia": "13",
+      "horario": "09:00",
+      "psicologo": "Dr. Mariana Albuquerque",
+      "assunto": "Consulta psicológica",
+      "id": 2
+    },
+    {
+      "nome": "Nayara",
+      "celular": "(31) 99744-74898",
+      "email": "juliatest@test.com",
+      "mensagem": "Quero falar sobre a minha sexualidade.",
+      "dia": "18",
+      "horario": "16:30",
+      "psicologo": "Dr. Mariana Albuquerque",
+      "assunto": "Consulta psicológica",
+      "id": 3
+    },
+    {
+      "nome": "Danielle Rocha",
+      "celular": "(31) 78896-84521",
+      "email": "danieller@gmail.com",
+      "mensagem": "Quero falar sobre mim.",
+      "dia": "13",
+      "horario": "16:30",
+      "psicologo": "Dr. Mariana Albuquerque",
+      "assunto": "Consulta psicológica",
+      "id": 5
+    },
+    {
+      "nome": "Ariadne",
+      "celular": "(31545565",
+      "email": "ariadne@gmail.com",
+      "mensagem": "Quero falar sobre a minha familia.",
+      "dia": "13",
+      "horario": "10:00",
+      "psicologo": "Dr. Mariana Albuquerque",
+      "assunto": "Quero falar sobre a minha familia.",
+      "id": 7
+    }
   ]
 }
