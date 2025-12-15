@@ -10,7 +10,6 @@
  * Júlia do Carmo Costa Rocha e Silva
  * Lucas Cardoso
  * Nathaly Nagem Araujo
- * Pedro Henrique de Oliveira Silva
  * Yago Garzon Chaves
 
 ## Contexto
@@ -177,27 +176,107 @@ O PsyCare tem como público principal pessoas em situação de vulnerabilidade s
 
 ## Gerenciamento do Projeto
 
-Divisão de papéis no grupo e apresentação da estrutura da ferramenta de controle de tarefas (Kanban).
+O grupo se organizou seguindo princípios do framework Scrum, adaptados à realidade acadêmica do projeto. Foram realizadas reuniões rápidas para alinhamento das atividades e definição das prioridades.
+Os papéis foram definidos da seguinte forma:
+Product Owner: responsável por definir os requisitos da aplicação, funcionalidades principais e regras de negócio. No caso da Psycare seria Yago Garzon Chaves
+Scrum Master: responsável por auxiliar na organização do trabalho, remoção de impedimentos e acompanhamento do andamento das tarefas. No caso da Psycare, seria Júlia do Carmo.
+Time de Desenvolvimento: responsável pela implementação do código, criação das telas, lógica de funcionamento e integração com o JSON Server.
+As tarefas foram divididas em pequenas entregas, permitindo que cada integrante contribuísse de forma contínua ao longo do desenvolvimento.
 
-![Exemplo de Kanban](images/exemplo-kanban.png)
+![Exemplo de Kanban](images/kanban.png)
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Nesta parte do documento, você deve apresentar  o processo de trabalho baseado nas metodologias ágeis, a divisão de papéis e tarefas, as ferramentas empregadas e como foi realizada a gestão de configuração do projeto via GitHub.
->
-> Coloque detalhes sobre o processo de Design Thinking e a implementação do Framework Scrum seguido pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
->
-> **Orientações**:
->
-> - [Sobre Projects - GitHub Docs](https://docs.github.com/pt/issues/planning-and-tracking-with-projects/learning-about-projects/about-projects)
-> - [Gestão de projetos com GitHub | balta.io](https://balta.io/blog/gestao-de-projetos-com-github)
-> - [(460) GitHub Projects - YouTube](https://www.youtube.com/playlist?list=PLiO7XHcmTsldZR93nkTFmmWbCEVF_8F5H)
-> - [11 Passos Essenciais para Implantar Scrum no seu Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
 
 # Solução Implementada
+Funcionalidade 1 - Cadastro do Paciente
+Permite que pacientes realizem seu cadastro na plataforma PsyCare, criando uma conta para acesso às funcionalidades do sistema, como agendamentos, triagem e consultas.
+Estrutura de dados: Pacientes
+Instruções de acesso:
+Acesse o site e acesse a tela de cadastro
+Preencha seus dados
+Confirme os dados para a criação da conta
+Tela da Funcionalidade:
 
-Esta seção apresenta todos os detalhes da solução criada no projeto.
+Funcionalidade 2 - Cadastro do Psicólogo
+Permite o cadastro de psicólogos na plataforma, possibilitando que profissionais ofereçam atendimento psicológico aos pacientes.
+Estrutura de dados: Psicólogos
+Instruções de acesso:
+Acesse o site e acesse a tela de cadastro
+Preencha seus dados
+Confirme os dados para a criação da conta
+Tela da Funcionalidade: 
+
+Funcionalidade 3 - Agendamento para o paciente
+Permite que pacientes realizem o agendamento de consultas com psicólogos disponíveis na plataforma.
+Estrutura de dados: Agendamento
+Instruções de acesso:
+Acesse o site
+Acesse a tela de agendamento
+Escolha o profissional, data e horário disponíveis, digite suas informações e confirma a solicitação.
+
+
+Funcionalidade 4 - Formulário de triagem
+Permite a coleta inicial de informações sobre o paciente, auxiliando na avaliação preliminar de suas necessidades psicológicas.
+Estrutura de dados: Triagem
+Instruções de acesso:
+Acesse a tela de triagem
+Preencha as informações
+Confirme as informações e envie.
+
+
+Funcionalidade 5 - Consulta do psicólogo
+Permite que o psicólogo visualize suas consultas agendadas e os dados básicos do paciente.
+Estrutura de dados: Consulta Psicólogo
+Instruções de acesso:
+Acesse o site
+Faça login como psicólogo
+Vá para área de consultas
+
+Funcionalidade 6 - Chat de conversa
+Disponibiliza um canal de comunicação entre paciente e psicólogo, garantindo troca de mensagens de forma segura.
+Estrutura de dados: Chat
+Instruções de acesso:
+Acesse a tela de login
+Abra a janela do chat
+
+Funcionalidade 7 - Tela de especificação
+Apresenta informações detalhadas sobre o serviço, profissional ou consulta, permitindo melhor compreensão por parte do usuário.
+
+Estrutura de dados: Especificação Especialistas
+Instruções de acesso:
+Acesse o site
+Clique em Especialistas
+
+Funcionalidade 8 - Relato do prontuário
+Permite que o psicólogo registre anotações sobre o atendimento realizado, compondo o prontuário do paciente.
+Estrutura de dados: Prontuário
+Instruções de acesso:
+Acesse o site
+Faça login como psicológo
+Acessa a tela de prontuários
+
+Funcionalidade 9 - Página de avaliação
+Permite que pacientes avaliem o atendimento recebido, contribuindo para a melhoria contínua da plataforma.
+Estrutura de dados: Avaliação
+Instruções de acesso:
+Após a consulta, acesse a página de avaliação
+Preencha as informações e envie.
+
+Funcionalidade 10 - Disponibilidade do Profissional
+Permite que o psicólogo defina seus dias e horários disponíveis para atendimento.
+Estrutura de dados: Disponibilidade do Psicólogo
+Instruções de acesso:
+Acesse o site
+Faça login como psicólogo
+Acesse a tela de disponibilidade
+
+Funcionalidade 11 - Disponibilidade de conteúdos
+Disponibiliza conteúdos informativos relacionados à saúde mental, como artigos e orientações.
+Estrutura de dados: Disponibilidade de conteúdo
+Instruções de acesso:
+Acesse o site
+Clique em conteúdo de apoio
+
+
 
 ## Vídeo do Projeto
 
@@ -205,76 +284,486 @@ O vídeo a seguir traz uma apresentação do problema que a equipe está tratand
 
 [![Vídeo do projeto](images/video.png)](https://www.youtube.com/embed/70gGoFyGeqQ)
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> O video de apresentação é voltado para que o público externo possa conhecer a solução. O formato é livre, sendo importante que seja apresentado o problema e a solução numa linguagem descomplicada e direta.
->
-> Inclua um link para o vídeo do projeto.
+
 
 ## Funcionalidades
 
 Esta seção apresenta as funcionalidades da solução.Info
 
-##### Funcionalidade 1 - Cadastro de Contatos ⚠️ EXEMPLO ⚠️
+##### Funcionalidade 1 
+Funcionalidade 1 - Cadastro do Paciente
+Permite que pacientes realizem seu cadastro na plataforma PsyCare, criando uma conta para acesso às funcionalidades do sistema, como agendamentos, triagem e consultas.
+•	Estrutura de dados: Pacientes
+•	Instruções de acesso:
+o	Acesse o site e acesse a tela de cadastro
+o	Preencha seus dados
+o	Confirme os dados para a criação da conta
+•	Tela da Funcionalidade:
 
-Permite a inclusão, leitura, alteração e exclusão de contatos para o sistema
 
-* **Estrutura de dados:** [Contatos](#ti_ed_contatos)
-* **Instruções de acesso:**
-  * Abra o site e efetue o login
-  * Acesse o menu principal e escolha a opção Cadastros
-  * Em seguida, escolha a opção Contatos
-* **Tela da funcionalidade**:
+![Tela de Funcionalidade](images/f1.png)
 
-![Tela de Funcionalidade](images/exemplo-funcionalidade.png)
+##### Funcionalidade 2
+Permite o cadastro de psicólogos na plataforma, possibilitando que profissionais ofereçam atendimento psicológico aos pacientes.
+•	Estrutura de dados: Psicólogos
+•	Instruções de acesso:
+o	Acesse o site e acesse a tela de cadastro
+o	Preencha seus dados
+o	Confirme os dados para a criação da conta
+•	Tela da Funcionalidade: 
 
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Apresente cada uma das funcionalidades que a aplicação fornece tanto para os usuários quanto aos administradores da solução.
->
-> Inclua, para cada funcionalidade, itens como: (1) titulos e descrição da funcionalidade; (2) Estrutura de dados associada; (3) o detalhe sobre as instruções de acesso e uso.
+
+![Tela de Funcionalidade](images/f2.png)
+
+##### Funcionalidade 3
+Permite que pacientes realizem o agendamento de consultas com psicólogos disponíveis na plataforma.
+•	Estrutura de dados: Agendamento
+•	Instruções de acesso:
+o	Acesse o site
+o	Acesse a tela de agendamento
+o	Escolha o profissional, data e horário disponíveis, digite suas informações e confirma a solicitação.
+•	Tela da Funcionalidade: 
+
+
+![Tela de Funcionalidade](images/f3.png)
+
+##### Funcionalidade 4
+Permite a coleta inicial de informações sobre o paciente, auxiliando na avaliação preliminar de suas necessidades psicológicas.
+•	Estrutura de dados: Triagem
+•	Instruções de acesso:
+o	Acesse a tela de triagem
+o	Preencha as informações
+o	Confirme as informações e envie.
+•	Tela da Funcionalidade: 
+
+
+
+![Tela de Funcionalidade](images/f4.png)
+
+##### Funcionalidade 5
+Permite o cadastro de psicólogos na plataforma, possibilitando que profissionais ofereçam atendimento psicológico aos pacientes.
+•	Estrutura de dados: Psicólogos
+•	Instruções de acesso:
+o	Acesse o site e acesse a tela de cadastro
+o	Preencha seus dados
+o	Confirme os dados para a criação da conta
+
+##### Funcionalidade 6
+Disponibiliza um canal de comunicação entre paciente e psicólogo, garantindo troca de mensagens de forma segura.
+•	Estrutura de dados: Chat
+•	Instruções de acesso:
+o	Acesse a tela de login
+o	Abra a janela do chat
+•	Tela da Funcionalidade:
+
+
+
+![Tela de Funcionalidade](images/f5.png)
+
+
+##### Funcionalidade 7
+Apresenta informações detalhadas sobre o serviço, profissional ou consulta, permitindo melhor compreensão por parte do usuário.
+
+•	Estrutura de dados: Especificação Especialistas
+•	Instruções de acesso:
+o	Acesse o site
+o	Clique em Especialistas
+•	Tela da Funcionalidade:
+
+
+
+![Tela de Funcionalidade](images/f6.png)
+
+
+
+##### Funcionalidade 8
+Permite que o psicólogo registre anotações sobre o atendimento realizado, compondo o prontuário do paciente.
+•	Estrutura de dados: Prontuário
+•	Instruções de acesso:
+o	Acesse o site
+o	Faça login como psicológo
+o	Acessa a tela de prontuários
+•	Tela da Funcionalidade: 
+
+
+![Tela de Funcionalidade](images/f7.png)
+
+
+##### Funcionalidade 9
+Permite que pacientes avaliem o atendimento recebido, contribuindo para a melhoria contínua da plataforma.
+•	Estrutura de dados: Avaliação
+•	Instruções de acesso:
+o	Após a consulta, acesse a página de avaliação
+o	Preencha as informações e envie.
+
+##### Funcionalidade 10
+Permite que o psicólogo defina seus dias e horários disponíveis para atendimento.
+•	Estrutura de dados: Disponibilidade do Psicólogo
+•	Instruções de acesso:
+o	Acesse o site
+o	Faça login como psicólogo
+o	Acesse a tela de disponibilidade
+o	Preencha as informações e envie.
+•	Tela da Funcionalidade:
+
+
+
+![Tela de Funcionalidade](images/f8.png)
+
+
+##### Funcionalidade 11
+Disponibiliza conteúdos informativos relacionados à saúde mental, como artigos e orientações.
+•	Estrutura de dados: Disponibilidade de conteúdo
+•	Instruções de acesso:
+o	Acesse o site
+o	Clique em conteúdo de apoio
+
 
 ## Estruturas de Dados
 
 Descrição das estruturas de dados utilizadas na solução com exemplos no formato JSON.Info
+Estrutura de Dados - Pacientes
+Pacientes da aplicação
+{
+  "pacientes": [
+    {
+      "id": 1,
+      "nome": "João Silva",
+      "usuario": "joao123",
+      "email": "joao@example.com",
+      "senha": "hashed_password_simulado",
+      "valorMaximo": 10.00,
+      "descricao": "Estou passando por ansiedade e procuro ajuda para gerenciar o estresse."
+    },
+    {
+      "id": 2,
+      "nome": "Maria Oliveira",
+      "usuario": "maria456",
+      "email": "maria@example.com",
+      "senha": "hashed_password_simulado",
+      "valorMaximo": 20.00,
+      "descricao": "Problemas de depressão e dificuldade em socializar."
+    }
+  ]
+}
 
-##### Estrutura de Dados - Contatos   ⚠️ EXEMPLO ⚠️
 
-Contatos da aplicação
 
-```json
-  {
-    "id": 1,
-    "nome": "Leanne Graham",
-    "cidade": "Belo Horizonte",
-    "categoria": "amigos",
-    "email": "Sincere@april.biz",
-    "telefone": "1-770-736-8031",
-    "website": "hildegard.org"
+## Estruturas de Dados – Psicólogos
+Psicólogos na aplicação
+{
+  "psicologos": [
+    {
+      "id": 1,
+      "nome": "Dra. Mariana Castro",
+      "crp": "06/12345",
+      "email": "mariana.castro@psycare.com",
+      "telefone": "(31) 98765-4321",
+      "dataNascimento": "1985-03-15",
+      "genero": "Feminino",
+      "estado": "MG",
+      "formacao": "Psicologia - USP",
+      "tempoExperiencia": 8,
+      "modalidadeAtendimento": "Hibrido",
+      "descricaoProfissional": "Psicóloga clínica especializada em TCC para ansiedade e depressão, com foco em adultos jovens.",
+      "especialidade": "Terapia Cognitivo-Comportamental (TCC)",
+      "disponibilidade": {
+        "dias": ["Segunda", "Quarta", "Sexta"],
+        "horarios": ["09:00-12:00", "14:00-18:00"]
+      },
+      "datasEspecificas": ["2025-01-13", "2025-01-20"],
+      "usuario": "mariana123",
+      "senha": "hash_simulado_mariana",
+      "dataCadastro": "2025-01-01T10:00:00.000Z",
+      "status": "ativo"
+    },
+    {
+      "id": 2,
+      "nome": "Dr. Ricardo Nunes",
+      "crp": "06/67890",
+      "email": "ricardo.nunes@psycare.com",
+      "telefone": "(31) 91234-5678",
+      "dataNascimento": "1978-07-22",
+      "genero": "Masculino",
+      "estado": "SP",
+      "formacao": "Psiquiatria - UFMG",
+      "tempoExperiencia": 12,
+      "modalidadeAtendimento": "Presencial",
+      "descricaoProfissional": "Psiquiatra com foco em transtornos do humor e saúde mental geral.",
+      "especialidade": "Psiquiatria e Transtornos do Humor",
+      "disponibilidade": {
+        "dias": ["Terça", "Quinta"],
+        "horarios": ["08:00-11:00", "15:00-17:00"]
+      },
+      "datasEspecificas": ["2025-01-15"],
+      "usuario": "ricardo456",
+      "senha": "hash_simulado_ricardo",
+      "dataCadastro": "2025-01-02T14:30:00.000Z",
+      "status": "ativo"
+    }
+]
+}
+
+## Estruturas de DadosAgendamento
+Agendamentos na aplicação
+{
+  "consultas": [
+    {
+      "nome": "Rosilene do Carmo Silva",
+      "celular": "(31) 974584545",
+      "email": "rodocarm@gmail.com",
+      "mensagem": "Quero falar sobre minha familia",
+      "dia": "13",
+      "horario": "10:00",
+      "psicologo": "Dr. Mariana Albuquerque",
+      "assunto": "Consulta comigo",
+      "id": 1
+    },
+    {
+      "nome": "Julia Teste",
+      "celular": "(31) 99744-74898",
+      "email": "juliatest@test.com",
+      "mensagem": "Quero falar sobre mim",
+      "dia": "13",
+      "horario": "09:00",
+      "psicologo": "Dr. Mariana Albuquerque",
+      "assunto": "Consulta psicológica",
+      "id": 2
+    },
+    {
+      "nome": "Nayara",
+      "celular": "(31) 99744-74898",
+      "email": "juliatest@test.com",
+      "mensagem": "Quero falar sobre a minha sexualidade.",
+      "dia": "18",
+      "horario": "16:30",
+      "psicologo": "Dr. Mariana Albuquerque",
+      "assunto": "Consulta psicológica",
+      "id": 3
+    },
+    {
+      "nome": "Danielle Rocha",
+      "celular": "(31) 78896-84521",
+      "email": "danieller@gmail.com",
+      "mensagem": "Quero falar sobre mim.",
+      "dia": "13",
+      "horario": "16:30",
+      "psicologo": "Dr. Mariana Albuquerque",
+      "assunto": "Consulta psicológica",
+      "id": 5
+    },
+    {
+      "nome": "Ariadne",
+      "celular": "31545565",
+      "email": "ariadne@gmail.com",
+      "mensagem": "Quero falar sobre a minha familia.",
+      "dia": "13",
+      "horario": "10:00",
+      "psicologo": "Dr. Mariana Albuquerque",
+      "assunto": "Quero falar sobre a minha familia.",
+      "id": 7
+    }
+  ]
+}
+
+
+
+## Estruturas de Dados– Chat
+Chat de conversa na aplicação
+{
+  "respostasAutomaticas": [
+    {
+      "id": "saudacao",
+      "triggers": ["oi", "olá", "ola", "bom dia", "boa tarde", "boa noite"],
+      "respostas": [
+        "Olá! É um prazer conversar com você. Como você está se sentindo hoje?",
+        "Oi! Fico feliz em falar com você. Em que posso ajudar?",
+        "Olá! Sou a Dra. Sarah Freitas. Como posso ajudá-lo hoje?"
+      ]
+    },
+    {
+      "id": "ansiedade",
+      "triggers": ["ansiedade", "ansioso", "ansiosa", "nervoso", "nervosa", "preocupado", "preocupada"],
+      "respostas": [
+        "Entendo que a ansiedade pode ser desafiadora. Podemos trabalhar juntos em técnicas para gerenciar esses sentimentos.",
+        "A ansiedade é uma resposta natural do corpo. Vamos conversar sobre o que tem desencadeado isso em você.",
+        "Muitas pessoas experienciam ansiedade. É importante identificar os gatilhos e desenvolver estratégias de coping."
+      ]
+    },
+    {
+      "id": "depressao",
+      "triggers": ["depressão", "depressao", "deprimido", "deprimida", "triste", "tristeza", "desanimado"],
+      "respostas": [
+        "A depressão é uma condição séria, mas tratável. É muito corajoso da sua parte buscar ajuda.",
+        "Entendo que você pode estar passando por um momento difícil. Vamos conversar sobre o que você tem experienciado.",
+        "A depressão afeta muitas pessoas e é importante buscar apoio. Estou aqui para ajudar."
+      ]
+    },
+    {
+      "id": "consulta",
+      "triggers": ["consulta", "horário", "horario", "agendar", "marcar", "disponibilidade"],
+      "respostas": [
+        "Posso ajudá-lo a agendar uma consulta. Temos disponibilidade nos próximos dias. Você prefere horário pela manhã ou à tarde?",
+        "Para marcar uma consulta, você pode ligar para (32) 3319-4444 ou acessar nosso site.",
+        "Tenho disponibilidade na próxima semana. Gostaria de ver os horários?"
+      ]
+    },
+    {
+      "id": "medicacao",
+      "triggers": ["remédio", "remedio", "medicamento", "medicação", "medicacao", "tarja preta", "ansiolítico"],
+      "respostas": [
+        "Sobre medicações, é importante conversarmos detalhadamente. Posso esclarecer dúvidas, mas ajustes devem ser discutidos em consulta.",
+        "Medicações psiquiátricas exigem acompanhamento profissional. Vamos agendar uma consulta para discutir isso adequadamente.",
+        "Cada caso requer uma avaliação individual para a prescrição medicamentosa. Posso te orientar sobre isso em consulta."
+      ]
+    },
+    {
+      "id": "agradecimento",
+      "triggers": ["obrigado", "obrigada", "grato", "grata", "valeu", "agradeço"],
+      "respostas": [
+        "De nada! Estou aqui para ajudar. Se tiver mais alguma dúvida ou preocupação, fique à vontade para compartilhar.",
+        "Fico feliz em poder ajudar! Não hesite em me procurar se precisar de mais orientações.",
+        "Por nada! Cuidar da sua saúde mental é muito importante. Estou à disposição."
+      ]
+    },
+    {
+      "id": "padrao",
+      "triggers": ["*"],
+      "respostas": [
+        "Entendo. Pode me contar um pouco mais sobre isso?",
+        "Obrigada por compartilhar. Como isso tem afetado seu dia a dia?",
+        "Compreendo sua preocupação. Vamos trabalhar juntos nisso.",
+        "Pode explicar um pouco melhor o que você está sentindo?",
+        "Estou aqui para ouvir e ajudar. Continue compartilhando.",
+        "Isso soa importante. Gostaria de explorar mais esse assunto?"
+      ]
+    }
+  ]
+}
+
+
+## Estruturas de Dados– Especificação Especialistas
+Visualização das especificações dos especialistas na aplicação
+{
+  "psicologos": [
+    {
+      "id": 1,
+      "nome": "Dra. Mariana Castro",
+      "crp": "06/12345",
+      "email": "mariana.castro@psycare.com",
+      "telefone": "(31) 98765-4321",
+      "dataNascimento": "1985-03-15",
+      "genero": "Feminino",
+      "estado": "MG",
+      "formacao": "Psicologia - USP",
+      "tempoExperiencia": 8,
+      "modalidadeAtendimento": "Hibrido",
+      "descricaoProfissional": "Psicóloga clínica especializada em TCC para ansiedade e depressão, com foco em adultos jovens.",
+      "especialidade": "Terapia Cognitivo-Comportamental (TCC)",
+      "disponibilidade": {
+        "dias": ["Segunda", "Quarta", "Sexta"],
+        "horarios": ["09:00-12:00", "14:00-18:00"]
+      },
+      "datasEspecificas": ["2025-01-13", "2025-01-20"],
+      "usuario": "mariana123",
+      "senha": "hash_simulado_mariana",
+      "dataCadastro": "2025-01-01T10:00:00.000Z",
+      "status": "ativo"
+    },
+    {
+      "id": 2,
+      "nome": "Dr. Ricardo Nunes",
+      "crp": "06/67890",
+      "email": "ricardo.nunes@psycare.com",
+      "telefone": "(31) 91234-5678",
+      "dataNascimento": "1978-07-22",
+      "genero": "Masculino",
+      "estado": "SP",
+      "formacao": "Psiquiatria - UFMG",
+      "tempoExperiencia": 12,
+      "modalidadeAtendimento": "Presencial",
+      "descricaoProfissional": "Psiquiatra com foco em transtornos do humor e saúde mental geral.",
+      "especialidade": "Psiquiatria e Transtornos do Humor",
+      "disponibilidade": {
+        "dias": ["Terça", "Quinta"],
+        "horarios": ["08:00-11:00", "15:00-17:00"]
+      },
+      "datasEspecificas": ["2025-01-15"],
+      "usuario": "ricardo456",
+      "senha": "hash_simulado_ricardo",
+      "dataCadastro": "2025-01-02T14:30:00.000Z",
+      "status": "ativo"
+    },
+    {
+      "id": 3,
+      "nome": "Dra. Juliana Prado",
+      "crp": "06/54321",
+      "email": "juliana.prado@psycare.com",
+      "telefone": "(31) 99876-5432",
+      "dataNascimento": "1990-11-08",
+      "genero": "Feminino",
+      "estado": "RJ",
+      "formacao": "Psicologia Infantil - PUC Minas",
+      "tempoExperiencia": 5,
+      "modalidadeAtendimento": "Remoto",
+      "descricaoProfissional": "Psicóloga infantil especializada em lidar com emoções e dificuldades escolares em crianças.",
+      "especialidade": "Psicologia Infantil e Emoções",
+      "disponibilidade": {
+        "dias": ["Segunda", "Quarta", "Sexta"],
+        "horarios": ["10:00-13:00"]
+      },
+      "datasEspecificas": [],
+      "usuario": "juliana789",
+      "senha": "hash_simulado_juliana",
+      "dataCadastro": "2025-01-03T09:15:00.000Z",
+      "status": "pendente"
+    }
+  ]
+}
+
+
+
+## Estruturas de Dados - Disponibilidade do Psicólogo
+Visualização da disponibilidade do psicólogo na aplicação
+{
+  "descricao": "Esquema da estrutura de dados para o objeto 'psicologo'. Este é um arquivo de modelo, os dados reais são salvos no localStorage pelo JavaScript.",
+  "estrutura": {
+    "psicologo": {
+      "id": "number",
+      "nome": "string",
+      "crp": "string",
+      "email": "string",
+      "telefone": "string",
+      "dataNascimento": "string (YYYY-MM-DD)",
+      "genero": "string",
+      "formacao": "string",
+      "tempoExperiencia": "number (anos)",
+      "modalidadeAtendimento": "string (online/presencial/ambos)",
+      
+      "descricaoProfissional": "string",
+      "especialidade": "string",
+      
+      "disponibilidade": {
+        "dias": [
+          "string (ex: Segunda, Terca)"
+        ],
+        "horarios": [
+          "string (ex: 09:00-12:00)"
+        ]
+      },
+      
+      "datasEspecificas": [
+        "string (ex: 2025-01-13) - Opcional, do calendário visual"
+      ],
+      
+      "usuario": "string",
+      "senha": "string (hash simulado)",
+      "dataCadastro": "string (ISO 8601)",
+      "status": "string (pendente/ativo)"
+    }
   }
-  
-```
+}
 
-##### Estrutura de Dados - Usuários  ⚠️ EXEMPLO ⚠️
-
-Registro dos usuários do sistema utilizados para login e para o perfil do sistema
-
-```json
-  {
-    id: "eed55b91-45be-4f2c-81bc-7686135503f9",
-    email: "admin@abc.com",
-    id: "eed55b91-45be-4f2c-81bc-7686135503f9",
-    login: "admin",
-    nome: "Administrador do Sistema",
-    senha: "123"
-  }
-```
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Apresente as estruturas de dados utilizadas na solução tanto para dados utilizados na essência da aplicação quanto outras estruturas que foram criadas para algum tipo de configuração
->
-> Nomeie a estrutura, coloque uma descrição sucinta e apresente um exemplo em formato JSON.
 >
 > **Orientações:**
 >
@@ -283,36 +772,26 @@ Registro dos usuários do sistema utilizados para login e para o perfil do siste
 
 ## Módulos e APIs
 
-Esta seção apresenta os módulos e APIs utilizados na solução
+Módulos e APIs
+Frameworks, bibliotecas e módulos:
+•	HTML5: estrutura das páginas.
+•	CSS3: estilização e layout das telas. 
+•	JavaScript: lógica da aplicação, validações, manipulação do DOM e requisições HTTP.
+•	JSON Server: simulação de uma API REST para persistência de dados.
 
-**Images**:
-
-* Unsplash - [https://unsplash.com/](https://unsplash.com/) ⚠️ EXEMPLO ⚠️
 
 **Fonts:**
+[https://fontawesome.com/](https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap) 
+[https://fontawesome.com/](https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css ) 
 
-* Icons Font Face - [https://fontawesome.com/](https://fontawesome.com/) ⚠️ EXEMPLO ⚠️
 
-**Scripts:**
-
-* jQuery - [http://www.jquery.com/](http://www.jquery.com/) ⚠️ EXEMPLO ⚠️
-* Bootstrap 4 - [http://getbootstrap.com/](http://getbootstrap.com/) ⚠️ EXEMPLO ⚠️
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Apresente os módulos e APIs utilizados no desenvolvimento da solução. Inclua itens como: (1) Frameworks, bibliotecas, módulos, etc. utilizados no desenvolvimento da solução; (2) APIs utilizadas para acesso a dados, serviços, etc.
 
 # Referências
 
-As referências utilizadas no trabalho foram:
+STACK OVERFLOW. Stack Overflow. Disponível em: https://stackoverflow.com/. 
+JSON SERVER. JSON Server. Disponível em: https://www.npmjs.com/package/json-server. 
+GITHUB. GitHub. Disponível em: https://github.com/. 
 
-* SOBRENOME, Nome do autor. Título da obra. 8. ed. Cidade: Editora, 2000. 287 p ⚠️ EXEMPLO ⚠️
-
-> ⚠️ **APAGUE ESSA PARTE ANTES DE ENTREGAR SEU TRABALHO**
->
-> Inclua todas as referências (livros, artigos, sites, etc) utilizados no desenvolvimento do trabalho.
->
-> **Orientações**:
 >
 > - [Formato ABNT](https://www.normastecnicas.com/abnt/trabalhos-academicos/referencias/)
 > - [Referências Bibliográficas da ABNT](https://comunidade.rockcontent.com/referencia-bibliografica-abnt/)
